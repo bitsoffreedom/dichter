@@ -23,6 +23,7 @@ class PoliticianCampaign(models.Model):
 	campaign = models.ForeignKey(Campaign)
 	politician = models.ForeignKey(Politician)
 	desc = models.TextField()
+	weight = models.IntegerField()
 
 class Contact(models.Model):
 	type = models.CharField(max_length=25)
@@ -38,8 +39,8 @@ class Action(models.Model):
 
 class Response(models.Model):
 	campaign = models.ForeignKey(Campaign)
-        contact = models.ForeignKey(Contact)
-        text = models.TextField()
+	contact = models.ForeignKey(Contact)
+	text = models.TextField()
 	date = models.DateTimeField(auto_now=True)
-        ip = models.IPAddressField()
+	ip = models.IPAddressField()
 	
