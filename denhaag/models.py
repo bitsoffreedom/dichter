@@ -2,9 +2,13 @@ from django.db import models
 
 class Campaign(models.Model):
 	title = models.CharField(max_length=200)
+	subtitle = models.CharField(max_length=200)
+	hashtag = models.CharField(max_length=42)
 	desc = models.TextField()
 	start_date = models.DateField()
 	end_date = models.DateField()
+	def __unicode__(self):
+		return "%s: %s (%s tot %s)" % (self.title, self.desc, self.start_date, self.end_date)
 
 class Party(models.Model):
 	name = models.CharField(max_length=200)

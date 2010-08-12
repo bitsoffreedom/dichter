@@ -8,7 +8,7 @@ urlpatterns = patterns('',
     # Example:
     # (r'^dichter/', include('dichter.foo.urls')),
 	(r'^$', 'dichter.denhaag.views.index'),
-	#(r'^campaign/(?P<poll_id>\d+)/$', 'mysite.polls.views.detail'),
+	(r'^campaign/(?P<campaign_id>\d+)/$', 'dichter.denhaag.views.campaign_detail'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
