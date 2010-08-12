@@ -1,0 +1,12 @@
+<h1>BoF: Dichter bij Den Haag</h1>
+
+{% if campaign_list %}
+    <ul>
+    {% for campaign in campaign_list %}
+        <li><a href="/campaign/{{ campaign.id }}/">{{ campaign.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Geen campagnes, jammer dan!</p>
+{% endif %}
+

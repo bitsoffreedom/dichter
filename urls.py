@@ -7,6 +7,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Example:
     # (r'^dichter/', include('dichter.foo.urls')),
+	(r'^$', 'dichter.denhaag.views.index'),
+	#(r'^campaign/(?P<poll_id>\d+)/$', 'mysite.polls.views.detail'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
