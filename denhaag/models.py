@@ -3,16 +3,16 @@ from django.db import models
 class Campaign(models.Model):
 	title = models.CharField(max_length=200)
 	desc = models.TextField()
-	start_date = models.DateTimeField()
-	end_date = models.DateTimeField()
+	start_date = models.DateField()
+	end_date = models.DateField()
+
+class Party(models.Model):
+	name = models.CharField(max_length=200)
 
 class Politician(models.Model):
 	name = models.CharField(max_length=200)
 	party = models.ForeignKey(Party)
 	desc = models.TextField()
-
-class Party(models.Model):
-	name = models.CharField(max_length=200)
 
 class PoliticianCampaign(models.Model):
 	campaign = models.ForeignKey(Campaign)
@@ -20,7 +20,7 @@ class PoliticianCampaign(models.Model):
 	desc = models.TextField()
 
 class Contact(models.Model):
-	type = modes.CharField(max_length=25)
+	type = models.CharField(max_length=25)
 	politician = models.ForeignKey(Politician)
 	address = models.CharField(max_length=200)
 
