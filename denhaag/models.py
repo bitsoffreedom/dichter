@@ -10,9 +10,14 @@ class Party(models.Model):
 	name = models.CharField(max_length=200)
 
 class Politician(models.Model):
+	GENDER_CHOICES = (
+        	('M', 'Male'),
+        	('F', 'Female'),
+	)
 	name = models.CharField(max_length=200)
 	party = models.ForeignKey(Party)
 	desc = models.TextField()
+	gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
 
 class PoliticianCampaign(models.Model):
 	campaign = models.ForeignKey(Campaign)
