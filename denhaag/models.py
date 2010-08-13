@@ -29,21 +29,27 @@ class PoliticianCampaign(models.Model):
 	desc = models.TextField()
 	weight = models.IntegerField()
 
-class Contact(models.Model):
-	type = models.CharField(max_length=25)
+class ContactMethod(models.Model):
+	name = models.CharField(max_length=25)
+
+class CampaignContact(models.Model):
+	campaign = models.ForeignKey(Campaign)
+	contact_method = models.ForeignKey(ContactMethod)
+	template = models.TextField()
+
+class PoliticianContactInfo(models.Model):
+	contact_method = models.ForeignKey(ContactMethod)
 	politician = models.ForeignKey(Politician)
 	address = models.CharField(max_length=200)
 
 class Action(models.Model):
-	campaign = models.ForeignKey(Campaign)
-	contact = models.ForeignKey(Contact)
+	campaign_contact = models.ForeignKey(CampaignContact)
 	text = models.TextField()
 	date = models.DateTimeField(auto_now=True)
 	ip = models.IPAddressField()
 
 class Response(models.Model):
-	campaign = models.ForeignKey(Campaign)
-	contact = models.ForeignKey(Contact)
+	campaign_contact = models.ForeignKey(CampaignContact)
 	text = models.TextField()
 	date = models.DateTimeField(auto_now=True)
 	ip = models.IPAddressField()
