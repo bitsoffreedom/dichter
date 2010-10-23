@@ -31,8 +31,7 @@
 				<div id="campagnes-list">
 					<ul>
 					{% for campaign in campaign_list %}
-        					<li><a href="/campaign/{{ campaign.id }}/">{{ campaign.title }}</a><br/>
-                        			{{ campaign.subtitle }}</li>
+        					<li><a href="/campaign/{{ campaign.title|slugify }}/" title="{{ campaign.title|slugify }}">{{ campaign.title }}</a></li>
     					{% endfor %}
 					</ul>
 				</div>
@@ -40,19 +39,11 @@
 			<div id="content">
             	
             	<div id="hero">
-                	<h2>Stop de ACTA</h2>
-                    <img class="aside" src="{{ STATIC_PREFIX }}images/test/image1.jpg" align=" " />
-                    <span class="bijschrift">"Een ondemocratisch verdrag"</span>
-                    <p class="intro">
-                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula nibh, accumsan sed cursus sit amet, faucibus non nunc. Nulla quis eros non nisl feugiat placerat quis quis tellus. 
-                    </p>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas augue erat, adipiscing non varius vel, vehicula non mauris.</p>
-                    <p>sollicitudin velit mauris et tortor. Sed mattis odio leo, ut hendrerit risus. Curabitur bibendum urna a lectus varius ac dictum nisi pretium. Maecenas lacus quam, fermentum id facilisis eu, commodo sed sapien. Duis molestie porta felis, accumsan... </p>
-                	<div class="extraInfo">
-                    	<p>Integer risus libero, commodo a bibendum in, egestas vel lectus. Ut semper lectus sed sapien faucibus mollis. In a urna iaculis felis posuere laoreet vel eu diam. Proin mattis tempus porttitor. Fusce commodo rutrum pretium. Sed facilisis pulvinar ligula, quis facilisis nisl pharetra eu. Etiam a arcu sapien, at venenatis nibh. Duis leo enim, eleifend vel accumsan ut, tempus a magna. Sed bibendum justo in justo eleifend interdum. Fusce et lacus odio, a scelerisque tortor. Nunc at nulla at justo semper semper non vel justo. Mauris suscipit semper metus, ac posuere mauris congue eget.</p>
-
-						<p>Donec varius dolor quis risus iaculis id sollicitudin libero aliquet. Quisque vel neque metus. In hac habitasse platea dictumst. Donec et accumsan nulla. Integer vel sem non dolor tincidunt mollis. Nam vel lobortis magna. Suspendisse laoreet metus vitae nunc vestibulum aliquet. Nunc nec nisi sapien, non blandit lorem. Aliquam eros sem, faucibus a dapibus vel, venenatis et est. Cras tempor turpis non risus ullamcorper aliquam. Morbi pharetra pharetra dolor, at interdum dolor viverra ut. Integer vitae ligula eu libero interdum imperdiet. Vivamus viverra tristique eros, ac mollis justo vestibulum id. Vestibulum non viverra erat. Aliquam erat volutpat.</p>
-                    </div>
+                	<h2>{{ campaign.title }}</h2>
+                    <img class="aside" src="{{ campaign.pica.url }}" align=" " />
+                    <span class="bijschrift">"{{ campaign.subtitle }}"</span>
+			<p class="intro">{{ campaign.intro }}</p>
+                	<div class="extraInfo">{{ campaign.desc|linebreaks }}</div>
                     <div id="meer">
                     	<span><a href="#">Meer lezen</a></span>
                     </div>
