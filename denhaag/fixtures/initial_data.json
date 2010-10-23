@@ -37,7 +37,7 @@
     "Model": "Politicians",
     "pk": 1,
     "fields":{
-      "name":,"Je moeder",
+      "name":"Je moeder",
       "party": 1,
       "desc": "Gematigd politici, rare neus",
       "gender": "F"
@@ -47,7 +47,7 @@
     "Model": "Politicians",
     "pk": 1,
     "fields":{
-      "name":,"Je vader",
+      "name":"Je vader",
       "party": 2,
       "desc": "Over the top politicus",
       "gender": M"
