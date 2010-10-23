@@ -4,12 +4,10 @@ $(function () {
 			$('#content').fadeTo("slow",0.01, function () {
 				$('#content').load(url + " #content", function () {
 					var anchor = url.replace(/\/$/,"").replace(/.*\//,"");
-					console.log(anchor);
 					// Working around issues with jQuery related to naming the ID after the fragment
 					$("#"+anchor).attr("id", "__fid");
 
 					current_fragment = anchor;
-					console.log(current_fragment);
 					window.location = window.location.href.replace(/#?.*$/,"#" + anchor)
 
 					$('#content').fadeTo('slow',1);
@@ -30,11 +28,9 @@ $(function () {
 			select: function(event, ui) {
 				var url = ui.tab.getAttribute("href");
 				url = "/campaign/" + url.replace(/^#/,"") + "/"; 
-				
 
 				// Working around issues with jQuery related to naming the ID after the fragment
 				$("#__fid").attr("id", current_fragment);
-				console.log(url)
 				load_content(url)
 				return true;
 			}
@@ -66,10 +62,13 @@ $(function () {
 			fragment = "#" + fragment.replace(/.*#/,"");
 			var url = "/campaign/" + fragment.replace(/^#/,"") + "/";
 			load_content(url)
-//			setTimeout(load_content_from_location, 1000);
 		} else {
 			var url = window.location.toString();
-			current_fragment = url.replace(/.*\/([^\/])\/$/,"$1");
+			current_fragment = url.replace(/.*\/([^\/]+)\/$/,"$1");
+			var current_tab = $("[href=#" + current_fragment + "]")[0].parentNode;
+			var clean_style = current_tab.className;
+			current_tab.className = $("#campagnes-list li")[0].className;
+			$("#campagnes-list li")[0].className = clean_style;
 		}
 })
 
