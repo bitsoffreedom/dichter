@@ -31,7 +31,7 @@
 				<div id="campagnes-list">
 					<ul>
 					{% for campaign in campaign_list %}
-        					<li><a href="/campaign/{{ campaign.title|slugify }}/" title="{{ campaign.title|slugify }}">{{ campaign.title }}</a></li>
+        					<li><a href="/campaign/{{ campaign.title_slug|slugify }}/" title="{{ campaign.title_slug|slugify }}">{{ campaign.title }}</a></li>
     					{% endfor %}
 					</ul>
 				</div>
@@ -136,6 +136,25 @@
                                </span>
                                 
                             </form>
+							<div id="tweetform">
+								<form action="http://www.twitter.com/"
+										enctype="multiform/form-data"
+										method="GET"
+										name="tweetform">
+									<span class="bericht unit">
+										<label>Bericht</label>
+										<textarea name="status" rows="3"
+											onKeyDown="field_size(this.form.status, this.form.sizedisplay, 140)"
+											onKeyUp="field_size(this.form.status,this.form.sizedisplay, 140)">
+										</textarea>
+										<input readonly type="text" name="sizedisplay" value="140" size="3"/>
+										karakters over.
+									</span>
+									<span class="versturen">
+										<input type="submit" value="Tweet" />
+									</span>
+								</form>
+							</div>
                             <p id="bedankt">Bedankt! We stellen je inzet en betrokkenheid enorm op prijs!</p> 
                            	<h5>Wil je nog meer doen? Top!</h5>
                             <ul>
