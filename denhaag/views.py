@@ -4,9 +4,9 @@ from django.conf import settings
 from dichter.denhaag.models import *
 from django.http import HttpResponse
 
-def index(request, campaign_id=1):
+def index(request, campaign_slug='stop-de-zwarte-lijst'):
 	try:
-        	c = Campaign.objects.get(pk=campaign_id)
+        	c = Campaign.objects.get(title_slug=campaign_slug)
 	except Campaign.DoesNotExist:
         	raise Http404
 
