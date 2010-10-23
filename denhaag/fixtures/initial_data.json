@@ -4,6 +4,7 @@
 		"pk": 1,
 		"fields": {
 			"title": "Stop de zwarte lijst",
+			"title_slug": "stop_de_zwarte_lijst",
 			"subtitle": "<i>\"Niet verbergen maar verwijderen\"</i>",
 			"hashtag": "#stopdezwartelijst",
 			"start_date": "2010-10-24",
