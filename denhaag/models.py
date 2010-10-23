@@ -16,6 +16,7 @@ class Campaign(models.Model):
 
 class Party(models.Model):
   name = models.CharField(max_length=200)
+  pica = models.ImageField(upload_to='photos/%Y/%m/%d')
   def __unicode__(self):
     return self.name
     
@@ -28,6 +29,7 @@ class Politician(models.Model):
   party = models.ForeignKey(Party)
   desc = models.TextField()
   gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
+  pica = models.ImageField(upload_to='photos/%Y/%m/%d')
   def __unicode__(self):
     return self.name
 

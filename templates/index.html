@@ -62,8 +62,8 @@
                                 <li>
                                    <div class="info">
                                         <h4>{{ politicus.name }}</h4>
-                                        <img class="politicus" src="{{ STATIC_PREFIX }}images/{{ politicus.image }}" align=" " />
-                                        <img class="partij" src="{{ STATIC_PREFIX }}images/{{ politicus.party.image }}" align=" " />
+                                        <img class="politicus" src="{{ politicus.pica.url }}" align=" " />
+                                        <img class="partij" src="{{ politicus.party.pica.url }}" align=" " />
                                        <ul class="contactVia">
                                           {% for contactmethod in politicus.contact_methods %}  
                                             <li class="via{{ contactmethod.name }}">
