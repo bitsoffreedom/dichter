@@ -5,8 +5,8 @@ from django.http import HttpResponse
 
 def index(request):
 	campaign_list = Campaign.objects.all().order_by('-start_date')[:5]
-	t = loader.get_template('main.html')
-	return render_to_response('main.html', {'campaign_list': campaign_list});
+	t = loader.get_template('index.html')
+	return render_to_response('index.html', {'campaign_list': campaign_list});
 
 def campaign_detail(request, campaign_id):
     try:
