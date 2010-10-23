@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	
 	$('#hero .extraInfo').hide();
-	$('#meer a').click(function(){
+	$('#meer a').click(function(e){
+		e.preventDefault();
 		$('#hero .extraInfo').slideToggle();
 		$('#meer').toggleClass('open');
 		$(this).text($(this).text() == "Meer lezen" ? "Verbergen" : "Meer lezen");
