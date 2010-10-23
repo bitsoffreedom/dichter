@@ -6,7 +6,7 @@ from django.http import HttpResponse
 def index(request):
 	campaign_list = Campaign.objects.all().order_by('-start_date')[:5]
 	t = loader.get_template('index.html')
-	return render_to_response('index.html', {'campaign_list': campaign_list});
+	return render_to_response('index.html', {'campaign_list': campaign_list, 'STATIC_PREFIX': 'http://0.0.0.0:8000/media/'});
 
 def campaign_detail(request, campaign_id):
     try:

@@ -2,6 +2,7 @@ from django.conf.urls.defaults import *
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
+from django.conf import settings
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -9,6 +10,7 @@ urlpatterns = patterns('',
     # (r'^dichter/', include('dichter.foo.urls')),
 	(r'^$', 'dichter.denhaag.views.index'),
 	(r'^campaign/(?P<campaign_id>\d+)/$', 'dichter.denhaag.views.campaign_detail'),
+	(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
