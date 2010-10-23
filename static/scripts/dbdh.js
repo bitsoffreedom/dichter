@@ -1,5 +1,4 @@
-$(document).ready(function(){
-	
+function hero() {
 	$('#hero .extraInfo').hide();
 	$('#meer a').click(function(e){
 		e.preventDefault();
@@ -8,6 +7,9 @@ $(document).ready(function(){
 		$(this).text($(this).text() == "Meer lezen" ? "Verbergen" : "Meer lezen");
 
 	});
+}
+$(document).ready(function(){
+	hero();	
 
 	$('#targets .extraInfo').hide();
 	$('#targets .infoToggle a').click(function(e){

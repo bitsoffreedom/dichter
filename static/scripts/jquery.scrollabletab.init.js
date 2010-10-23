@@ -10,6 +10,7 @@ $(function () {
 					current_fragment = anchor;
 					window.location = window.location.href.replace(/#?.*$/,"#" + anchor)
 
+					hero();
 					$('#content').fadeTo('slow',1);
 					// Release hash change lock here due to asynchronicity
 					__hash_change_running = false;
