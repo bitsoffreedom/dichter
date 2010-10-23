@@ -10,6 +10,11 @@ urlpatterns = patterns('',
     # (r'^dichter/', include('dichter.foo.urls')),
 	(r'^$', 'dichter.denhaag.views.index'),
 	(r'^campaign/(?P<campaign_id>\d+)/$', 'dichter.denhaag.views.campaign_detail'),
+
+  (r'^action/(?P<campaign_id>\d+)/(?P<user>\w+)/hyves/$', 'dichter.denhaag.views.send_message_hyves'),
+  (r'^action/(?P<campaign_id>\d+)/(?P<user>\w+)/mail/$', 'dichter.denhaag.views.send_message_mail'),
+  (r'^action/(?P<campaign_id>\d+)/(?P<user>\w+)/facebook/$', 'dichter.denhaag.views.send_message_facebook'),
+
 	(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
@@ -17,5 +22,6 @@ urlpatterns = patterns('',
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    (r'^admin/', include(admin.site.urls)),
+  (r'^admin/', include(admin.site.urls)),
 )
+
