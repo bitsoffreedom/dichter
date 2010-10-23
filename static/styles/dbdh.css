@@ -513,7 +513,8 @@ ul {
 				float: left;
 			}
 			
-			#step3 .bericht textarea {
+			#step3 .bericht textarea,
+			#tweetform textarea {
 				border: 1px solid #a59d9d;
 				width: 316px;
 				height: 216px;
@@ -523,6 +524,9 @@ ul {
 				font-size: 12px;
 				line-height: 15px;
 				margin: 0;
+			}
+			#tweetform textarea {
+				height: 120px;
 			}
 			
 			#step3 .versturen input {
