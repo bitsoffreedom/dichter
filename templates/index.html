@@ -58,126 +58,28 @@
                        	<div class="stepContent">
                             <div id="targetScrollUp"></div>
                             <ul id="targets">
+                                {% for politicus in politici_list %}
                                 <li>
                                    <div class="info">
-                                        <h4>Politicus</h4>
-                                        <img class="politicus" src="{{ STATIC_PREFIX }}images/test/politicus.jpg" align=" " />
-                                        <img class="partij" src="{{ STATIC_PREFIX }}images/test/partij.jpg" align=" " />
+                                        <h4>{{ politicus.name }}</h4>
+                                        <img class="politicus" src="{{ STATIC_PREFIX }}images/{{ politicus.image }}" align=" " />
+                                        <img class="partij" src="{{ STATIC_PREFIX }}images/{{ politicus.party.image }}" align=" " />
                                        <ul class="contactVia">
-                                            <li class="viaMail">
-                                                <a href="#">via Mail</a>
-                                            </li>
-                                            <li class="viaPhone">
-                                                <a href="#">via Phone</a>
-                                            </li>
-                                            <li class="viaTwitter">
-                                                <a href="#">via Twitter</a>
-                                            </li>
-                                            <li class="viaHyves">
-                                                <a href="#">via Hyves</a>
-                                            </li>
-                                            <li class="viaFacebook">
-                                                <a href="#">via Facebook</a>
-                                            </li>
+                                          {% for contactmethod in politicus.contact_methods %}  
+                                            <li class="via{{ contactmethod.name }}">
+                                                <a href="#">via {{ contactmethod.name }}</a>
+                                            </li>                                          
+                                          {% endfor %}
                                         </ul>
                                     </div>
                                     <div class="extraInfo">
-                                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat ante sit amet orci ornare non convallis purus porttitor.</p>
-
-                                        <p>Proin sit amet turpis metus, sit amet mollis mi. In sagittis, nibh id tincidunt suscipit.</p>
-                                        
-                                        <p>Orci elit laoreet nisl, ac mattis eliLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat ante sit amet orci ornare non convallis purus porttitor. </p>
-                                        
-                                        <p>Proin sit amet turpis metus, sit amet mollis mi. In sagittis, nibh id tincidunt suscipit.</p>
+                                    	<p>{{ politicus.desc|linebreaks }}</p>
                                     </div>
                                     <div class="infoToggle">
-                                    	<span><span><a href="#">Meer informatie</a></span></span>
+                                    	<span><span><a href="/politicus/{{ politicus.name }}">Meer informatie</a></span></span>
                                     </div>
                                 </li>
-                                <li>
-                                   <div class="info">
-                                        <h4>Politicus</h4>
-                                        <img class="politicus" src="{{ STATIC_PREFIX }}images/test/politicus.jpg" align=" " />
-                                        <img class="partij" src="{{ STATIC_PREFIX }}images/test/partij.jpg" align=" " />
-                                       <ul class="contactVia">
-                                            <li class="viaMail">
-                                                <a href="#">via Mail</a>
-                                            </li>
-                                            <li class="viaPhone">
-                                                <a href="#">via Phone</a>
-                                            </li>
-                                            <li class="viaTwitter">
-                                                <a href="#">via Twitter</a>
-                                            </li>
-                                            <li class="viaHyves">
-                                                <a href="#">via Hyves</a>
-                                            </li>
-                                            <li class="viaFacebook">
-                                                <a href="#">via Facebook</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="extraInfo">
-                                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat ante sit amet orci ornare non convallis purus porttitor.</p>
-
-                                        <p>Proin sit amet turpis metus, sit amet mollis mi. In sagittis, nibh id tincidunt suscipit.</p>
-                                        
-                                        <p>Orci elit laoreet nisl, ac mattis eliLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat ante sit amet orci ornare non convallis purus porttitor. </p>
-                                        
-                                        <p>Proin sit amet turpis metus, sit amet mollis mi. In sagittis, nibh id tincidunt suscipit.</p>
-                                    </div>
-                                    <div class="infoToggle">
-                                    	<span><span><a href="#">Meer informatie</a></span></span>
-                                    </div>
-                                </li>
-                                <li class="selected">
-                                    <div class="info">
-                                        <h4>Politicus</h4>
-                                        <img class="politicus" src="{{ STATIC_PREFIX }}images/test/politicus.jpg" align=" " />
-                                        <img class="partij" src="{{ STATIC_PREFIX }}images/test/partij.jpg" align=" " />
-                                       <ul class="contactVia">
-                                            <li class="viaMail">
-                                                <a href="#">via Mail</a>
-                                            </li>
-                                            <li class="viaPhone">
-                                                <a href="#">via Phone</a>
-                                            </li>
-                                            <li class="viaTwitter">
-                                                <a href="#">via Twitter</a>
-                                            </li>
-                                            <li class="viaHyves">
-                                                <a href="#">via Hyves</a>
-                                            </li>
-                                            <li class="viaFacebook">
-                                                <a href="#">via Facebook</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="disabled">
-                                	<div class="info">
-                                        <h4>Politicus</h4>
-                                        <img class="politicus" src="{{ STATIC_PREFIX }}images/test/politicus.jpg" align=" " />
-                                        <img class="partij" src="{{ STATIC_PREFIX }}images/test/partij.jpg" align=" " />
-                                       <ul class="contactVia">
-                                            <li class="viaMail">
-                                                <a href="#">via Mail</a>
-                                            </li>
-                                            <li class="viaPhone">
-                                                <a href="#">via Phone</a>
-                                            </li>
-                                            <li class="viaTwitter">
-                                                <a href="#">via Twitter</a>
-                                            </li>
-                                            <li class="viaHyves">
-                                                <a href="#">via Hyves</a>
-                                            </li>
-                                            <li class="viaFacebook">
-                                                <a href="#">via Facebook</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                {% endfor %}
                             </ul>
                             <div id="targetScrollDown"></div>
                          </div>
