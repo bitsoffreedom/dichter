@@ -1,3 +1,3 @@
-denhaag.db
+denhaag.sqlite
 *.pyc
 local.py
