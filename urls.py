@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     # Example:
     # (r'^dichter/', include('dichter.foo.urls')),
 	(r'^$', 'dichter.denhaag.views.index'),
-	(r'^campaign/(?P<campaign_id>\d+)/$', 'dichter.denhaag.views.campaign_detail'),
+	(r'^campaign/(?P<campaign_id>\d+)/$', 'dichter.denhaag.views.index'),
 	(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
