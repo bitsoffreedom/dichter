@@ -13,28 +13,28 @@
 		}
 	},
 	{
-	  "Model": "Partys",
+	  "model": "denhaag.Party",
 	  "pk": 1,
 	  "fields":{
 	    "name": "GroenLinks"
 	  }
 	},
 	{
-	  "Model": "Partys",
+	  "model": "denhaag.Party",
 	  "pk": 2,
 	  "fields":{
 	    "name": "VVD"
 	  }
 	},
 	{
-	  "Model": "Partys",
+	  "model": "denhaag.Party",
 	  "pk": 3,
 	  "fields":{
 	    "name": "PVDA"
 	  }
 	},
   {
-    "Model": "Politicians",
+    "model": "denhaag.Politician",
     "pk": 1,
     "fields":{
       "name":"Je moeder",
@@ -44,7 +44,7 @@
     }
   },
   {
-    "Model": "Politicians",
+    "model": "denhaag.Politician",
     "pk": 1,
     "fields":{
       "name":"Je vader",
