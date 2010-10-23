@@ -1,10 +1,14 @@
 from django.db import models
+from django.conf import settings
 
 class Campaign(models.Model):
 	title = models.CharField(max_length=200)
+	title_slug = models.CharField(max_length=200)
 	subtitle = models.CharField(max_length=200)
 	hashtag = models.CharField(max_length=42)
+	intro = models.TextField()
 	desc = models.TextField()
+	pica = models.ImageField(upload_to='photos/%Y/%m/%d')
 	start_date = models.DateField()
 	end_date = models.DateField()
 	def __unicode__(self):
