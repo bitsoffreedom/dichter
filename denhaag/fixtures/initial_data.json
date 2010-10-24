@@ -9,7 +9,7 @@
 			"hashtag": "#stopdezwartelijst",
 			"start_date": "2010-10-24",
 			"end_date": "2011-10-24",
-			"pica": "static/photos/2010/10/24/henk.jpg",
+			"pica": "photos/2010/10/24/henk.jpg",
 			"intro": "Gefaciliteerd door het Ministerie van Justitie werken de grootste internetproviders samen aan het blokkeren van een zwarte lijst met verboden websites met afbeeldingen van seksueel kindermisbruik. Het project is met geheimzinnigheid omgeven, het doel en de effectiviteit is niet duidelijk en nog belangrijker het werkt averechts. Want de afbeeldingen van seksueel kindermisbruik blijven online staan, de criminelen worden niet opgespoord en de geldstromen worden niet stilgelegd. <br><br> Dit moet anders. Nederland moet afbeeldingen van seksueel misbruik verwijderen, niet verbergen. De Tweede Kamer moet niet accepteren dat haar bevoegdheid op deze manier wordt omzeild, en dat een excuus wordt gegeven aan de politie om deze afschuwelijke afbeeldingen op het internet te laten staan."
 		}
 	},
@@ -18,7 +18,7 @@
 	  "pk": 1,
 	  "fields":{
 	    "name": "GroenLinks",
-		"pica": "static/photos/2010/10/24/henk.jpg"
+		"pica": "photos/2010/10/24/henk.jpg"
 	  }
 	},
 	{
@@ -26,7 +26,7 @@
 	  "pk": 2,
 	  "fields":{
 	    "name": "VVD",
-		"pica": "static/photos/2010/10/24/henk.jpg"
+		"pica": "photos/2010/10/24/henk.jpg"
 	  }
 	},
 	{
@@ -34,7 +34,7 @@
 	  "pk": 3,
 	  "fields":{
 	    "name": "PVDA",
-		"pica": "static/photos/2010/10/24/henk.jpg"
+		"pica": "photos/2010/10/24/henk.jpg"
 	  }
 	},
   {
@@ -45,7 +45,7 @@
       "party": 1,
       "desc": "Gematigd politici, rare neus",
       "gender": "F",
-	  "pica": "static/photos/2010/10/24/henk.jpg"
+	  "pica": "photos/2010/10/24/henk.jpg"
     }
   },
   {
@@ -56,7 +56,7 @@
       "party": 2,
       "desc": "Over the top politicus",
       "gender": "M",
-	  "pica": "static/photos/2010/10/24/henk.jpg"
+	  "pica": "photos/2010/10/24/henk.jpg"
     }
   }
 ]
