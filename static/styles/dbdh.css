@@ -224,7 +224,7 @@ ul {
 		#steps .stepContent {
 			background: url(../images/bg-panel-narrow.png) no-repeat 0px 0px;
 			min-height: 370px;
-			overflow: auto;
+			overflow: hidden;
 		}
 		
 		#steps p.intro {
@@ -267,11 +267,22 @@ ul {
 			#targets {
 				list-style: none;
 				margin: 0;
+				height: 600px;
+				padding-left: 2px;
+				margin-right: -64px;
+				overflow-x: hidden;
+				overflow-y: auto;
 			}
+				#targets li:first-child {
+					margin-top: 13px;
+				}
 			
 				#targets li {
+					border: 1px solid #6c6c6c;
+					padding: 3px 4px;
 					overflow: auto;
-					margin: 13px 0 0 0;
+					margin: 0 0 13px 0;
+					width: 197px;
 				}
 				
 					#targets li.selected { background: #36abdb; }
