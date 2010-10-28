@@ -1,5 +1,19 @@
-Twitter (floort)
-Email
-Telefoon
-Facebook
-Hyves
+Af =>	* Berichten naar politici versturen via Twitter - Floort
+		* Berichten naar politici versturen via email
+		* Berichten naar politici versturen via Facebook
+		* Berichten naar politici versturen viaHyves
+		* Admin 100% werkend maken
+		* GUI voor de bedank pagina afronden (voor een groot deel kan
+		* de index gebruikt worden).
+
+De MoSCoW:
+
+Must:
+         * Admin 100% werkend maken
+         * GUI voor de bedank pagina afronden (voor een groot deel kan
+         * de index gebruikt worden).
+         * Berichten naar politici versturen via email
+
+Kan eventueel in versie 1.1:
+         * Berichten naar politici versturen via Facebook
+         * Berichten naar politici versturen viaHyves
