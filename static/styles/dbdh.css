@@ -217,7 +217,12 @@ ul {
 		margin-top: 0px;
 		font-weight: bold !important;
 	}
+	#campagnes-list {
+		overflow: hidden;
+		width: 650px;
+	}
 	#campagnes-list ul {
+		width: 6000px;	
 	}
 	
 	
