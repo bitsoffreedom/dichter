@@ -37,29 +37,29 @@ def politician_info(request, politician=None):
   if not politician:
     raise Http404
   return render_to_response(
-      'politicus.html',
-      {'STATIC_PREFIX': settings.MEDIA_URL, 'politicus': politician})
+      'politician.html',
+      {'STATIC_PREFIX': settings.MEDIA_URL, 'politician': politician})
 
 def send_message_mail(request, politician):
   try:
     politician = Politician.objects.get(name=politician)
   except Politician.DoesNotExist:
     raise Http404
-  return render_to_response('form_mail.html', {'politicus': politician})
+  return render_to_response('form_mail.html', {'politician': politician})
 
 def send_message_facebook(request, politician):
   try:
     politician = Politician.objects.get(name=politician)
   except Politician.DoesNotExist:
     raise Http404
-  return render_to_response('form_facebook.html', {'politicus': politician})
+  return render_to_response('form_facebook.html', {'politician': politician})
 
 def send_message_hyves(request, politician):
   try:
     politician = Politician.objects.get(name=politician)
   except Politician.DoesNotExist:
     raise Http404
-  return render_to_response('form_hyves.html', {'politicus': politician})
+  return render_to_response('form_hyves.html', {'politician': politician})
 
 
 def static(request, slug):
