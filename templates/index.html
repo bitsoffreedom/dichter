@@ -17,16 +17,16 @@
 		<div id="wrapper">
 			<div id="header">
 				<h1 id="logo"><a href="#">Dichterbij Den Haag</a></h1>
-        <a id="boflogo">Bits of Freedom</a>
+			        <a id="boflogo">Bits of Freedom</a>
 			</div>
-      <div id="navbar">
-        <ul id="nav">
-          <li><a id="nav-home" href="#">Home</a></li>
-          <li><a id="nav-over" href="#">Over</a></li>
-          <li><a id="nav-contact" href="#">Contact / Pers</a></li>
-        </ul>
-      </div>
-      <div id="campagnes">
+		         <div id="navbar">
+                		<ul id="nav">
+		                    <li><a id="nav-home" href="/">Home</a></li>
+                		    <li><a id="nav-over" href="/static/over">Over</a></li>
+		                    <li><a id="nav-contact" href="/static/contact">Contact / Pers</a></li>
+                		</ul>
+             		</div>
+            		<div id="campagnes">
 				<div id="campagnes-list">
 					<ul>
 					  {% for campaign in campaign_list %}
@@ -39,8 +39,8 @@
             	
             	<div id="hero">
                 	<h2>{{ campaign.title }}</h2>
-                  <img class="aside" src="{{ campaign.pica.url }}" />
-                  <span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
+                  	<img class="aside" src="{{ campaign.pica.url }}" />
+                  	<span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
 			            <p class="intro">{{ campaign.intro }}</p>
                 	<div class="extraInfo">{{ campaign.desc|safe }}</div>
                     <div id="meer">
@@ -58,7 +58,7 @@
                                 {% for politicus in politici_list %}
                                 <li>
                                    <div class="info">
-                                        <h4>{{ politicus.name }}</h4>
+                                         <h4>{{ politicus.name }}</h4>
                                         <img class="politicus" src="{{ politicus.pica.url }}" align=" " />
                                         <img class="partij" src="{{ politicus.party.pica.url }}" align=" " />
                                        <ul class="contactVia">
@@ -132,7 +132,7 @@
                                 
                             </form>
 							<div id="tweetform">
-								<form action="http://www.twitter.com/"
+								<form action="https://www.twitter.com/"
 										enctype="multiform/form-data"
 										method="GET"
 										name="tweetform">
@@ -189,16 +189,16 @@
                         <p>volg de laatste ontwikkelingen van deze en andere campagnes van Dichter...</p>
                     </div>
                     <ul id="footerlinks">
-                        <li><a href="#">Privacy-verklaring</a>&nbsp;|&nbsp;</li>
-                        <li><a href="#">Huisregels</a>&nbsp;|&nbsp;</li>
-                        <li><a href="#">info@bof.nl</a>&nbsp;|&nbsp;</li>
+                        <li><a href="/static/privacy">Privacy-verklaring</a>&nbsp;|&nbsp;</li>
+                        <li><a href="/static/huisregel">Huisregels</a>&nbsp;|&nbsp;</li>
+                        <li><a href="mailto:info@bof.nl">info@bof.nl</a>&nbsp;|&nbsp;</li>
                         <li>design: <a href="#">Martijn</a>&nbsp;|&nbsp;</li>
                         <li>techniek: <a href="#">iemand anders</a></li>
                     </ul>
                 </div>
                 <ul id="followLinks">
                 	<li id="followLinkedin"><a href="#"></a></li>
-                    <li id="followTwitter"><a href="#"></a></li>
+                    <li id="followTwit ter"><a href="#"></a></li>
                     <li id="followRss"><a href="#"></a></li>
                     <li id="followFacebook"><a href="#"></a></li>
                 </ul>

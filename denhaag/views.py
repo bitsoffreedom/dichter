@@ -11,7 +11,7 @@ def index(request, campaign_slug=None):
   today = datetime.date.today().isoformat()
   try:
     if not campaign_slug:
-      c = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).order_by('-start_date')[0:1]
+      c = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).order_by('-start_date')[:1]
     else:
       c = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).get(title_slug=campaign_slug)
   except Campaign.DoesNotExist:    
@@ -44,4 +44,16 @@ def send_message_hyves(request, politicus):
   except Politician.DoesNotExist:
     raise Http404
   return render_to_response('form_hyves.html', {'politicus': p})
+
+
+def static(request, slug):
+	try:
+		p = Static.objects.get(slug=slug)
+		print p.slug
+	except Static.DoesNotExist:
+		raise Http404
+	return render_to_response('static.html', {
+		'page': p,
+		'STATIC_PREFIX': settings.MEDIA_URL,
+	})
 
