@@ -50,3 +50,44 @@ function field_size(field,size_field,limit) {
 	}
 }
 
+
+
+/* Handle step 2 clicks */
+$("#viaMail").click(function(e) {
+	e.preventDefault();
+	$('#tweetform').hide(); 
+	$('#mailform').show(); 
+	return false;
+});
+$("#viaTwitter").addClass("active");
+$("#viaTwitter").click(function(e) {
+	e.preventDefault();
+	$('#tweetform').show(); 
+	$('#mailform').hide(); 
+	return false;
+});
+$("#viaPhone").click(function() {
+	$('#tweetform').hide(); 
+	$('#mailform').hide(); 
+	return false;
+});
+$("#viaHyves").click(function() {
+	$('#tweetform').hide(); 
+	$('#mailform').hide(); 
+	return false;
+});
+$("#viaFacebook").click(function() {
+	$('#tweetform').hide(); 
+	$('#mailform').hide(); 
+	return false;
+});
+
+
+
+
+
+
+
+
+
+
