@@ -25,13 +25,13 @@ $(function () {
 		var firstPartialTop = $.grep($("#targets > li"), function (e) {
 			return ($(e).position().top < $("#targets").position().top) 
 		}).reverse()[0]
-		$(firstPartialTop).parent("ul").scrollTo(firstPartialTop, { duration: 500 })
+		$(firstPartialTop).trigger("scrollTo");
 	}
 	function scrollDown (e) {
-		var firstPartialTop = $.grep($("#targets > li"), function (e) {
+		var firstPartialBottom = $.grep($("#targets > li"), function (e) {
 			return (($(e).position().top + $(e).height()) > ($("#targets").position().top + $("#targets").height()) ) 
 		})[0]
-		$(firstPartialTop).parent("ul").scrollTo(firstPartialTop, { duration: 500 })
+		$(firstPartialBottom).trigger("scrollTo");
 	}
 
 	$("#targetScrollUp").click(scrollUp);
