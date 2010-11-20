@@ -30,6 +30,9 @@ class Politician(models.Model):
   desc = models.TextField()
   gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
   pica = models.ImageField(upload_to='photos/%Y/%m/%d')
+  def name_slug(self):
+    return self.name.replace(' ','_')
+  
   def __unicode__(self):
     return self.name
 
