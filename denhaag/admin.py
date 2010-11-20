@@ -29,3 +29,6 @@ class PoliticianContactInfoAdmin(admin.ModelAdmin):
 admin.site.register(PoliticianContactInfo, PoliticianContactInfoAdmin)
 admin.site.register(Action)
 admin.site.register(Response)
+admin.site.register(Static)
+
+

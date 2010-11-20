@@ -16,6 +16,7 @@ urlpatterns = patterns('',
   
 	(r'^campaign/(?P<campaign_slug>[\w-]+)/$', 'dichter.denhaag.views.index'),
 	(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+	(r'^static/(?P<slug>[-\w]+)/$', 'dichter.denhaag.views.static'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
