@@ -65,4 +65,13 @@ class Response(models.Model):
 	text = models.TextField()
 	date = models.DateTimeField(auto_now=True)
 	ip = models.IPAddressField()
+
+class Static(models.Model):
+	slug = models.SlugField()
+	title = models.CharField(max_length=200)
+	page = models.TextField()
+
+	def __unicode__(self):
+		return self.slug
+
 	

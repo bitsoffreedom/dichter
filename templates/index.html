@@ -4,30 +4,30 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Dichter bij Den Haag</title>
 		<link href="{{ STATIC_PREFIX }}styles/jquery-ui.css" rel="stylesheet" type="text/css"/>
-       <link href="{{ STATIC_PREFIX }}styles/jquery-ui-override.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}styles/dbdh.css" />
-		<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery-1.4.2.min.js'></script>
- 		<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery-ui-1.8.4.custom.min.js'></script>
-        <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollTo.js'></script>
-        <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletab.js'></script>
-        <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletab.init.js'></script>
-        <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletargets.js'></script>
-        <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/dbdh.js'></script>
+    <link href="{{ STATIC_PREFIX }}styles/jquery-ui-override.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}styles/dbdh.css" />
+	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery-1.4.2.min.js'></script>
+	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery-ui-1.8.4.custom.min.js'></script>
+	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollTo.js'></script>
+	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletab.js'></script>
+	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletab.init.js'></script>
+	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletargets.js'></script>
+	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/dbdh.js'></script>
 </head>
 	<body class="">
 		<div id="wrapper">
 			<div id="header">
 				<h1 id="logo"><a href="#">Dichterbij Den Haag</a></h1>
-                <a id="boflogo">Bits of Freedom</a>
+			        <a id="boflogo">Bits of Freedom</a>
 			</div>
-            <div id="navbar">
-                <ul id="nav">
-                    <li><a id="nav-home" href="#">Home</a></li>
-                    <li><a id="nav-over" href="#">Over</a></li>
-                    <li><a id="nav-contact" href="#">Contact / Pers</a></li>
-                </ul>
-             </div>
-            <div id="campagnes">
+		         <div id="navbar">
+                		<ul id="nav">
+		                    <li><a id="nav-home" href="/">Home</a></li>
+                		    <li><a id="nav-over" href="/static/over">Over</a></li>
+		                    <li><a id="nav-contact" href="/static/contact">Contact / Pers</a></li>
+                		</ul>
+             		</div>
+            		<div id="campagnes">
 				<div id="campagnes-list">
 					<ul>
 					  {% for campaign in campaign_list %}
@@ -35,33 +35,31 @@
     			  {% endfor %}
 					</ul>
 				</div>
-            </div> 
+      </div> 
 			<div id="content">
             	
             	<div id="hero">
                 	<h2>{{ campaign.title }}</h2>
-                    <img class="aside" src="{{ campaign.pica.url }}" align=" " />
-                    <span class="bijschrift">"{{ campaign.subtitle }}"</span>
-			<p class="intro">{{ campaign.intro }}</p>
-                	<div class="extraInfo">{{ campaign.desc|linebreaks }}</div>
+                  	<img class="aside" src="{{ campaign.pica.url }}" />
+                  	<span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
+			            <p class="intro">{{ campaign.intro }}</p>
+                	<div class="extraInfo">{{ campaign.desc|safe }}</div>
                     <div id="meer">
                     	<span><a href="#">Meer lezen</a></span>
                     </div>
                 </div>
                 
-                
-                
                 <div id="steps">
                 	<div id="step1">
                     	<h3>Stap 1: Wie</h3>
-                        <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas augue erat.</p>
+                        <p class="intro">Kies hier welke politicus je wilt bereiken.</p>
                        	<div class="stepContent">
                             <div id="targetScrollUp"></div>
                             <ul id="targets">
                                 {% for politicus in politici_list %}
                                 <li>
                                    <div class="info">
-                                        <h4>{{ politicus.name }}</h4>
+                                         <h4>{{ politicus.name }}</h4>
                                         <img class="politicus" src="{{ politicus.pica.url }}" align=" " />
                                         <img class="partij" src="{{ politicus.party.pica.url }}" align=" " />
                                        <ul class="contactVia">
@@ -86,7 +84,7 @@
                     </div>
                     <div id="step2">
                     	<h3>Stap 2: Hoe</h3>
-                        <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas augue erat.</p>
+                        <p class="intro">Kies hier hoe je die politicus wilt bereiken.</p>
                         <div class="stepContent">
                             <ul id="vectors">
                                 <li id="viaMail">
@@ -114,20 +112,20 @@
                     </div>
                     <div id="step3">
                     	<h3>Stap 3: Wat</h3>
-                        <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas augue erat.</p>
+                        <p class="intro">Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er ook het meeste aan.</p>
                         <div class="stepContent">
                             <form action="" enctype="multipart/form-data" method="post">
                                 <span class="onderwerp unit">
-                                    <label>Onderwerp</label>
-                                    <input type="text" />
+                                    <label for="description">Onderwerp</label>
+                                    <input name="description"  id="description" type="text" />
                                 </span>
                                 <span class="bericht unit">
                                     <label>Bericht</label>
                                     <textarea>Sed enim erat, accumsan quis auctor at, ultrices faucibus quam. Vestibulum congue ligula ac mi auctor placerat. Curabitur nisi quam, gravida at vestibulum ut, convallis a dolor. Nulla facilisi. Duis turpis ligula, laoreet nec eleifend id, suscipit eget mi. Pellentesque eget neque nisl, eu viverra diam. Cras tincidunt ornare nibh at laoreet. Proin arcu lacus, varius nec cursus vel, gravida eget arcu. Duis non elit sit amet tellus pellentesque egestas. Sed vulputate massa in nisl accumsan porta. Quisque non dolor at mi laoreet bibendum et tincidunt orci. Aliquam erat volutpat. Nullam eleifend purus nec magna consequat aliquet. Vestibulum in velit libero, at commodo metus.</textarea>
                                 </span>
                                 <span class="naam unit">
-                                    <label>Uw Naam</label>
-                                    <input type="text" />
+                                    <label for="name">Uw Naam</label>
+                                    <input type="text" id="name" name="name" />
                                 </span>
                                 <span class="versturen">
                                 	<input type="submit" value="Versturen" />
@@ -135,16 +133,16 @@
                                 
                             </form>
 							<div id="tweetform">
-								<form action="http://www.twitter.com/"
+								<form action="https://www.twitter.com/"
 										enctype="multiform/form-data"
 										method="GET"
 										name="tweetform">
 									<span class="bericht unit">
-										<label>Bericht</label>
-										<textarea name="status" rows="3"
-											onKeyDown="field_size(this.form.status, this.form.sizedisplay, 140)"
-											onKeyUp="field_size(this.form.status,this.form.sizedisplay, 140)"></textarea>
-										<input readonly type="text" name="sizedisplay" value="140" size="3"/>
+										<label id="message">Bericht</label>
+										<textarea id="message" name="status" rows="3"
+											onKeyDown="field_size(this, this.form.sizedisplay, 140)"
+											onKeyUp="field_size(this,this.form.sizedisplay, 140)"></textarea>
+										<input readonly type="text" name="sizedisplay" id="tweetsizedisplay" value="140" size="3"/>
 										karakters over.
 									</span>
 									<span class="versturen">
@@ -192,9 +190,9 @@
                         <p>volg de laatste ontwikkelingen van deze en andere campagnes van Dichter...</p>
                     </div>
                     <ul id="footerlinks">
-                        <li><a href="#">Privacy-verklaring</a>&nbsp;|&nbsp;</li>
-                        <li><a href="#">Huisregels</a>&nbsp;|&nbsp;</li>
-                        <li><a href="#">info@bof.nl</a>&nbsp;|&nbsp;</li>
+                        <li><a href="/static/privacy">Privacy-verklaring</a>&nbsp;|&nbsp;</li>
+                        <li><a href="/static/huisregel">Huisregels</a>&nbsp;|&nbsp;</li>
+                        <li><a href="mailto:info@bof.nl">info@bof.nl</a>&nbsp;|&nbsp;</li>
                         <li>design: <a href="#">Martijn</a>&nbsp;|&nbsp;</li>
                         <li>techniek: <a href="#">iemand anders</a></li>
                     </ul>
