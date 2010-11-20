@@ -1,19 +1,4 @@
-[
-	{
-		"model": "denhaag.campaign",
-		"pk": 1,
-		"fields": {
-			"title": "Stop de zwarte lijst",
-			"title_slug": "stop_de_zwarte_lijst",
-			"subtitle": "<i>\"Niet verbergen maar verwijderen\"</i>",
-			"hashtag": "#stopdezwartelijst",
-			"start_date": "2010-10-24",
-			"end_date": "2011-10-24",
-			"pica": "photos/2010/10/24/henk.jpg",
-			"intro": "Gefaciliteerd door het Ministerie van Justitie werken de grootste internetproviders samen aan het blokkeren van een zwarte lijst met verboden websites met afbeeldingen van seksueel kindermisbruik. Het project is met geheimzinnigheid omgeven, het doel en de effectiviteit is niet duidelijk en nog belangrijker het werkt averechts. Want de afbeeldingen van seksueel kindermisbruik blijven online staan, de criminelen worden niet opgespoord en de geldstromen worden niet stilgelegd. <br><br> Dit moet anders. Nederland moet afbeeldingen van seksueel misbruik verwijderen, niet verbergen. De Tweede Kamer moet niet accepteren dat haar bevoegdheid op deze manier wordt omzeild, en dat een excuus wordt gegeven aan de politie om deze afschuwelijke afbeeldingen op het internet te laten staan."
-		}
-	},
-	{
+{
 	    "model": "denhaag.Party",
 	    "pk": 1,
 	    "fields":{
@@ -83,7 +68,8 @@
 	      "name": "Partij voor de dieren  (PVDD)",
 		    "pica": "images/partij_logos/pvdd.jpg"
 	    }
-	  },{
+	  }
+{
     "model": "denhaag.Politician",
     "pk": 1,
     "fields":{
@@ -1563,32 +1549,4 @@
       "gender": "M",
 	    "pica": "politici/Erik Ziengs.jpg"
     }
-  },
-  {
-    "model": "denhaag.Static",
-    "pk": 1,
-    "fields":{
-      "slug":"contact",
-      "title":"Contact / Pers",
-      "page":"<h2>Contact</h2><p>Als je vragen of opmerkingen hebt over Dichterbij Den Haag, neem dan gerust contact op met:</p><address>Daphne van der Kroft<br />+31 (0)6 4280 0968<br /><a href=\"mailto:daphne.vanderkroft@bof.nl\">daphne.vanderkroft@bof.nl</a></address><p>Je kunt ook contact opnemen via de verschillende sociale media waar we aanwezig zijn:</p><ul><li><a href=\"https://www.linkedin.com/groups?home=&amp;gid=2677586\">LinkedIn</a></li><li><a href=\"https://twitter.com/bitsoffreedom\">Twitter</a></li><li><a href=\"https://www.facebook.com/BitsofFreedom\">Facebook</a></li><li><a href=\"https://www.bof.nl/rss/\">RSS</a></li></ul><h2>Pers</h2><p>Lorizzle own yo' fo shizzle gangsta amizzle, shizzlin dizzle adipiscing elit. Nullam sapien velizzle, go to hizzle volutpizzle, suscipizzle quizzle, brizzle vizzle, arcu. Pellentesque fizzle tortizzle. Sizzle eros. Fusce izzle fizzle dapibizzle turpis pizzle tempor. Doggy pellentesque nibh et get down get down. Break it down izzle izzle. Uhuh ... yih! pimpin' rhoncizzle yo. In gangster habitasse owned dictumst. Donec ghetto. That's the shizzle tellizzle break it down, pretizzle daahng dawg, mattizzle that's the shizzle, eleifend vitae, nunc. Owned check it out. Integizzle sempizzle stuff sizzle boom shackalack.</p>"
-     }
-  },
-  {
-    "model": "denhaag.Static",
-    "pk": 2,
-    "fields":{
-      "slug":"over",
-      "title":"Over deze site",
-      "page":"<h2>Over Dichter bij Den Haag</h2><p>Geregeld horen we over een groeiende kloof tussen burgers en politici in Nederland, terwijl het nog nooit zo makkelijk was om met elkaar in contact te komen. Dichter bij Den Haag helpt alle Nederlanders om met politici in contact te komen, door de contactgegevens van politici op één plek samen te voegen. <p>Dichter bij Den Haag is een initiatief van <a href=\"https://www.bof.nl/\">Bits of Freedom</a>. Het ontwerp is van <a href=\"http://www.martijnbroekman.nl/\">Martijn Broekman</a>. Dichter bij Den Haag is ontwikkeld door talloze vrijwilligers, waaronder <a href=\"http://freshway.biz/\">Arnoud Vermeer</a>, <a href=\"about:blank\">Ilja Kamps</a>, <a href=\"https://twitter.com/praseodym\">Mark Janssen</a>,<a href=\"about:blank\">Tycho Bismeijer</a>, <a href=\"http://www.largetosti.com/\">Sjef van Gaalen</a>, <a href=\"http://eth-0.nl\">Jan Klopper</a>, <a href=\"https://www.twitter.com/floorter\">Floor Terra</a> en <a href=\"http://www.jeroenvandergun.nl/\">Jeroen van der Gun</a>. De ontwikkelingsomgeving is door <a href=\"http://high5.net/\">High5!</a> ter beschikking gesteld. Pizza's en Mate in de late uurtjes zijn gedoneerd door de <a href=\"http://hxxfoundation.nl/\">Stichting HXX</a>.</p><p>Zijn we je naam vergeten, heb je tips of suggesties? Laat het ons weten op <a href=\"mailto:info@dichterbijdenhaag.nl\">info@dichterbijdenhaag.nl</a>.</p></p>"
-     }
-  },
-  {
-    "model": "denhaag.Static",
-    "pk": 3,
-    "fields":{
-      "slug":"privacy",
-      "title":"Privacyverklaring",
-      "page":"<h2>Privacy</h2><p>Dichterbij Den Haag wordt onderhouden door <a href=\"https://www.bof.nl/\">Bits of Freedom</a>. Bits of Freedom komt op voor vrijheid en privacy op internet. Voor haar activiteiten, websites en mailinglijsten hanteert Bits of Freedom daarom een helder privacy-beleid.</p><!-- Big brother is watching you!!!11!11!1! --><p><a href=\"https://www.bof.nl/home/privacy-verklaring/\">Lees hier meer over het privacy-beleid van Bits of Freedom.</a></p>"
-     }
   }
-]
