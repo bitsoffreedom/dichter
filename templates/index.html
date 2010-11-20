@@ -39,10 +39,10 @@
             	
             	<div id="hero">
                 	<h2>{{ campaign.title }}</h2>
-                    <img class="aside" src="{{ campaign.pica.url }}" align=" " />
-                    <span class="bijschrift">"{{ campaign.subtitle }}"</span>
+                    <img class="aside" src="{{ campaign.pica.url }}" />
+                    <span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
 			<p class="intro">{{ campaign.intro }}</p>
-                	<div class="extraInfo">{{ campaign.desc|linebreaks }}</div>
+                	<div class="extraInfo">{{ campaign.desc|safe }}</div>
                     <div id="meer">
                     	<span><a href="#">Meer lezen</a></span>
                     </div>
