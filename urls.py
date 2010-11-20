@@ -15,7 +15,7 @@ urlpatterns = patterns('',
   (r'^action/(?P<campaign_id>\d+)/(?P<user>\w+)/facebook/$', 'dichter.denhaag.views.send_message_facebook'),
 
   (r'^campaign/(?P<campaign_slug>[\w-]+)/$', 'dichter.denhaag.views.index'),
-  (r'^politicus/(?P<politicus>[\w-]+)/$', 'dichter.denhaag.views.politician_info'),
+  (r'^politicus/(?P<politician>[\w-]+)/$', 'dichter.denhaag.views.politician_info'),
   (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
   (r'^static/(?P<slug>[-\w]+)/$', 'dichter.denhaag.views.static'),
 
