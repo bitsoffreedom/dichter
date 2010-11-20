@@ -42,7 +42,7 @@
                 	<h2>{{ campaign.title }}</h2>
                   	<img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
                   	<span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
-			            <p class="intro">{{ campaign.intro }}</p>
+			            <p class="intro">{{ campaign.intro | safe }}</p>
                 	<div class="extraInfo">{{ campaign.desc|safe }}</div>
                     <div id="meer">
                     	<span><a href="#">Meer lezen</a></span>
@@ -56,7 +56,7 @@
                        	<div class="stepContent">
                             <div id="targetScrollUp"></div>
                             <ul id="targets">
-                                {% for politicus in politici_list %}
+                                {% for politician in politici_list %}
                                 <li>
                                    <div class="info">
                                         <h4>{{ politician.name }}</h4>
