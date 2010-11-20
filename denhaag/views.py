@@ -24,6 +24,12 @@ def index(request, campaign_slug=None):
 
   return render_to_response('index.html', {'campaign_list': campaign_list, 'politici_list': politici_list, 'STATIC_PREFIX': settings.MEDIA_URL, 'campaign': c})
 
+def politicus_info(request, politicus=None):
+  if not politicus:
+    raise Http404
+  p = Politician.objects.get(name=politicus)
+  return render_to_response('politicus.html', {'STATIC_PREFIX': settings.MEDIA_URL, 'politicus': p})
+  
 def send_message_mail(request, politicus):
   try:
     p = Politician.objects.get(name=politicus)
