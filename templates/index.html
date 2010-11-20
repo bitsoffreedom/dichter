@@ -28,10 +28,10 @@
                 		</ul>
              		</div>
             		<div id="campagnes">
-				<div id="campagnes-list">
-					<ul>
+				<div id="campagnes-list" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+					<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
 					  {% for campaign in campaign_list %}
-        					<li><a href="/campaign/{{ campaign.title_slug|slugify }}/" title="{{ campaign.title_slug|slugify }}">{{ campaign.title }}</a></li>
+					  <li class="ui-state-default ui-corner-top"><a href="/campaign/{{ campaign.title_slug|slugify }}/" title="{{ campaign.title_slug|slugify }}">{{ campaign.title }}</a></li>
     			  {% endfor %}
 					</ul>
 				</div>
