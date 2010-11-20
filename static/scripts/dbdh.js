@@ -31,6 +31,7 @@ $(document).ready(function(){
 		}
 		$(src).hide();
 	}
+	
 	$('#targets .infoToggle a').click(function(e){
 		e.preventDefault();
 		$(this).closest('.infoToggle').prev().slideToggle(400,function () { $(this).trigger("scrollTo"); });
