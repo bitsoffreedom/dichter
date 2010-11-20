@@ -18,70 +18,70 @@
 	    "pk": 1,
 	    "fields":{
 	      "name": "Partij voor de vrijheid  (PVV)",
-		    "pica": "images/partij_logos/pvv.jpg"
+		    "pica": "images/partij_logos/pvv.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 2,
 	    "fields":{
 	      "name": "Partij van de Arbeid  (PVDA)",
-		    "pica": "images/partij_logos/pvda.jpg"
+		    "pica": "images/partij_logos/pvda.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 3,
 	    "fields":{
 	      "name": "Volkspartij voor Vrijheid en Democratie  (VVD)",
-		    "pica": "images/partij_logos/vvd.jpg"
+		    "pica": "images/partij_logos/vvd.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 4,
 	    "fields":{
 	      "name": "Socialistische Partij  (SP)",
-		    "pica": "images/partij_logos/sp.jpg"
+		    "pica": "images/partij_logos/sp.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 5,
 	    "fields":{
 	      "name": "Democraten 66  (D66)",
-		    "pica": "images/partij_logos/d66.jpg"
+		    "pica": "images/partij_logos/d66.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 6,
 	    "fields":{
 	      "name": "Christen Democratisch Appel  (CDA)",
-		    "pica": "images/partij_logos/cda.jpg"
+		    "pica": "images/partij_logos/cda.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 7,
 	    "fields":{
 	      "name": "GroenLinks  (GL)",
-		    "pica": "images/partij_logos/gl.jpg"
+		    "pica": "images/partij_logos/gl.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 8,
 	    "fields":{
 	      "name": "Staatkundig Gereformeerde Partij  (SGP)",
-		    "pica": "images/partij_logos/sgp.jpg"
+		    "pica": "images/partij_logos/sgp.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 9,
 	    "fields":{
 	      "name": "ChristenUnie  (CU)",
-		    "pica": "images/partij_logos/cu.jpg"
+		    "pica": "images/partij_logos/cu.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 10,
 	    "fields":{
 	      "name": "Partij voor de dieren  (PVDD)",
-		    "pica": "images/partij_logos/pvdd.jpg"
+		    "pica": "images/partij_logos/pvdd.gif"
 	    }
 	  },{
     "model": "denhaag.Politician",

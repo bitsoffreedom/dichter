@@ -19,7 +19,7 @@ for party in partycsv:
 	    "pk": %d,
 	    "fields":{
 	      "name": "%s",
-		    "pica": "images/partij_logos/%s.jpg"
+		    "pica": "images/partij_logos/%s.gif"
 	    }
 	  }""" % (i,
 	          party[10],
