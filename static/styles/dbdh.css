@@ -270,12 +270,32 @@ ul {
 				margin: 13px 0 0 2px;
 			}
 			
+				#targetScrollUp:hover {
+					background: url(../images/bg-stap1-scrollup.png) no-repeat 0px -27px;
+					cursor: pointer;
+				}
+				
+				#targetScrollUp.ui-state-disabled:hover {
+					background: url(../images/bg-stap1-scrollup.png) no-repeat;
+					cursor: default;
+				}
+			
 			#targetScrollDown {
 				background: url(../images/bg-stap1-scrolldown.png) no-repeat;
 				width: 207px;
 				height: 27px;
 				margin: 0px 0 13px 2px;
 			}
+			
+				#targetScrollDown:hover {
+					background: url(../images/bg-stap1-scrolldown.png) no-repeat 0px -27px;
+					cursor: pointer;
+				}
+				
+				#targetScrollDown.ui-state-disabled:hover {
+					background: url(../images/bg-stap1-scrolldown.png) no-repeat;
+					cursor: default;
+				}
 			
 			#targets {
 				list-style: none;
@@ -349,12 +369,13 @@ ul {
 				
 				#targets .politicus {
 					border: 1px solid #6c6c6c;
+					border-bottom: none;
 					float: left;
 					max-width: 96px;
 				}
 				
 				#targets .partij {
-					border: 1px solid #6c6c6c;
+					border: none;
 					float: right;
 					max-width: 96px;
 				}
@@ -372,7 +393,7 @@ ul {
 					line-height: 13px;
 					background: #444;
 					color: #fff;
-					padding: 0px 4px 3px;					
+					padding: 3px 4px;					
 				}
 				
 				#targets li .extraInfo.first {

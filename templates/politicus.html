@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 	<head profile="http://gmpg.org/xfn/11">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Dichter bij Den Haag</title>
+		<title>Dichter bij Den Haag: {{ politicus.name }}</title>
 		<link href="{{ STATIC_PREFIX }}styles/jquery-ui.css" rel="stylesheet" type="text/css"/>
        <link href="{{ STATIC_PREFIX }}styles/jquery-ui-override.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}styles/dbdh.css" />
@@ -30,10 +30,12 @@
 			<div id="content">
             	
             	<div id="hero">
-                	<h2>Page title</h2>
-                    <p>
-                    	Lorizzle ipsum dolizzle sizzle amizzle, brizzle adipiscing elit. Nullizzle pot dang, shizzlin dizzle volutpizzle, suscipit quis, check it out vizzle, . Things daahng dawg tortor. Sed erizzle. Sure at dolizzle dapibizzle turpis tempizzle boom shackalack. Maurizzle pellentesque nibh phat izzle. Dizzle izzle boom shackalack. Pellentesque eleifend rhoncizzle check out this. In hac habitasse platea dictumst. Donec dapibizzle. Curabitur tellus ghetto, pretizzle eu, mattizzle ac, eleifend vitae, nunc. Go to hizzle suscipizzle. Integer sempizzle velit sizzle bow wow wow.
-					</p>
+                	<h2>{{ politicus.name }}</h2>
+                	<img class="politicus" src="{{ politicus.pica.url }}" alt="{{ politicus.name }}" />
+                  <img class="partij" src="{{ politicus.party.pica.url }}" alt="{{ politicus.party.name }}" />
+                  <p>
+                    {{ politicus.desc }}
+                  </p>
                 </div>
                 
              
