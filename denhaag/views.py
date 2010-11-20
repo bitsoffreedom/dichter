@@ -14,7 +14,7 @@ def index(request, campaign_slug=None):
       c = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).order_by('-start_date')[:1]
     else:
       c = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).get(title_slug=campaign_slug)
-  except Campaign.DoesNotExist:    
+  except Campaign.DoesNotExist:
     raise Http404
 
   campaign_list = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).order_by('-start_date')
