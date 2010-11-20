@@ -350,15 +350,21 @@ ul {
 					border-bottom: none;
 					padding: 3px 4px;				
 				}
-				
+
 				#targets li .extraInfo {
 					clear: left;
 					font-size: 11px;
 					line-height: 13px;
-					background: url(../images/bg-politicus-extrainfo.png) no-repeat #444;
+					background: #444;
 					color: #fff;
+					padding: 0px 4px 3px;					
+				}
+				
+				#targets li .extraInfo.first {
+					background: url(../images/bg-politicus-extrainfo.png) no-repeat #444;
 					padding: 13px 4px 3px;					
 				}
+
 					#targets li .extraInfo p {
 						margin: 0 0 13px 0;
 					}

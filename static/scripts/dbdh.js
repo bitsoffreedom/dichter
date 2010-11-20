@@ -11,7 +11,26 @@ function hero() {
 $(document).ready(function(){
 	hero();	
 
-	$('#targets .extraInfo').hide();
+	//$('#targets .extraInfo').hide();
+	var targets = $('#targets .extraInfo');
+
+	for (i=0; i < targets.length; i++) {
+		var src = targets[i];
+//		var dst = $(targets[i]).prev()[0];
+		var dst = src.cloneNode(false);
+		src.parentNode.insertBefore(dst,src);
+		$(dst).addClass("first");
+		
+		var children = $(src).children()
+		var length = 0;
+		for (j=0; j < children.length; j++) {
+			if (length < 200) {
+				dst.appendChild(children[j]);
+				length = length + $(children[j]).text().length
+			}
+		}
+		$(src).hide();
+	}
 	$('#targets .infoToggle a').click(function(e){
 		e.preventDefault();
 		$(this).closest('.infoToggle').prev().slideToggle();
