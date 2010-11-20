@@ -70,7 +70,9 @@ $(function () {
 			var clean_style = current_tab.className;
 			current_tab.className = $("#campagnes-list li")[0].className;
 			$("#campagnes-list li")[0].className = clean_style;
-			$("li.ui-state-active").trigger("scrollToTab");
+
+			$("#campagnes-list").trigger('scrollToTab',$("#campagnes-list li.ui-tabs-selected"));
+			$("#campagnes-list").trigger('navEnabler'); 
 		}
 })
 
