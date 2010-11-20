@@ -218,7 +218,12 @@ ul {
 		margin-top: 0px;
 		font-weight: bold !important;
 	}
+	#campagnes-list {
+		overflow: hidden;
+		width: 650px;
+	}
 	#campagnes-list ul {
+		width: 6000px;	
 	}
 	
 	
@@ -366,13 +371,14 @@ ul {
 					border: 1px solid #6c6c6c;
 					border-bottom: none;
 					float: left;
-					max-width: 96px;
+					max-width: 76px;
 				}
 				
 				#targets .partij {
 					border: none;
 					float: right;
 					max-width: 96px;
+					margin-right: 8px;
 				}
 				
 				#targets li .info {
@@ -748,6 +754,10 @@ ul {
 	#followTwitter a { background-position: -586px -50px; }
 	#followRss a { background-position: -664px -50px; }
 	#followFacebook a { background-position: -742px -50px; }
+	
+	p:empty {
+		display: none;
+	}
 	
 	
 /* new clearfix */

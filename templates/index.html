@@ -28,27 +28,27 @@
                 		</ul>
              		</div>
             		<div id="campagnes">
-				<div id="campagnes-list">
-					<ul>
+				<div id="campagnes-list" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+					<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
 					  {% for campaign in campaign_list %}
-        					<li><a href="/campaign/{{ campaign.title_slug|slugify }}/" title="{{ campaign.title_slug|slugify }}">{{ campaign.title }}</a></li>
+					  <li class="ui-state-default ui-corner-top"><a href="/campaign/{{ campaign.title_slug|slugify }}/" title="{{ campaign.title_slug|slugify }}">{{ campaign.title }}</a></li>
     			  {% endfor %}
 					</ul>
 				</div>
-      </div> 
+      </div>
 			<div id="content">
-            	
+
             	<div id="hero">
                 	<h2>{{ campaign.title }}</h2>
                   	<img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
                   	<span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
-			            <p class="intro">{{ campaign.intro }}</p>
+			            <p class="intro">{{ campaign.intro|safe }}</p>
                 	<div class="extraInfo">{{ campaign.desc|safe }}</div>
                     <div id="meer">
                     	<span><a href="#">Meer lezen</a></span>
                     </div>
                 </div>
-                
+
                 <div id="steps">
                 	<div id="step1">
                     	<h3>Stap 1: Wie</h3>
@@ -56,25 +56,25 @@
                        	<div class="stepContent">
                             <div id="targetScrollUp"></div>
                             <ul id="targets">
-                                {% for politicus in politici_list %}
+                                {% for politician in politici_list %}
                                 <li>
                                    <div class="info">
-                                        <h4>{{ politicus.name }}</h4>
-                                        <img class="politicus" src="{{ politicus.pica.url }}" alt="{{ politicus.name }}" />
-                                        <img class="partij" src="{{ politicus.party.pica.url }}" alt="{{ politicus.party.name }}" />
+                                        <h4>{{ politician.name }}</h4>
+                                        <img class="politicus" src="{{ politician.pica.url }}" alt="{{ politician.name }}" />
+                                        <img class="partij" src="{{ politician.party.pica.url }}" alt="{{ politician.party.name }}" />
                                        <ul class="contactVia">
-                                          {% for contactmethod in politicus.contact_methods %}  
+                                          {% for contactmethod in politician.contact_methods %}
                                             <li class="via{{ contactmethod.name }}">
                                                 <a href="#">via {{ contactmethod.name }}</a>
-                                            </li>                                          
+                                            </li>
                                           {% endfor %}
                                         </ul>
                                     </div>
                                     <div class="extraInfo">
-                                    	<p>{{ politicus.desc|linebreaks }}</p>
+                                    	<p>{{ politician.desc|linebreaks }}</p>
                                     </div>
                                     <div class="infoToggle">
-                                    	<span><span><a href="/politicus/{{ politicus.name }}">Meer informatie</a></span></span>
+                                    	<span><span><a href="/politicus/{{ politician.name_slug }}">Meer informatie</a></span></span>
                                     </div>
                                 </li>
                                 {% endfor %}
@@ -104,7 +104,7 @@
                                 </li>
                             </ul>
                          </div>
-                         
+
                          <div class="nietbeschikbaar">
                          	<h4>niet beschikbaar</h4>
                             <p>Een of meerdere van de geselecteerde politici is niet bereikbaar via dit medium. Deselecteer ze om hier gebruik van te kunnen maken.</p>
@@ -130,7 +130,7 @@
                                 <span class="versturen">
                                 	<input type="submit" value="Versturen" />
                                </span>
-                                
+
                             </form></div>
 							<div id="tweetform" style="display:none;">
 								<form action="https://www.twitter.com/"
@@ -150,7 +150,7 @@
 									</span>
 								</form>
 							</div>
-                            <p id="bedankt">Bedankt! We stellen je inzet en betrokkenheid enorm op prijs!</p> 
+                            <p id="bedankt">Bedankt! We stellen je inzet en betrokkenheid enorm op prijs!</p>
                            	<h5>Wil je nog meer doen? Top!</h5>
                             <ul>
                             	<li><a href="#">Nam aliquam commodo turpis sed commodo</a></li>
@@ -158,11 +158,11 @@
                                 <li><a href="#">Placerat hendrerit laoreet vel</a></li>
                                 <li><a href="#">Vulputate at arcu</a></li>
                             </ul>
-                            
+
                         </div>
                     </div>
                 </div>
-				<div id="deelreageer">                	
+				<div id="deelreageer">
                     <div id="reageren">
                     	<p id="kloptniet">
                         	Kloppen contactgegevens niet? Mis je iets? <a href="#">Laat het ons weten!</a>
@@ -182,7 +182,7 @@
                         	<a href="#">Hyves</a>
                         </li>
                     </ul>
-                </div>	
+                </div>
 			</div><!-- //content -->
 			<div id="footer">
             	<div id="footerText">
@@ -203,9 +203,9 @@
                     <li id="followRss"><a href="https://www.bof.nl/rss/"></a></li>
                     <li id="followFacebook"><a href="https://www.facebook.com/BitsofFreedom"></a></li>
                 </ul>
-                
+
 			</div><!-- //footer -->
-			
+
 		</div><!-- //wrapper -->
 
 	</body>

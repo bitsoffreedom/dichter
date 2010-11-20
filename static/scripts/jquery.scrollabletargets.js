@@ -25,13 +25,14 @@ $(function () {
 		var firstPartialTop = $.grep($("#targets > li"), function (e) {
 			return ($(e).position().top < $("#targets").position().top) 
 		}).reverse()[0]
-		$(firstPartialTop).trigger("scrollTo");
+		$(firstPartialTop).trigger("scrollTo"); 
 	}
 	function scrollDown (e) {
 		var firstPartialBottom = $.grep($("#targets > li"), function (e) {
 			return (($(e).position().top + $(e).height()) > ($("#targets").position().top + $("#targets").height()) ) 
 		})[0]
-		$(firstPartialBottom).trigger("scrollTo");
+		$(firstPartialBottom).trigger("scrollTo"); 
+		
 	}
 
 	$("#targetScrollUp").click(scrollUp);
@@ -39,10 +40,15 @@ $(function () {
 	$("#targets").scroll(navEnabler);
 
 	var targets = $("#targets > li");
-	for (var i = 0; i < targets.length; i++) {
+	for (var i = 0; i < targets.length; i++) { 
 		$(targets[i]).bind("scrollTo", function (e) { 
-			$(e.currentTarget).parent("ul").scrollTo(e.currentTarget, { duration: 500 })
+			if ($(e.currentTarget).position().top < $("#targets").position().top) {
+				$(e.currentTarget).parent("ul").scrollTo(e.currentTarget, 500, {offset: {top: -12, left: 0} })
+			} else if (($(e.currentTarget).position().top + $(e.currentTarget).height()) > ($("#targets").position().top + $("#targets").height())) {
+				$(e.currentTarget).parent("ul").scrollTo(e.currentTarget, 500, {offset: {top: 20 - ( $("#targets").height() - $(e.currentTarget).height() ), left: 0} })
+			}
 		});
+
 		$(targets[i]).click(function (e) {
 			$(e.currentTarget).trigger("scrollTo");
 		});
