@@ -22,7 +22,7 @@
 		         <div id="navbar">
                 		<ul id="nav">
 		                    <li><a id="nav-home" href="/">Home</a></li>
-                		    <li><a id="nav-over" href="#">Over</a></li>
+                		    <li><a id="nav-over" href="/static/over">Over</a></li>
 		                    <li><a id="nav-contact" href="/static/contact">Contact / Pers</a></li>
                 		</ul>
              		</div>
@@ -141,7 +141,7 @@
 										<textarea id="message" name="status" rows="3"
 											onKeyDown="field_size(this, this.form.sizedisplay, 140)"
 											onKeyUp="field_size(this,this.form.sizedisplay, 140)"></textarea>
-										<input readonly type="text" name="sizedisplay" value="140" size="3"/>
+										<input readonly type="text" name="sizedisplay" id="tweetsizedisplay" value="140" size="3"/>
 										karakters over.
 									</span>
 									<span class="versturen">
@@ -189,8 +189,8 @@
                         <p>volg de laatste ontwikkelingen van deze en andere campagnes van Dichter...</p>
                     </div>
                     <ul id="footerlinks">
-                        <li><a href="#">Privacy-verklaring</a>&nbsp;|&nbsp;</li>
-                        <li><a href="#">Huisregels</a>&nbsp;|&nbsp;</li>
+                        <li><a href="/static/privacy">Privacy-verklaring</a>&nbsp;|&nbsp;</li>
+                        <li><a href="/static/huisregel">Huisregels</a>&nbsp;|&nbsp;</li>
                         <li><a href="mailto:info@bof.nl">info@bof.nl</a>&nbsp;|&nbsp;</li>
                         <li>design: <a href="#">Martijn</a>&nbsp;|&nbsp;</li>
                         <li>techniek: <a href="#">iemand anders</a></li>
@@ -198,7 +198,7 @@
                 </div>
                 <ul id="followLinks">
                 	<li id="followLinkedin"><a href="#"></a></li>
-                    <li id="followTwit ter"><a href="#"></a></li>
+                    <li id="followTwitter"><a href="#"></a></li>
                     <li id="followRss"><a href="#"></a></li>
                     <li id="followFacebook"><a href="#"></a></li>
                 </ul>
