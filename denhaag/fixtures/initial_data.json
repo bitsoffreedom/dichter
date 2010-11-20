@@ -85,7 +85,7 @@
       "title":"Privacyverklaring",
       "page":"<h2>Privacy</h2><p>Dichter bij Den Haag wordt onderhouden door <a href=\"https://www.bof.nl/\">Bits of Freedom</a>. Bits of Freedom komt op voor vrijheid en privacy op internet. Voor haar activiteiten, websites en mailinglijsten hanteert Bits of Freedom daarom een helder privacy-beleid.</p><!-- Big brother is watching you!!!11!11!1! --><p><a href=\"https://www.bof.nl/home/privacy-verklaring/\">Lees hier meer over het privacy-beleid van Bits of Freedom.</a></p>"
      }
-  }
+  },
   {
     "model": "denhaag.Static",
     "pk": 4,
