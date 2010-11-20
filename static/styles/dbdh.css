@@ -234,6 +234,7 @@ ul {
 			line-height: 12px;
 			margin: 0px;
 			padding: 4px 7px;
+			min-height: 36px;
 		}
 	
 		#step1 {
