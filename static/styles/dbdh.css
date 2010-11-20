@@ -553,6 +553,11 @@ ul {
 				height: 120px;
 			}
 			
+			#tweetsizedisplay {
+				border: none;
+				font-weight: bold;
+			}
+			
 			#step3 .versturen input {
 				background: url(../images/bg-btn-versturen.png) no-repeat;
 				display: block;

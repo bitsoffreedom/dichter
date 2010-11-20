@@ -212,6 +212,10 @@
 	cursor: pointer;
 }
 
+#campagnes-list.ui-tabs .ui-tabs-nav li.ui-tabs-selected a:hover {
+	cursor: default;
+}
+
 #campagnes-list li {
 	font-weight: bold;
 }
