@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, o, ul, li, ol, dl, dt, dd, p {
 	padding: 0;
 }
 
+input {
+	border: 1px solid #A59D9D;
+}
+
 	h2 {
 		font-size: 26px;
 		margin: 12px 0 0 0;
@@ -161,6 +165,7 @@ ul {
 	
 		#hero img.aside {
 			float: right;
+			margin: 0 0 19px 19px;
 		}
 		
 		#hero p.intro {
@@ -171,6 +176,7 @@ ul {
 			#meer {
 				margin: 15px 0 0 0;
 				border-top: 2px solid #36abdb;
+				clear: both;
 			}
 			
 				#meer span {
