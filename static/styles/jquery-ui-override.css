@@ -208,6 +208,10 @@
 	height: 25px;
 }
 
+#campagnes-list.ui-tabs .ui-tabs-nav li a:hover {
+	cursor: pointer;
+}
+
 #campagnes-list li {
 	font-weight: bold;
 }
