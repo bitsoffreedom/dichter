@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="nl_nl">
 	<head profile="http://gmpg.org/xfn/11">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Dichter bij Den Haag</title>
@@ -40,7 +40,7 @@
             	
             	<div id="hero">
                 	<h2>{{ campaign.title }}</h2>
-                  	<img class="aside" src="{{ campaign.pica.url }}" />
+                  	<img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
                   	<span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
 			            <p class="intro">{{ campaign.intro }}</p>
                 	<div class="extraInfo">{{ campaign.desc|safe }}</div>
@@ -59,9 +59,9 @@
                                 {% for politicus in politici_list %}
                                 <li>
                                    <div class="info">
-                                         <h4>{{ politicus.name }}</h4>
-                                        <img class="politicus" src="{{ politicus.pica.url }}" align=" " />
-                                        <img class="partij" src="{{ politicus.party.pica.url }}" align=" " />
+                                        <h4>{{ politicus.name }}</h4>
+                                        <img class="politicus" src="{{ politicus.pica.url }}" alt="{{ politicus.name }}" />
+                                        <img class="partij" src="{{ politicus.party.pica.url }}" alt="{{ politicus.party.name }}" />
                                        <ul class="contactVia">
                                           {% for contactmethod in politicus.contact_methods %}  
                                             <li class="via{{ contactmethod.name }}">
