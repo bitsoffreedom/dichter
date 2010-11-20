@@ -40,7 +40,6 @@ $(function () {
 	$("#targets").scroll(navEnabler);
 
 	var targets = $("#targets > li");
-	b
 	for (var i = 0; i < targets.length; i++) { 
 		$(targets[i]).bind("scrollTo", function (e) { 
 			if ($(e.currentTarget).position().top < $("#targets").position().top) {
