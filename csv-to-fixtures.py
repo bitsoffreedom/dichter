@@ -52,7 +52,7 @@ for politicus in c:
   }""" % (i, 
           politicus[1],
           parties[politicus[10]],
-          ','.join(politicus[12:31]).rstrip(','),
+          ', '.join(politicus[12:31]).rstrip(', '),
           politicus[8]  == 'Man' and 'M' or 'F',
           dstimage))
   

@@ -1,81 +1,80 @@
-{
+    {
 	    "model": "denhaag.Party",
 	    "pk": 1,
 	    "fields":{
 	      "name": "Partij voor de vrijheid  (PVV)",
-		    "pica": "images/partij_logos/pvv.jpg"
+		    "pica": "images/partij_logos/pvv.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 2,
 	    "fields":{
 	      "name": "Partij van de Arbeid  (PVDA)",
-		    "pica": "images/partij_logos/pvda.jpg"
+		    "pica": "images/partij_logos/pvda.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 3,
 	    "fields":{
 	      "name": "Volkspartij voor Vrijheid en Democratie  (VVD)",
-		    "pica": "images/partij_logos/vvd.jpg"
+		    "pica": "images/partij_logos/vvd.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 4,
 	    "fields":{
 	      "name": "Socialistische Partij  (SP)",
-		    "pica": "images/partij_logos/sp.jpg"
+		    "pica": "images/partij_logos/sp.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 5,
 	    "fields":{
 	      "name": "Democraten 66  (D66)",
-		    "pica": "images/partij_logos/d66.jpg"
+		    "pica": "images/partij_logos/d66.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 6,
 	    "fields":{
 	      "name": "Christen Democratisch Appel  (CDA)",
-		    "pica": "images/partij_logos/cda.jpg"
+		    "pica": "images/partij_logos/cda.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 7,
 	    "fields":{
 	      "name": "GroenLinks  (GL)",
-		    "pica": "images/partij_logos/gl.jpg"
+		    "pica": "images/partij_logos/gl.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 8,
 	    "fields":{
 	      "name": "Staatkundig Gereformeerde Partij  (SGP)",
-		    "pica": "images/partij_logos/sgp.jpg"
+		    "pica": "images/partij_logos/sgp.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 9,
 	    "fields":{
 	      "name": "ChristenUnie  (CU)",
-		    "pica": "images/partij_logos/cu.jpg"
+		    "pica": "images/partij_logos/cu.gif"
 	    }
 	  },{
 	    "model": "denhaag.Party",
 	    "pk": 10,
 	    "fields":{
 	      "name": "Partij voor de dieren  (PVDD)",
-		    "pica": "images/partij_logos/pvdd.jpg"
+		    "pica": "images/partij_logos/pvdd.gif"
 	    }
-	  }
-{
+	  },{
     "model": "denhaag.Politician",
     "pk": 1,
     "fields":{
       "name":"Fleur Agema",
       "party": 1,
-      "desc": "Actief in: Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport,Bouwbegeleidingscommissie,Presidium",
+      "desc": "Actief in: Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport, Bouwbegeleidingscommissie, Presidium",
       "gender": "F",
 	    "pica": "politici/Fleur Agema.jpg"
     }
@@ -85,7 +84,7 @@
     "fields":{
       "name":"Nebahat Albayrak",
       "party": 2,
-      "desc": "Actief in: Europese Zaken,Economische Zaken,Justitie,Landbouw, Natuur en Voedselkwaliteit",
+      "desc": "Actief in: Europese Zaken, Economische Zaken, Justitie, Landbouw, Natuur en Voedselkwaliteit",
       "gender": "F",
 	    "pica": "politici/Nebahat Albayrak.jpg"
     }
@@ -95,7 +94,7 @@
     "fields":{
       "name":"Charlie Aptroot",
       "party": 3,
-      "desc": "Actief in: Economische Zaken,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Bouwbegeleidingscommissie",
+      "desc": "Actief in: Economische Zaken, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Bouwbegeleidingscommissie",
       "gender": "M",
 	    "pica": "politici/Charlie Aptroot.jpg"
     }
@@ -105,7 +104,7 @@
     "fields":{
       "name":"Khadija Arib",
       "party": 2,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Defensie,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Delegatie naar de Euro-Mediterrane Parlementaire Assemblee,Presidium",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Defensie, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Delegatie naar de Euro-Mediterrane Parlementaire Assemblee, Presidium",
       "gender": "F",
 	    "pica": "politici/Khadija Arib.jpg"
     }
@@ -115,7 +114,7 @@
     "fields":{
       "name":"Malik Azmani",
       "party": 3,
-      "desc": "Actief in: Financiën,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Sociale Zaken en Werkgelegenheid,Jeugd en Gezin",
+      "desc": "Actief in: Financiën, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Sociale Zaken en Werkgelegenheid, Jeugd en Gezin",
       "gender": "M",
 	    "pica": "politici/Malik Azmani.jpg"
     }
@@ -125,7 +124,7 @@
     "fields":{
       "name":"Farshad Bashir",
       "party": 4,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Financiën,Landbouw, Natuur en Voedselkwaliteit,Nederlands-Antilliaanse en Arubaanse Zaken,Rijksuitgaven,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Financiën, Landbouw, Natuur en Voedselkwaliteit, Nederlands-Antilliaanse en Arubaanse Zaken, Rijksuitgaven, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat",
       "gender": "M",
 	    "pica": "politici/Farshad Bashir.jpg"
     }
@@ -135,7 +134,7 @@
     "fields":{
       "name":"Willibrord van Beek",
       "party": 3,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Rijksuitgaven",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Rijksuitgaven",
       "gender": "M",
 	    "pica": "politici/Willibrord van Beek.jpg"
     }
@@ -145,7 +144,7 @@
     "fields":{
       "name":"Harm Beertema",
       "party": 1,
-      "desc": "Actief in: Financiën,Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin",
+      "desc": "Actief in: Financiën, Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin",
       "gender": "M",
 	    "pica": "politici/Harm Beertema.jpg"
     }
@@ -155,7 +154,7 @@
     "fields":{
       "name":"Jhim van Bemmel",
       "party": 1,
-      "desc": "Actief in: Economische Zaken,Financiën,Landbouw, Natuur en Voedselkwaliteit,Rijksuitgaven,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Contactgroep Frankrijk,Strategisch Overleg Informatievoorziening",
+      "desc": "Actief in: Economische Zaken, Financiën, Landbouw, Natuur en Voedselkwaliteit, Rijksuitgaven, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Contactgroep Frankrijk, Strategisch Overleg Informatievoorziening",
       "gender": "M",
 	    "pica": "politici/Jhim van Bemmel.jpg"
     }
@@ -165,7 +164,7 @@
     "fields":{
       "name":"Magda Berndsen",
       "party": 5,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Justitie,Jeugd en Gezin,Presidium,Commissie voor de Werkwijze",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Justitie, Jeugd en Gezin, Presidium, Commissie voor de Werkwijze",
       "gender": "F",
 	    "pica": "politici/Magda Berndsen.jpg"
     }
@@ -175,7 +174,7 @@
     "fields":{
       "name":"Ank Bijleveld-Schouten",
       "party": 6,
-      "desc": "Actief in: Vergaderingen,Plenaire vergaderingen,Commissievergaderingen,Live debatten",
+      "desc": "Actief in: Vergaderingen, Plenaire vergaderingen, Commissievergaderingen, Live debatten",
       "gender": "F",
 	    "pica": "politici/Ank Bijleveld-Schouten.jpg"
     }
@@ -195,7 +194,7 @@
     "fields":{
       "name":"Elly Blanksma-van den Heuvel",
       "party": 6,
-      "desc": "Actief in: Defensie,Economische Zaken,Financiën,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Jeugd en Gezin,Delegatie naar de Raadgevende Interparlementaire Beneluxraad,Commissie voor de Verzoekschriften en de Burgerinitiatieven",
+      "desc": "Actief in: Defensie, Economische Zaken, Financiën, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Jeugd en Gezin, Delegatie naar de Raadgevende Interparlementaire Beneluxraad, Commissie voor de Verzoekschriften en de Burgerinitiatieven",
       "gender": "F",
 	    "pica": "politici/Elly Blanksma-van den Heuvel.jpg"
     }
@@ -205,7 +204,7 @@
     "fields":{
       "name":"Stef Blok",
       "party": 3,
-      "desc": "Actief in: Defensie,Financiën,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Jeugd en Gezin,Contactgroep Frankrijk,Presidium,Commissie voor de Verzoekschriften en de Burgerinitiatieven",
+      "desc": "Actief in: Defensie, Financiën, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Jeugd en Gezin, Contactgroep Frankrijk, Presidium, Commissie voor de Verzoekschriften en de Burgerinitiatieven",
       "gender": "M",
 	    "pica": "politici/Stef Blok.jpg"
     }
@@ -215,7 +214,7 @@
     "fields":{
       "name":"Bas Jan Van Bochove",
       "party": 6,
-      "desc": "Actief in: Vergaderingen,Plenaire vergaderingen,Commissievergaderingen,Live debatten",
+      "desc": "Actief in: Vergaderingen, Plenaire vergaderingen, Commissievergaderingen, Live debatten",
       "gender": "M",
 	    "pica": "politici/Bas Jan Van Bochove.jpg"
     }
@@ -225,7 +224,7 @@
     "fields":{
       "name":"Betty de Boer",
       "party": 3,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Financiën,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Jeugd en Gezin",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Financiën, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Betty de Boer.jpg"
     }
@@ -235,7 +234,7 @@
     "fields":{
       "name":"Harry van Bommel",
       "party": 4,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Delegatie naar de Navo Assemblee,Delegatie naar de OVSE-Assemblee,Presidium,Commissie voor de Werkwijze",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Delegatie naar de Navo Assemblee, Delegatie naar de OVSE-Assemblee, Presidium, Commissie voor de Werkwijze",
       "gender": "M",
 	    "pica": "politici/Harry van Bommel.jpg"
     }
@@ -245,7 +244,7 @@
     "fields":{
       "name":"Louis Bontes",
       "party": 1,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Justitie,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Commissie voor de Werkwijze",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Justitie, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Commissie voor de Werkwijze",
       "gender": "M",
 	    "pica": "politici/Louis Bontes.jpg"
     }
@@ -255,7 +254,7 @@
     "fields":{
       "name":"Martin Bosma",
       "party": 1,
-      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin",
+      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin",
       "gender": "M",
 	    "pica": "politici/Martin Bosma.jpg"
     }
@@ -265,7 +264,7 @@
     "fields":{
       "name":"André Bosman",
       "party": 3,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Landbouw, Natuur en Voedselkwaliteit,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Landbouw, Natuur en Voedselkwaliteit, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap",
       "gender": "M",
 	    "pica": "politici/André Bosman.jpg"
     }
@@ -275,7 +274,7 @@
     "fields":{
       "name":"Lea Bouwmeester",
       "party": 2,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Financiën,Justitie,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Contactgroep Verenigd Koninkrijk",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Financiën, Justitie, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Contactgroep Verenigd Koninkrijk",
       "gender": "F",
 	    "pica": "politici/Lea Bouwmeester.jpg"
     }
@@ -285,7 +284,7 @@
     "fields":{
       "name":"Bruno Braakhuis",
       "party": 7,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Economische Zaken,Financiën,Landbouw, Natuur en Voedselkwaliteit,Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Tijdelijke commissie onderzoek financieel stelsel",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Economische Zaken, Financiën, Landbouw, Natuur en Voedselkwaliteit, Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Tijdelijke commissie onderzoek financieel stelsel",
       "gender": "M",
 	    "pica": "politici/Bruno Braakhuis.jpg"
     }
@@ -295,7 +294,7 @@
     "fields":{
       "name":"Hero Brinkman",
       "party": 1,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Nederlands-Antilliaanse en Arubaanse Zaken",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Nederlands-Antilliaanse en Arubaanse Zaken",
       "gender": "M",
 	    "pica": "politici/Hero Brinkman.jpg"
     }
@@ -305,7 +304,7 @@
     "fields":{
       "name":"Han ten Broeke",
       "party": 3,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Financiën,Contactgroep België,Delegatie naar de OVSE-Assemblee,Delegatie naar de Parlementaire Vergadering van de Raad van Europa,Europese Veiligheids- en Defensie Assemblee,Tijdelijke commissie subsidiariteitstoets",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Financiën, Contactgroep België, Delegatie naar de OVSE-Assemblee, Delegatie naar de Parlementaire Vergadering van de Raad van Europa, Europese Veiligheids- en Defensie Assemblee, Tijdelijke commissie subsidiariteitstoets",
       "gender": "M",
 	    "pica": "politici/Han ten Broeke.jpg"
     }
@@ -315,7 +314,7 @@
     "fields":{
       "name":"Hanke Bruins Slot",
       "party": 6,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Volksgezondheid, Welzijn en Sport",
       "gender": "F",
 	    "pica": "politici/Hanke Bruins Slot.jpg"
     }
@@ -325,7 +324,7 @@
     "fields":{
       "name":"Brigitte van der Burg",
       "party": 3,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Justitie,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Jeugd en Gezin",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Justitie, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Brigitte van der Burg.jpg"
     }
@@ -335,7 +334,7 @@
     "fields":{
       "name":"Metin Çelik",
       "party": 2,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid",
       "gender": "M",
 	    "pica": "politici/Metin Çelik.jpg"
     }
@@ -355,7 +354,7 @@
     "fields":{
       "name":"Coskun Çörüz",
       "party": 6,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Jeugd en Gezin,Commissie voor de Verzoekschriften en de Burgerinitiatieven",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Jeugd en Gezin, Commissie voor de Verzoekschriften en de Burgerinitiatieven",
       "gender": "M",
 	    "pica": "politici/Coskun Çörüz.jpg"
     }
@@ -365,7 +364,7 @@
     "fields":{
       "name":"Martijn van Dam",
       "party": 2,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Economische Zaken,Landbouw, Natuur en Voedselkwaliteit,Onderwijs, Cultuur en Wetenschap,Delegatie naar de Navo Assemblee",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Economische Zaken, Landbouw, Natuur en Voedselkwaliteit, Onderwijs, Cultuur en Wetenschap, Delegatie naar de Navo Assemblee",
       "gender": "M",
 	    "pica": "politici/Martijn van Dam.jpg"
     }
@@ -375,7 +374,7 @@
     "fields":{
       "name":"Tjeerd van Dekken",
       "party": 2,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Landbouw, Natuur en Voedselkwaliteit,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Landbouw, Natuur en Voedselkwaliteit, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport",
       "gender": "M",
 	    "pica": "politici/Tjeerd van Dekken.jpg"
     }
@@ -385,7 +384,7 @@
     "fields":{
       "name":"Ineke Dezentjé Hamming-Bluemink",
       "party": 3,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Jeugd en Gezin,Contactgroep Duitsland,Kunstcommissie,Commissie voor de Verzoekschriften en de Burgerinitiatieven",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Jeugd en Gezin, Contactgroep Duitsland, Kunstcommissie, Commissie voor de Verzoekschriften en de Burgerinitiatieven",
       "gender": "F",
 	    "pica": "politici/Ineke Dezentjé Hamming-Bluemink.jpg"
     }
@@ -395,7 +394,7 @@
     "fields":{
       "name":"Tofik Dibi",
       "party": 7,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Binnenlandse Zaken en Koninkrijksrelaties,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Jeugd en Gezin",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Binnenlandse Zaken en Koninkrijksrelaties, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Jeugd en Gezin",
       "gender": "M",
 	    "pica": "politici/Tofik Dibi.jpg"
     }
@@ -405,7 +404,7 @@
     "fields":{
       "name":"Tony van Dijck",
       "party": 1,
-      "desc": "Actief in: Economische Zaken,Financiën,Landbouw, Natuur en Voedselkwaliteit,Rijksuitgaven,Sociale Zaken en Werkgelegenheid",
+      "desc": "Actief in: Economische Zaken, Financiën, Landbouw, Natuur en Voedselkwaliteit, Rijksuitgaven, Sociale Zaken en Werkgelegenheid",
       "gender": "M",
 	    "pica": "politici/Tony van Dijck.jpg"
     }
@@ -415,7 +414,7 @@
     "fields":{
       "name":"Jasper van Dijk",
       "party": 4,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Kunstcommissie",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Kunstcommissie",
       "gender": "M",
 	    "pica": "politici/Jasper van Dijk.jpg"
     }
@@ -425,7 +424,7 @@
     "fields":{
       "name":"Elbert Dijkgraaf",
       "party": 8,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Economische Zaken,Financiën,Justitie,Landbouw, Natuur en Voedselkwaliteit,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Presidium",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Economische Zaken, Financiën, Justitie, Landbouw, Natuur en Voedselkwaliteit, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Presidium",
       "gender": "M",
 	    "pica": "politici/Elbert Dijkgraaf.jpg"
     }
@@ -435,7 +434,7 @@
     "fields":{
       "name":"Klaas Dijkhoff",
       "party": 3,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Defensie,Europese Zaken,Nederlands-Antilliaanse en Arubaanse Zaken",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Defensie, Europese Zaken, Nederlands-Antilliaanse en Arubaanse Zaken",
       "gender": "M",
 	    "pica": "politici/Klaas Dijkhoff.jpg"
     }
@@ -445,7 +444,7 @@
     "fields":{
       "name":"Sharon Dijksma",
       "party": 2,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Nederlands-Antilliaanse en Arubaanse Zaken,Verkeer en Waterstaat",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Nederlands-Antilliaanse en Arubaanse Zaken, Verkeer en Waterstaat",
       "gender": "F",
 	    "pica": "politici/Sharon Dijksma.jpg"
     }
@@ -455,7 +454,7 @@
     "fields":{
       "name":"Pia Dijkstra",
       "party": 5,
-      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin",
+      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Pia Dijkstra.jpg"
     }
@@ -465,7 +464,7 @@
     "fields":{
       "name":"Jeroen Dijsselbloem",
       "party": 2,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Jeugd en Gezin,Contactgroep Verenigd Koninkrijk,Commissie voor het Onderzoek van de Geloofsbrieven,Commissie voor de Werkwijze",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Jeugd en Gezin, Contactgroep Verenigd Koninkrijk, Commissie voor het Onderzoek van de Geloofsbrieven, Commissie voor de Werkwijze",
       "gender": "M",
 	    "pica": "politici/Jeroen Dijsselbloem.jpg"
     }
@@ -475,7 +474,7 @@
     "fields":{
       "name":"Sjoera Dikkers",
       "party": 2,
-      "desc": "Actief in: Buitenlandse Zaken,Europese Zaken,Landbouw, Natuur en Voedselkwaliteit",
+      "desc": "Actief in: Buitenlandse Zaken, Europese Zaken, Landbouw, Natuur en Voedselkwaliteit",
       "gender": "F",
 	    "pica": "politici/Sjoera Dikkers.jpg"
     }
@@ -485,7 +484,7 @@
     "fields":{
       "name":"Willie Dille",
       "party": 1,
-      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin",
+      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Willie Dille.jpg"
     }
@@ -495,7 +494,7 @@
     "fields":{
       "name":"Johan Driessen",
       "party": 1,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Europese Zaken,Justitie",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Europese Zaken, Justitie",
       "gender": "M",
 	    "pica": "politici/Johan Driessen.jpg"
     }
@@ -505,7 +504,7 @@
     "fields":{
       "name":"Angelien Eijsink",
       "party": 2,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Landbouw, Natuur en Voedselkwaliteit,Jeugd en Gezin,Delegatie naar de Navo Assemblee",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Landbouw, Natuur en Voedselkwaliteit, Jeugd en Gezin, Delegatie naar de Navo Assemblee",
       "gender": "F",
 	    "pica": "politici/Angelien Eijsink.jpg"
     }
@@ -515,7 +514,7 @@
     "fields":{
       "name":"Arjan El Fassed",
       "party": 7,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Defensie,Europese Zaken,Economische Zaken,Landbouw, Natuur en Voedselkwaliteit,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Defensie, Europese Zaken, Economische Zaken, Landbouw, Natuur en Voedselkwaliteit, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer",
       "gender": "M",
 	    "pica": "politici/Arjan El Fassed.jpg"
     }
@@ -525,7 +524,7 @@
     "fields":{
       "name":"Ton Elias",
       "party": 3,
-      "desc": "Actief in: Justitie,Landbouw, Natuur en Voedselkwaliteit,Onderwijs, Cultuur en Wetenschap,Volksgezondheid, Welzijn en Sport,Commissie voor de Werkwijze",
+      "desc": "Actief in: Justitie, Landbouw, Natuur en Voedselkwaliteit, Onderwijs, Cultuur en Wetenschap, Volksgezondheid, Welzijn en Sport, Commissie voor de Werkwijze",
       "gender": "M",
 	    "pica": "politici/Ton Elias.jpg"
     }
@@ -535,7 +534,7 @@
     "fields":{
       "name":"Andre Elissen",
       "party": 1,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Europese Zaken,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Commissie voor de Verzoekschriften en de Burgerinitiatieven",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Europese Zaken, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Commissie voor de Verzoekschriften en de Burgerinitiatieven",
       "gender": "M",
 	    "pica": "politici/Andre Elissen.jpg"
     }
@@ -545,7 +544,7 @@
     "fields":{
       "name":"Kathleen Ferrier",
       "party": 6,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Onderwijs, Cultuur en Wetenschap,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Delegatie naar de Euro-Mediterrane Parlementaire Assemblee,Delegatie naar de OVSE-Assemblee",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Onderwijs, Cultuur en Wetenschap, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Delegatie naar de Euro-Mediterrane Parlementaire Assemblee, Delegatie naar de OVSE-Assemblee",
       "gender": "F",
 	    "pica": "politici/Kathleen Ferrier.jpg"
     }
@@ -555,7 +554,7 @@
     "fields":{
       "name":"Sietse Fritsma",
       "party": 1,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Sociale Zaken en Werkgelegenheid",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Sociale Zaken en Werkgelegenheid",
       "gender": "M",
 	    "pica": "politici/Sietse Fritsma.jpg"
     }
@@ -565,7 +564,7 @@
     "fields":{
       "name":"Ineke van Gent",
       "party": 7,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Financiën,Landbouw, Natuur en Voedselkwaliteit,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Verkeer en Waterstaat,Presidium,Commissie voor de Verzoekschriften en de Burgerinitiatieven,Commissie voor de Werkwijze",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Financiën, Landbouw, Natuur en Voedselkwaliteit, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Verkeer en Waterstaat, Presidium, Commissie voor de Verzoekschriften en de Burgerinitiatieven, Commissie voor de Werkwijze",
       "gender": "F",
 	    "pica": "politici/Ineke van Gent.jpg"
     }
@@ -575,7 +574,7 @@
     "fields":{
       "name":"Karen Gerbrands",
       "party": 1,
-      "desc": "Actief in: Landbouw, Natuur en Voedselkwaliteit,Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Landbouw, Natuur en Voedselkwaliteit, Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport",
       "gender": "F",
 	    "pica": "politici/Karen Gerbrands.jpg"
     }
@@ -585,7 +584,7 @@
     "fields":{
       "name":"Henk van Gerven",
       "party": 4,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Landbouw, Natuur en Voedselkwaliteit,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Landbouw, Natuur en Voedselkwaliteit, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport",
       "gender": "M",
 	    "pica": "politici/Henk van Gerven.jpg"
     }
@@ -595,7 +594,7 @@
     "fields":{
       "name":"Sharon Gesthuizen",
       "party": 4,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Economische Zaken,Financiën,Justitie,Rijksuitgaven,Commissie voor het Onderzoek van de Geloofsbrieven,Strategisch Overleg Informatievoorziening",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Economische Zaken, Financiën, Justitie, Rijksuitgaven, Commissie voor het Onderzoek van de Geloofsbrieven, Strategisch Overleg Informatievoorziening",
       "gender": "F",
 	    "pica": "politici/Sharon Gesthuizen.jpg"
     }
@@ -605,7 +604,7 @@
     "fields":{
       "name":"Dion Graus",
       "party": 1,
-      "desc": "Actief in: Economische Zaken,Financiën,Landbouw, Natuur en Voedselkwaliteit,Rijksuitgaven,Verkeer en Waterstaat,Tijdelijke commissie onderzoek financieel stelsel",
+      "desc": "Actief in: Economische Zaken, Financiën, Landbouw, Natuur en Voedselkwaliteit, Rijksuitgaven, Verkeer en Waterstaat, Tijdelijke commissie onderzoek financieel stelsel",
       "gender": "M",
 	    "pica": "politici/Dion Graus.jpg"
     }
@@ -615,7 +614,7 @@
     "fields":{
       "name":"Ed Groot",
       "party": 2,
-      "desc": "Actief in: Europese Zaken,Economische Zaken,Financiën,Rijksuitgaven,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat",
+      "desc": "Actief in: Europese Zaken, Economische Zaken, Financiën, Rijksuitgaven, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat",
       "gender": "M",
 	    "pica": "politici/Ed Groot.jpg"
     }
@@ -625,7 +624,7 @@
     "fields":{
       "name":"Wassila Hachchi",
       "party": 5,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken",
       "gender": "F",
 	    "pica": "politici/Wassila Hachchi.jpg"
     }
@@ -635,7 +634,7 @@
     "fields":{
       "name":"Sybrand van Haersma Buma",
       "party": 6,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Binnenlandse Zaken en Koninkrijksrelaties,Financiën,Justitie,Rijksuitgaven,Contactgroep Duitsland,Presidium",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Binnenlandse Zaken en Koninkrijksrelaties, Financiën, Justitie, Rijksuitgaven, Contactgroep Duitsland, Presidium",
       "gender": "M",
 	    "pica": "politici/Sybrand van Haersma Buma.jpg"
     }
@@ -645,7 +644,7 @@
     "fields":{
       "name":"Femke Halsema",
       "party": 7,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Financiën,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Rijksuitgaven,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Contactgroep Verenigd Koninkrijk,Commissie voor de Inlichtingen- en Veiligheidsdiensten",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Financiën, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Rijksuitgaven, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Contactgroep Verenigd Koninkrijk, Commissie voor de Inlichtingen- en Veiligheidsdiensten",
       "gender": "F",
 	    "pica": "politici/Femke Halsema.jpg"
     }
@@ -655,7 +654,7 @@
     "fields":{
       "name":"Boris van der Ham",
       "party": 5,
-      "desc": "Actief in: Landbouw, Natuur en Voedselkwaliteit,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Tijdelijke commissie subsidiariteitstoets",
+      "desc": "Actief in: Landbouw, Natuur en Voedselkwaliteit, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Tijdelijke commissie subsidiariteitstoets",
       "gender": "M",
 	    "pica": "politici/Boris van der Ham.jpg"
     }
@@ -665,7 +664,7 @@
     "fields":{
       "name":"Mariëtte Hamer",
       "party": 2,
-      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Jeugd en Gezin,Presidium",
+      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Jeugd en Gezin, Presidium",
       "gender": "F",
 	    "pica": "politici/Mariëtte Hamer.jpg"
     }
@@ -675,7 +674,7 @@
     "fields":{
       "name":"Mark Harbers",
       "party": 3,
-      "desc": "Actief in: Buitenlandse Zaken,Europese Zaken,Landbouw, Natuur en Voedselkwaliteit,Onderwijs, Cultuur en Wetenschap,Verkeer en Waterstaat",
+      "desc": "Actief in: Buitenlandse Zaken, Europese Zaken, Landbouw, Natuur en Voedselkwaliteit, Onderwijs, Cultuur en Wetenschap, Verkeer en Waterstaat",
       "gender": "M",
 	    "pica": "politici/Mark Harbers.jpg"
     }
@@ -695,7 +694,7 @@
     "fields":{
       "name":"Pierre Heijnen",
       "party": 2,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Binnenlandse Zaken en Koninkrijksrelaties,Financiën,Nederlands-Antilliaanse en Arubaanse Zaken,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Bouwbegeleidingscommissie,Commissie voor de Werkwijze",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Binnenlandse Zaken en Koninkrijksrelaties, Financiën, Nederlands-Antilliaanse en Arubaanse Zaken, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Bouwbegeleidingscommissie, Commissie voor de Werkwijze",
       "gender": "M",
 	    "pica": "politici/Pierre Heijnen.jpg"
     }
@@ -705,7 +704,7 @@
     "fields":{
       "name":"Lilian Helder",
       "party": 1,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Contactgroep Duitsland,Commissie voor het Onderzoek van de Geloofsbrieven",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Contactgroep Duitsland, Commissie voor het Onderzoek van de Geloofsbrieven",
       "gender": "F",
 	    "pica": "politici/Lilian Helder.jpg"
     }
@@ -715,7 +714,7 @@
     "fields":{
       "name":"Jeanine Hennis-Plasschaert",
       "party": 3,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Europese Zaken,Justitie,Sociale Zaken en Werkgelegenheid",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Europese Zaken, Justitie, Sociale Zaken en Werkgelegenheid",
       "gender": "F",
 	    "pica": "politici/Jeanine Hennis-Plasschaert.jpg"
     }
@@ -725,7 +724,7 @@
     "fields":{
       "name":"Marcial Hernandez",
       "party": 1,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie",
       "gender": "M",
 	    "pica": "politici/Marcial Hernandez.jpg"
     }
@@ -735,7 +734,7 @@
     "fields":{
       "name":"Eddy van Hijum",
       "party": 6,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Economische Zaken,Financiën,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Verkeer en Waterstaat,Tijdelijke commissie onderzoek financieel stelsel",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Economische Zaken, Financiën, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Verkeer en Waterstaat, Tijdelijke commissie onderzoek financieel stelsel",
       "gender": "M",
 	    "pica": "politici/Eddy van Hijum.jpg"
     }
@@ -745,7 +744,7 @@
     "fields":{
       "name":"Johan Houwers",
       "party": 3,
-      "desc": "Actief in: Vergaderingen,Plenaire vergaderingen,Commissievergaderingen,Live debatten",
+      "desc": "Actief in: Vergaderingen, Plenaire vergaderingen, Commissievergaderingen, Live debatten",
       "gender": "M",
 	    "pica": "politici/Johan Houwers.jpg"
     }
@@ -755,7 +754,7 @@
     "fields":{
       "name":"Matthijs Huizing",
       "party": 3,
-      "desc": "Actief in: Vergaderingen,Plenaire vergaderingen,Commissievergaderingen,Live debatten",
+      "desc": "Actief in: Vergaderingen, Plenaire vergaderingen, Commissievergaderingen, Live debatten",
       "gender": "M",
 	    "pica": "politici/Matthijs Huizing.jpg"
     }
@@ -765,7 +764,7 @@
     "fields":{
       "name":"Ewout Irrgang",
       "party": 4,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Economische Zaken,Financiën,Rijksuitgaven,Sociale Zaken en Werkgelegenheid",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Economische Zaken, Financiën, Rijksuitgaven, Sociale Zaken en Werkgelegenheid",
       "gender": "M",
 	    "pica": "politici/Ewout Irrgang.jpg"
     }
@@ -775,7 +774,7 @@
     "fields":{
       "name":"Tanja Jadnanansing",
       "party": 2,
-      "desc": "Actief in: Economische Zaken,Onderwijs, Cultuur en Wetenschap,Jeugd en Gezin",
+      "desc": "Actief in: Economische Zaken, Onderwijs, Cultuur en Wetenschap, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Tanja Jadnanansing.jpg"
     }
@@ -785,7 +784,7 @@
     "fields":{
       "name":"Paulus Jansen",
       "party": 4,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Economische Zaken,Landbouw, Natuur en Voedselkwaliteit,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Bouwbegeleidingscommissie",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Economische Zaken, Landbouw, Natuur en Voedselkwaliteit, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Bouwbegeleidingscommissie",
       "gender": "M",
 	    "pica": "politici/Paulus Jansen.jpg"
     }
@@ -795,7 +794,7 @@
     "fields":{
       "name":"Léon de Jong",
       "party": 1,
-      "desc": "Actief in: Economische Zaken,Financiën,Sociale Zaken en Werkgelegenheid,Verkeer en Waterstaat,Jeugd en Gezin",
+      "desc": "Actief in: Economische Zaken, Financiën, Sociale Zaken en Werkgelegenheid, Verkeer en Waterstaat, Jeugd en Gezin",
       "gender": "M",
 	    "pica": "politici/Léon de Jong.jpg"
     }
@@ -805,7 +804,7 @@
     "fields":{
       "name":"Sadet Karabulut",
       "party": 4,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Economische Zaken,Financiën,Landbouw, Natuur en Voedselkwaliteit,Sociale Zaken en Werkgelegenheid,Verkeer en Waterstaat,Jeugd en Gezin,Delegatie naar de Raadgevende Interparlementaire Beneluxraad",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Economische Zaken, Financiën, Landbouw, Natuur en Voedselkwaliteit, Sociale Zaken en Werkgelegenheid, Verkeer en Waterstaat, Jeugd en Gezin, Delegatie naar de Raadgevende Interparlementaire Beneluxraad",
       "gender": "F",
 	    "pica": "politici/Sadet Karabulut.jpg"
     }
@@ -815,7 +814,7 @@
     "fields":{
       "name":"Jesse Klaver",
       "party": 7,
-      "desc": "Actief in: Economische Zaken,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Economische Zaken, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport",
       "gender": "M",
 	    "pica": "politici/Jesse Klaver.jpg"
     }
@@ -825,7 +824,7 @@
     "fields":{
       "name":"Joram van Klaveren",
       "party": 1,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Verkeer en Waterstaat,Jeugd en Gezin",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Verkeer en Waterstaat, Jeugd en Gezin",
       "gender": "M",
 	    "pica": "politici/Joram van Klaveren.jpg"
     }
@@ -835,7 +834,7 @@
     "fields":{
       "name":"Jetta Klijnsma",
       "party": 2,
-      "desc": "Actief in: Economische Zaken,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Economische Zaken, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport",
       "gender": "F",
 	    "pica": "politici/Jetta Klijnsma.jpg"
     }
@@ -845,7 +844,7 @@
     "fields":{
       "name":"Raymond Knops",
       "party": 6,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Delegatie naar de Raadgevende Interparlementaire Beneluxraad,Delegatie naar de Navo Assemblee",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Delegatie naar de Raadgevende Interparlementaire Beneluxraad, Delegatie naar de Navo Assemblee",
       "gender": "M",
 	    "pica": "politici/Raymond Knops.jpg"
     }
@@ -855,7 +854,7 @@
     "fields":{
       "name":"Nine Kooiman",
       "party": 4,
-      "desc": "Actief in: Justitie,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin",
+      "desc": "Actief in: Justitie, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Nine Kooiman.jpg"
     }
@@ -865,7 +864,7 @@
     "fields":{
       "name":"Wouter Koolmees",
       "party": 5,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Economische Zaken,Financiën,Landbouw, Natuur en Voedselkwaliteit,Rijksuitgaven,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Economische Zaken, Financiën, Landbouw, Natuur en Voedselkwaliteit, Rijksuitgaven, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport",
       "gender": "M",
 	    "pica": "politici/Wouter Koolmees.jpg"
     }
@@ -875,7 +874,7 @@
     "fields":{
       "name":"Ger Koopmans",
       "party": 6,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Economische Zaken,Landbouw, Natuur en Voedselkwaliteit,Verkeer en Waterstaat",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Economische Zaken, Landbouw, Natuur en Voedselkwaliteit, Verkeer en Waterstaat",
       "gender": "M",
 	    "pica": "politici/Ger Koopmans.jpg"
     }
@@ -885,7 +884,7 @@
     "fields":{
       "name":"Ad Koppejan",
       "party": 6,
-      "desc": "Actief in: Europese Zaken,Economische Zaken,Financiën,Landbouw, Natuur en Voedselkwaliteit,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Delegatie naar de Raadgevende Interparlementaire Beneluxraad",
+      "desc": "Actief in: Europese Zaken, Economische Zaken, Financiën, Landbouw, Natuur en Voedselkwaliteit, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Delegatie naar de Raadgevende Interparlementaire Beneluxraad",
       "gender": "M",
 	    "pica": "politici/Ad Koppejan.jpg"
     }
@@ -895,7 +894,7 @@
     "fields":{
       "name":"Wim Kortenoeven",
       "party": 1,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Nederlands-Antilliaanse en Arubaanse Zaken,Contactgroep Verenigd Koninkrijk,Kunstcommissie",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Nederlands-Antilliaanse en Arubaanse Zaken, Contactgroep Verenigd Koninkrijk, Kunstcommissie",
       "gender": "M",
 	    "pica": "politici/Wim Kortenoeven.jpg"
     }
@@ -905,7 +904,7 @@
     "fields":{
       "name":"Fatma Koşer Kaya",
       "party": 5,
-      "desc": "Actief in: Financiën,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Tijdelijke commissie onderzoek financieel stelsel",
+      "desc": "Actief in: Financiën, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Tijdelijke commissie onderzoek financieel stelsel",
       "gender": "F",
 	    "pica": "politici/Fatma Koşer Kaya.jpg"
     }
@@ -915,7 +914,7 @@
     "fields":{
       "name":"Attje Kuiken",
       "party": 2,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Nederlands-Antilliaanse en Arubaanse Zaken,Rijksuitgaven",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Nederlands-Antilliaanse en Arubaanse Zaken, Rijksuitgaven",
       "gender": "F",
 	    "pica": "politici/Attje Kuiken.jpg"
     }
@@ -925,7 +924,7 @@
     "fields":{
       "name":"René Leegte",
       "party": 3,
-      "desc": "Actief in: Vergaderingen,Plenaire vergaderingen,Commissievergaderingen,Live debatten",
+      "desc": "Actief in: Vergaderingen, Plenaire vergaderingen, Commissievergaderingen, Live debatten",
       "gender": "M",
 	    "pica": "politici/René Leegte.jpg"
     }
@@ -935,7 +934,7 @@
     "fields":{
       "name":"Renske Leijten",
       "party": 4,
-      "desc": "Actief in: Volksgezondheid, Welzijn en Sport,Jeugd en Gezin",
+      "desc": "Actief in: Volksgezondheid, Welzijn en Sport, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Renske Leijten.jpg"
     }
@@ -945,7 +944,7 @@
     "fields":{
       "name":"Bart De Liefde",
       "party": 3,
-      "desc": "Actief in: Vergaderingen,Plenaire vergaderingen,Commissievergaderingen,Live debatten",
+      "desc": "Actief in: Vergaderingen, Plenaire vergaderingen, Commissievergaderingen, Live debatten",
       "gender": "M",
 	    "pica": "politici/Bart De Liefde.jpg"
     }
@@ -955,7 +954,7 @@
     "fields":{
       "name":"Helma Lodders",
       "party": 3,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Economische Zaken,Landbouw, Natuur en Voedselkwaliteit,Verkeer en Waterstaat",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Economische Zaken, Landbouw, Natuur en Voedselkwaliteit, Verkeer en Waterstaat",
       "gender": "F",
 	    "pica": "politici/Helma Lodders.jpg"
     }
@@ -965,7 +964,7 @@
     "fields":{
       "name":"Eric Lucassen",
       "party": 1,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Defensie,Nederlands-Antilliaanse en Arubaanse Zaken",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Defensie, Nederlands-Antilliaanse en Arubaanse Zaken",
       "gender": "M",
 	    "pica": "politici/Eric Lucassen.jpg"
     }
@@ -975,7 +974,7 @@
     "fields":{
       "name":"Anne-Wil Lucas-Smeerdijk",
       "party": 3,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Landbouw, Natuur en Voedselkwaliteit,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Landbouw, Natuur en Voedselkwaliteit, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat",
       "gender": "F",
 	    "pica": "politici/Anne-Wil Lucas-Smeerdijk.jpg"
     }
@@ -985,7 +984,7 @@
     "fields":{
       "name":"Anouchka van Miltenburg",
       "party": 3,
-      "desc": "Actief in: Buitenlandse Zaken,Onderwijs, Cultuur en Wetenschap,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Nederlandse Groep van de Interparlementaire Unie",
+      "desc": "Actief in: Buitenlandse Zaken, Onderwijs, Cultuur en Wetenschap, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Nederlandse Groep van de Interparlementaire Unie",
       "gender": "F",
 	    "pica": "politici/Anouchka van Miltenburg.jpg"
     }
@@ -995,7 +994,7 @@
     "fields":{
       "name":"Jacques Monasch",
       "party": 2,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Defensie,Landbouw, Natuur en Voedselkwaliteit,Rijksuitgaven,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Defensie, Landbouw, Natuur en Voedselkwaliteit, Rijksuitgaven, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat",
       "gender": "M",
 	    "pica": "politici/Jacques Monasch.jpg"
     }
@@ -1005,7 +1004,7 @@
     "fields":{
       "name":"Richard de Mos",
       "party": 1,
-      "desc": "Actief in: Landbouw, Natuur en Voedselkwaliteit,Onderwijs, Cultuur en Wetenschap,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Jeugd en Gezin",
+      "desc": "Actief in: Landbouw, Natuur en Voedselkwaliteit, Onderwijs, Cultuur en Wetenschap, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Jeugd en Gezin",
       "gender": "M",
 	    "pica": "politici/Richard de Mos.jpg"
     }
@@ -1015,7 +1014,7 @@
     "fields":{
       "name":"Anne Mulder",
       "party": 3,
-      "desc": "Actief in: Financiën,Justitie,Rijksuitgaven,Volksgezondheid, Welzijn en Sport,Commissie voor de Verzoekschriften en de Burgerinitiatieven",
+      "desc": "Actief in: Financiën, Justitie, Rijksuitgaven, Volksgezondheid, Welzijn en Sport, Commissie voor de Verzoekschriften en de Burgerinitiatieven",
       "gender": "M",
 	    "pica": "politici/Anne Mulder.jpg"
     }
@@ -1025,7 +1024,7 @@
     "fields":{
       "name":"Helma Neppérus",
       "party": 3,
-      "desc": "Actief in: Economische Zaken,Financiën,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport,Strategisch Overleg Informatievoorziening,Commissie voor de Verzoekschriften en de Burgerinitiatieven,Tijdelijke commissie onderzoek financieel stelsel",
+      "desc": "Actief in: Economische Zaken, Financiën, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport, Strategisch Overleg Informatievoorziening, Commissie voor de Verzoekschriften en de Burgerinitiatieven, Tijdelijke commissie onderzoek financieel stelsel",
       "gender": "F",
 	    "pica": "politici/Helma Neppérus.jpg"
     }
@@ -1035,7 +1034,7 @@
     "fields":{
       "name":"Atzo Nicolaï",
       "party": 3,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Rijksuitgaven,Delegatie naar de Raadgevende Interparlementaire Beneluxraad,Interparlementaire commissie inzake de Nederlandse Taalunie",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Rijksuitgaven, Delegatie naar de Raadgevende Interparlementaire Beneluxraad, Interparlementaire commissie inzake de Nederlandse Taalunie",
       "gender": "M",
 	    "pica": "politici/Atzo Nicolaï.jpg"
     }
@@ -1045,7 +1044,7 @@
     "fields":{
       "name":"Cora van Nieuwenhuizen",
       "party": 3,
-      "desc": "Actief in: Economische Zaken,Rijksuitgaven,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Economische Zaken, Rijksuitgaven, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport",
       "gender": "F",
 	    "pica": "politici/Cora van Nieuwenhuizen.jpg"
     }
@@ -1055,7 +1054,7 @@
     "fields":{
       "name":"Pieter Omtzigt",
       "party": 6,
-      "desc": "Actief in: Delegatie naar de Parlementaire Vergadering van de Raad van Europa,Europese Veiligheids- en Defensie Assemblee",
+      "desc": "Actief in: Delegatie naar de Parlementaire Vergadering van de Raad van Europa, Europese Veiligheids- en Defensie Assemblee",
       "gender": "M",
 	    "pica": "politici/Pieter Omtzigt.jpg"
     }
@@ -1065,7 +1064,7 @@
     "fields":{
       "name":"Henk Jan Ormel",
       "party": 6,
-      "desc": "Actief in: Defensie,Europese Zaken,Justitie,Landbouw, Natuur en Voedselkwaliteit,Nederlands-Antilliaanse en Arubaanse Zaken,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Volksgezondheid, Welzijn en Sport,Delegatie naar de Raadgevende Interparlementaire Beneluxraad,Contactgroep Duitsland,Delegatie naar de Navo Assemblee,Tijdelijke commissie subsidiariteitstoets",
+      "desc": "Actief in: Defensie, Europese Zaken, Justitie, Landbouw, Natuur en Voedselkwaliteit, Nederlands-Antilliaanse en Arubaanse Zaken, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Volksgezondheid, Welzijn en Sport, Delegatie naar de Raadgevende Interparlementaire Beneluxraad, Contactgroep Duitsland, Delegatie naar de Navo Assemblee, Tijdelijke commissie subsidiariteitstoets",
       "gender": "M",
 	    "pica": "politici/Henk Jan Ormel.jpg"
     }
@@ -1075,7 +1074,7 @@
     "fields":{
       "name":"Cynthia Ortega-Martijn",
       "party": 9,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Economische Zaken,Landbouw, Natuur en Voedselkwaliteit,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Volksgezondheid, Welzijn en Sport,Contactgroep Verenigd Koninkrijk",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Economische Zaken, Landbouw, Natuur en Voedselkwaliteit, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Volksgezondheid, Welzijn en Sport, Contactgroep Verenigd Koninkrijk",
       "gender": "F",
 	    "pica": "politici/Cynthia Ortega-Martijn.jpg"
     }
@@ -1085,7 +1084,7 @@
     "fields":{
       "name":"Esther Ouwehand",
       "party": 10,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Economische Zaken,Financiën,Justitie,Landbouw, Natuur en Voedselkwaliteit,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Economische Zaken, Financiën, Justitie, Landbouw, Natuur en Voedselkwaliteit, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Esther Ouwehand.jpg"
     }
@@ -1095,7 +1094,7 @@
     "fields":{
       "name":"Alexander Pechtold",
       "party": 5,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Commissie voor de Inlichtingen- en Veiligheidsdiensten,Kunstcommissie,Tijdelijke commissie subsidiariteitstoets",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Commissie voor de Inlichtingen- en Veiligheidsdiensten, Kunstcommissie, Tijdelijke commissie subsidiariteitstoets",
       "gender": "M",
 	    "pica": "politici/Alexander Pechtold.jpg"
     }
@@ -1105,7 +1104,7 @@
     "fields":{
       "name":"Mariko Peters",
       "party": 7,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Verkeer en Waterstaat",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Verkeer en Waterstaat",
       "gender": "F",
 	    "pica": "politici/Mariko Peters.jpg"
     }
@@ -1115,7 +1114,7 @@
     "fields":{
       "name":"Ronald Plasterk",
       "party": 2,
-      "desc": "Actief in: Financiën,Rijksuitgaven,Verkeer en Waterstaat",
+      "desc": "Actief in: Financiën, Rijksuitgaven, Verkeer en Waterstaat",
       "gender": "M",
 	    "pica": "politici/Ronald Plasterk.jpg"
     }
@@ -1125,7 +1124,7 @@
     "fields":{
       "name":"Ronald van Raak",
       "party": 4,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Rijksuitgaven,Delegatie naar de Raadgevende Interparlementaire Beneluxraad,Interparlementaire commissie inzake de Nederlandse Taalunie,Commissie voor de emolumenten,Presidium,Commissie voor de Verzoekschriften en de Burgerinitiatieven,Commissie voor de Werkwijze",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Rijksuitgaven, Delegatie naar de Raadgevende Interparlementaire Beneluxraad, Interparlementaire commissie inzake de Nederlandse Taalunie, Commissie voor de emolumenten, Presidium, Commissie voor de Verzoekschriften en de Burgerinitiatieven, Commissie voor de Werkwijze",
       "gender": "M",
 	    "pica": "politici/Ronald van Raak.jpg"
     }
@@ -1135,7 +1134,7 @@
     "fields":{
       "name":"Jeroen Recourt",
       "party": 2,
-      "desc": "Actief in: Buitenlandse Zaken,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken",
+      "desc": "Actief in: Buitenlandse Zaken, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken",
       "gender": "M",
 	    "pica": "politici/Jeroen Recourt.jpg"
     }
@@ -1145,7 +1144,7 @@
     "fields":{
       "name":"Emile Roemer",
       "party": 4,
-      "desc": "Actief in: Delegatie naar de Raadgevende Interparlementaire Beneluxraad,Commissie voor de Inlichtingen- en Veiligheidsdiensten",
+      "desc": "Actief in: Delegatie naar de Raadgevende Interparlementaire Beneluxraad, Commissie voor de Inlichtingen- en Veiligheidsdiensten",
       "gender": "M",
 	    "pica": "politici/Emile Roemer.jpg"
     }
@@ -1155,7 +1154,7 @@
     "fields":{
       "name":"Raymond de Roon",
       "party": 1,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Europese Zaken,Justitie,Tijdelijke commissie subsidiariteitstoets",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Europese Zaken, Justitie, Tijdelijke commissie subsidiariteitstoets",
       "gender": "M",
 	    "pica": "politici/Raymond de Roon.jpg"
     }
@@ -1165,7 +1164,7 @@
     "fields":{
       "name":"André Rouvoet",
       "party": 9,
-      "desc": "Actief in: Financiën,Justitie,Rijksuitgaven,Commissie voor de Inlichtingen- en Veiligheidsdiensten",
+      "desc": "Actief in: Financiën, Justitie, Rijksuitgaven, Commissie voor de Inlichtingen- en Veiligheidsdiensten",
       "gender": "M",
 	    "pica": "politici/André Rouvoet.jpg"
     }
@@ -1175,7 +1174,7 @@
     "fields":{
       "name":"Sander de Rouwe",
       "party": 6,
-      "desc": "Actief in: Economische Zaken,Nederlands-Antilliaanse en Arubaanse Zaken,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat",
+      "desc": "Actief in: Economische Zaken, Nederlands-Antilliaanse en Arubaanse Zaken, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat",
       "gender": "M",
 	    "pica": "politici/Sander de Rouwe.jpg"
     }
@@ -1185,7 +1184,7 @@
     "fields":{
       "name":"Diederik Samsom",
       "party": 2,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Economische Zaken,Landbouw, Natuur en Voedselkwaliteit,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Economische Zaken, Landbouw, Natuur en Voedselkwaliteit, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat",
       "gender": "M",
 	    "pica": "politici/Diederik Samsom.jpg"
     }
@@ -1195,7 +1194,7 @@
     "fields":{
       "name":"Jolande Sap",
       "party": 7,
-      "desc": "Actief in: Financiën,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin",
+      "desc": "Actief in: Financiën, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Jolande Sap.jpg"
     }
@@ -1205,7 +1204,7 @@
     "fields":{
       "name":"Afke Schaart",
       "party": 3,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Economische Zaken,Financiën,Nederlands-Antilliaanse en Arubaanse Zaken,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Economische Zaken, Financiën, Nederlands-Antilliaanse en Arubaanse Zaken, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer",
       "gender": "F",
 	    "pica": "politici/Afke Schaart.jpg"
     }
@@ -1215,7 +1214,7 @@
     "fields":{
       "name":"Gerard Schouw",
       "party": 5,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Europese Zaken,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Commissie voor de Werkwijze",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Europese Zaken, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Commissie voor de Werkwijze",
       "gender": "M",
 	    "pica": "politici/Gerard Schouw.jpg"
     }
@@ -1225,7 +1224,7 @@
     "fields":{
       "name":"James Sharpe",
       "party": 1,
-      "desc": "Actief in: Europese Zaken,Economische Zaken,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Europese Zaken, Economische Zaken, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport",
       "gender": "M",
 	    "pica": "politici/James Sharpe.jpg"
     }
@@ -1235,7 +1234,7 @@
     "fields":{
       "name":"Arie Slob",
       "party": 9,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Justitie,Onderwijs, Cultuur en Wetenschap,Verkeer en Waterstaat",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Justitie, Onderwijs, Cultuur en Wetenschap, Verkeer en Waterstaat",
       "gender": "M",
 	    "pica": "politici/Arie Slob.jpg"
     }
@@ -1245,7 +1244,7 @@
     "fields":{
       "name":"Pauline Smeets",
       "party": 2,
-      "desc": "Actief in: Defensie,Economische Zaken,Financiën,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Delegatie naar de Raadgevende Interparlementaire Beneluxraad,Contactgroep Duitsland",
+      "desc": "Actief in: Defensie, Economische Zaken, Financiën, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Delegatie naar de Raadgevende Interparlementaire Beneluxraad, Contactgroep Duitsland",
       "gender": "F",
 	    "pica": "politici/Pauline Smeets.jpg"
     }
@@ -1255,7 +1254,7 @@
     "fields":{
       "name":"Margreeth Smilde",
       "party": 6,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Financiën,Justitie,Landbouw, Natuur en Voedselkwaliteit,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport,Commissie voor het Onderzoek van de Geloofsbrieven,Commissie voor de Werkwijze",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Financiën, Justitie, Landbouw, Natuur en Voedselkwaliteit, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport, Commissie voor het Onderzoek van de Geloofsbrieven, Commissie voor de Werkwijze",
       "gender": "F",
 	    "pica": "politici/Margreeth Smilde.jpg"
     }
@@ -1265,7 +1264,7 @@
     "fields":{
       "name":"Manja Smits",
       "party": 4,
-      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Jeugd en Gezin",
+      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Manja Smits.jpg"
     }
@@ -1275,7 +1274,7 @@
     "fields":{
       "name":"Janneke Snijder-Hazelhoff",
       "party": 3,
-      "desc": "Actief in: Europese Zaken,Landbouw, Natuur en Voedselkwaliteit,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Europese Zaken, Landbouw, Natuur en Voedselkwaliteit, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport",
       "gender": "F",
 	    "pica": "politici/Janneke Snijder-Hazelhoff.jpg"
     }
@@ -1285,7 +1284,7 @@
     "fields":{
       "name":"Hans Spekman",
       "party": 2,
-      "desc": "Actief in: Financiën,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Sociale Zaken en Werkgelegenheid",
+      "desc": "Actief in: Financiën, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Sociale Zaken en Werkgelegenheid",
       "gender": "M",
 	    "pica": "politici/Hans Spekman.jpg"
     }
@@ -1295,7 +1294,7 @@
     "fields":{
       "name":"Kees van der Staaij",
       "party": 8,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Economische Zaken,Financiën,Justitie,Landbouw, Natuur en Voedselkwaliteit,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Commissie voor de Inlichtingen- en Veiligheidsdiensten,Commissie voor de Werkwijze",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Economische Zaken, Financiën, Justitie, Landbouw, Natuur en Voedselkwaliteit, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Commissie voor de Inlichtingen- en Veiligheidsdiensten, Commissie voor de Werkwijze",
       "gender": "M",
 	    "pica": "politici/Kees van der Staaij.jpg"
     }
@@ -1305,7 +1304,7 @@
     "fields":{
       "name":"Mirjam Sterk",
       "party": 6,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Binnenlandse Zaken en Koninkrijksrelaties,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Contactgroep Duitsland",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Binnenlandse Zaken en Koninkrijksrelaties, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Contactgroep Duitsland",
       "gender": "F",
 	    "pica": "politici/Mirjam Sterk.jpg"
     }
@@ -1315,7 +1314,7 @@
     "fields":{
       "name":"Ard van der Steur",
       "party": 3,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Economische Zaken,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Economische Zaken, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken",
       "gender": "M",
 	    "pica": "politici/Ard van der Steur.jpg"
     }
@@ -1325,7 +1324,7 @@
     "fields":{
       "name":"Karin Straus",
       "party": 3,
-      "desc": "Actief in: Vergaderingen,Plenaire vergaderingen,Commissievergaderingen,Live debatten",
+      "desc": "Actief in: Vergaderingen, Plenaire vergaderingen, Commissievergaderingen, Live debatten",
       "gender": "F",
 	    "pica": "politici/Karin Straus.jpg"
     }
@@ -1335,7 +1334,7 @@
     "fields":{
       "name":"Joost Taverne",
       "party": 3,
-      "desc": "Actief in: Vergaderingen,Plenaire vergaderingen,Commissievergaderingen,Live debatten",
+      "desc": "Actief in: Vergaderingen, Plenaire vergaderingen, Commissievergaderingen, Live debatten",
       "gender": "M",
 	    "pica": "politici/Joost Taverne.jpg"
     }
@@ -1345,7 +1344,7 @@
     "fields":{
       "name":"Marianne Thieme",
       "party": 10,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Europese Zaken,Economische Zaken,Financiën,Justitie,Landbouw, Natuur en Voedselkwaliteit,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport,Commissie voor de Inlichtingen- en Veiligheidsdiensten",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Europese Zaken, Economische Zaken, Financiën, Justitie, Landbouw, Natuur en Voedselkwaliteit, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport, Commissie voor de Inlichtingen- en Veiligheidsdiensten",
       "gender": "F",
 	    "pica": "politici/Marianne Thieme.jpg"
     }
@@ -1355,7 +1354,7 @@
     "fields":{
       "name":"Frans Timmermans",
       "party": 2,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Europese Zaken,Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Contactgroep Duitsland",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Europese Zaken, Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Contactgroep Duitsland",
       "gender": "M",
 	    "pica": "politici/Frans Timmermans.jpg"
     }
@@ -1365,7 +1364,7 @@
     "fields":{
       "name":"Liesbeth van Tongeren",
       "party": 7,
-      "desc": "Actief in: Europese Zaken,Economische Zaken,Landbouw, Natuur en Voedselkwaliteit,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat",
+      "desc": "Actief in: Europese Zaken, Economische Zaken, Landbouw, Natuur en Voedselkwaliteit, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat",
       "gender": "F",
 	    "pica": "politici/Liesbeth van Tongeren.jpg"
     }
@@ -1375,7 +1374,7 @@
     "fields":{
       "name":"Madeleine van Toorenburg",
       "party": 6,
-      "desc": "Actief in: Justitie,Nederlands-Antilliaanse en Arubaanse Zaken,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Jeugd en Gezin",
+      "desc": "Actief in: Justitie, Nederlands-Antilliaanse en Arubaanse Zaken, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Madeleine van Toorenburg.jpg"
     }
@@ -1385,7 +1384,7 @@
     "fields":{
       "name":"Sabine Uitslag",
       "party": 6,
-      "desc": "Actief in: Landbouw, Natuur en Voedselkwaliteit,Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Contactgroep Duitsland",
+      "desc": "Actief in: Landbouw, Natuur en Voedselkwaliteit, Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Contactgroep Duitsland",
       "gender": "F",
 	    "pica": "politici/Sabine Uitslag.jpg"
     }
@@ -1395,7 +1394,7 @@
     "fields":{
       "name":"Paul Ulenbelt",
       "party": 4,
-      "desc": "Actief in: Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport",
       "gender": "M",
 	    "pica": "politici/Paul Ulenbelt.jpg"
     }
@@ -1405,7 +1404,7 @@
     "fields":{
       "name":"Eelke van der Veen",
       "party": 2,
-      "desc": "Actief in: Economische Zaken,Financiën,Rijksuitgaven,Volksgezondheid, Welzijn en Sport",
+      "desc": "Actief in: Economische Zaken, Financiën, Rijksuitgaven, Volksgezondheid, Welzijn en Sport",
       "gender": "M",
 	    "pica": "politici/Eelke van der Veen.jpg"
     }
@@ -1415,7 +1414,7 @@
     "fields":{
       "name":"Stientje van Veldhoven",
       "party": 5,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Defensie,Europese Zaken,Economische Zaken,Financiën,Landbouw, Natuur en Voedselkwaliteit,Rijksuitgaven,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Defensie, Europese Zaken, Economische Zaken, Financiën, Landbouw, Natuur en Voedselkwaliteit, Rijksuitgaven, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat",
       "gender": "F",
 	    "pica": "politici/Stientje van Veldhoven.jpg"
     }
@@ -1425,7 +1424,7 @@
     "fields":{
       "name":"Tamara Venrooy-van Ark",
       "party": 3,
-      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap,Sociale Zaken en Werkgelegenheid,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin",
+      "desc": "Actief in: Onderwijs, Cultuur en Wetenschap, Sociale Zaken en Werkgelegenheid, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Tamara Venrooy-van Ark.jpg"
     }
@@ -1435,7 +1434,7 @@
     "fields":{
       "name":"Gerdi Verbeet",
       "party": 2,
-      "desc": "Actief in: Vergaderingen,Plenaire vergaderingen,Commissievergaderingen,Live debatten",
+      "desc": "Actief in: Vergaderingen, Plenaire vergaderingen, Commissievergaderingen, Live debatten",
       "gender": "F",
 	    "pica": "politici/Gerdi Verbeet.jpg"
     }
@@ -1445,7 +1444,7 @@
     "fields":{
       "name":"Gerda Verburg",
       "party": 6,
-      "desc": "Actief in: Vergaderingen,Plenaire vergaderingen,Commissievergaderingen,Live debatten",
+      "desc": "Actief in: Vergaderingen, Plenaire vergaderingen, Commissievergaderingen, Live debatten",
       "gender": "F",
 	    "pica": "politici/Gerda Verburg.jpg"
     }
@@ -1455,7 +1454,7 @@
     "fields":{
       "name":"Kees Verhoeven",
       "party": 5,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Economische Zaken,Financiën,Landbouw, Natuur en Voedselkwaliteit,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Economische Zaken, Financiën, Landbouw, Natuur en Voedselkwaliteit, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat",
       "gender": "M",
 	    "pica": "politici/Kees Verhoeven.jpg"
     }
@@ -1465,7 +1464,7 @@
     "fields":{
       "name":"Roos Vermeij",
       "party": 2,
-      "desc": "Actief in: Buitenlandse Zaken,Binnenlandse Zaken en Koninkrijksrelaties,Financiën,Rijksuitgaven,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Verkeer en Waterstaat,Volksgezondheid, Welzijn en Sport,Tijdelijke commissie onderzoek financieel stelsel",
+      "desc": "Actief in: Buitenlandse Zaken, Binnenlandse Zaken en Koninkrijksrelaties, Financiën, Rijksuitgaven, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Verkeer en Waterstaat, Volksgezondheid, Welzijn en Sport, Tijdelijke commissie onderzoek financieel stelsel",
       "gender": "F",
 	    "pica": "politici/Roos Vermeij.jpg"
     }
@@ -1475,7 +1474,7 @@
     "fields":{
       "name":"Roland van Vliet",
       "party": 1,
-      "desc": "Actief in: Economische Zaken,Financiën,Landbouw, Natuur en Voedselkwaliteit,Rijksuitgaven,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer",
+      "desc": "Actief in: Economische Zaken, Financiën, Landbouw, Natuur en Voedselkwaliteit, Rijksuitgaven, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer",
       "gender": "M",
 	    "pica": "politici/Roland van Vliet.jpg"
     }
@@ -1485,7 +1484,7 @@
     "fields":{
       "name":"Joël Voordewind",
       "party": 9,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Buitenlandse Zaken,Defensie,Europese Zaken,Nederlands-Antilliaanse en Arubaanse Zaken,Jeugd en Gezin,Contactgroep Frankrijk",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Buitenlandse Zaken, Defensie, Europese Zaken, Nederlands-Antilliaanse en Arubaanse Zaken, Jeugd en Gezin, Contactgroep Frankrijk",
       "gender": "M",
 	    "pica": "politici/Joël Voordewind.jpg"
     }
@@ -1495,7 +1494,7 @@
     "fields":{
       "name":"Linda Voortman",
       "party": 7,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Binnenlandse Zaken en Koninkrijksrelaties,Justitie,Sociale Zaken en Werkgelegenheid,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Binnenlandse Zaken en Koninkrijksrelaties, Justitie, Sociale Zaken en Werkgelegenheid, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin",
       "gender": "F",
 	    "pica": "politici/Linda Voortman.jpg"
     }
@@ -1505,7 +1504,7 @@
     "fields":{
       "name":"Esmé Wiegman-van Meppelen Scheppink",
       "party": 9,
-      "desc": "Actief in: Buitenlandse Zaken,Defensie,Europese Zaken,Economische Zaken,Landbouw, Natuur en Voedselkwaliteit,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Contactgroep Duitsland,Presidium,Tijdelijke commissie subsidiariteitstoets",
+      "desc": "Actief in: Buitenlandse Zaken, Defensie, Europese Zaken, Economische Zaken, Landbouw, Natuur en Voedselkwaliteit, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Contactgroep Duitsland, Presidium, Tijdelijke commissie subsidiariteitstoets",
       "gender": "F",
 	    "pica": "politici/Esmé Wiegman-van Meppelen Scheppink.jpg"
     }
@@ -1515,7 +1514,7 @@
     "fields":{
       "name":"Geert Wilders",
       "party": 1,
-      "desc": "Actief in: Buitenlandse Zaken,Delegatie naar de Navo Assemblee,Commissie voor de Inlichtingen- en Veiligheidsdiensten",
+      "desc": "Actief in: Buitenlandse Zaken, Delegatie naar de Navo Assemblee, Commissie voor de Inlichtingen- en Veiligheidsdiensten",
       "gender": "M",
 	    "pica": "politici/Geert Wilders.jpg"
     }
@@ -1525,7 +1524,7 @@
     "fields":{
       "name":"Jan de Wit",
       "party": 4,
-      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties,Justitie",
+      "desc": "Actief in: Binnenlandse Zaken en Koninkrijksrelaties, Justitie",
       "gender": "M",
 	    "pica": "politici/Jan de Wit.jpg"
     }
@@ -1535,7 +1534,7 @@
     "fields":{
       "name":"Agnes Wolbert",
       "party": 2,
-      "desc": "Actief in: Wonen, Wijken en Integratie,Binnenlandse Zaken en Koninkrijksrelaties,Defensie,Nederlands-Antilliaanse en Arubaanse Zaken,Volksgezondheid, Welzijn en Sport,Jeugd en Gezin,Contactgroep Duitsland",
+      "desc": "Actief in: Wonen, Wijken en Integratie, Binnenlandse Zaken en Koninkrijksrelaties, Defensie, Nederlands-Antilliaanse en Arubaanse Zaken, Volksgezondheid, Welzijn en Sport, Jeugd en Gezin, Contactgroep Duitsland",
       "gender": "F",
 	    "pica": "politici/Agnes Wolbert.jpg"
     }
@@ -1545,7 +1544,7 @@
     "fields":{
       "name":"Erik Ziengs",
       "party": 3,
-      "desc": "Actief in: Economische Zaken,Landbouw, Natuur en Voedselkwaliteit,Onderwijs, Cultuur en Wetenschap,Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer",
+      "desc": "Actief in: Economische Zaken, Landbouw, Natuur en Voedselkwaliteit, Onderwijs, Cultuur en Wetenschap, Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer",
       "gender": "M",
 	    "pica": "politici/Erik Ziengs.jpg"
     }
