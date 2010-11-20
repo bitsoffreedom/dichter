@@ -39,10 +39,10 @@
             	
             	<div id="hero">
                 	<h2>{{ campaign.title }}</h2>
-                    <img class="aside" src="{{ campaign.pica.url }}" align=" " />
-                    <span class="bijschrift">"{{ campaign.subtitle }}"</span>
+                    <img class="aside" src="{{ campaign.pica.url }}" />
+                    <span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
 			<p class="intro">{{ campaign.intro }}</p>
-                	<div class="extraInfo">{{ campaign.desc|linebreaks }}</div>
+                	<div class="extraInfo">{{ campaign.desc|safe }}</div>
                     <div id="meer">
                     	<span><a href="#">Meer lezen</a></span>
                     </div>
@@ -117,16 +117,16 @@
                         <div class="stepContent">
                             <form action="" enctype="multipart/form-data" method="post">
                                 <span class="onderwerp unit">
-                                    <label>Onderwerp</label>
-                                    <input type="text" />
+                                    <label for="description">Onderwerp</label>
+                                    <input name="description"  id="description" type="text" />
                                 </span>
                                 <span class="bericht unit">
                                     <label>Bericht</label>
                                     <textarea>Sed enim erat, accumsan quis auctor at, ultrices faucibus quam. Vestibulum congue ligula ac mi auctor placerat. Curabitur nisi quam, gravida at vestibulum ut, convallis a dolor. Nulla facilisi. Duis turpis ligula, laoreet nec eleifend id, suscipit eget mi. Pellentesque eget neque nisl, eu viverra diam. Cras tincidunt ornare nibh at laoreet. Proin arcu lacus, varius nec cursus vel, gravida eget arcu. Duis non elit sit amet tellus pellentesque egestas. Sed vulputate massa in nisl accumsan porta. Quisque non dolor at mi laoreet bibendum et tincidunt orci. Aliquam erat volutpat. Nullam eleifend purus nec magna consequat aliquet. Vestibulum in velit libero, at commodo metus.</textarea>
                                 </span>
                                 <span class="naam unit">
-                                    <label>Uw Naam</label>
-                                    <input type="text" />
+                                    <label for="name">Uw Naam</label>
+                                    <input type="text" id="name" name="name" />
                                 </span>
                                 <span class="versturen">
                                 	<input type="submit" value="Versturen" />
@@ -139,10 +139,10 @@
 										method="GET"
 										name="tweetform">
 									<span class="bericht unit">
-										<label>Bericht</label>
-										<textarea name="status" rows="3"
-											onKeyDown="field_size(this.form.status, this.form.sizedisplay, 140)"
-											onKeyUp="field_size(this.form.status,this.form.sizedisplay, 140)"></textarea>
+										<label id="message">Bericht</label>
+										<textarea id="message" name="status" rows="3"
+											onKeyDown="field_size(this, this.form.sizedisplay, 140)"
+											onKeyUp="field_size(this,this.form.sizedisplay, 140)"></textarea>
 										<input readonly type="text" name="sizedisplay" value="140" size="3"/>
 										karakters over.
 									</span>
