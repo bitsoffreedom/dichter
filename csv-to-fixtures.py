@@ -29,6 +29,7 @@ print ','.join(partiesoutput)
   
 c = csv.reader(open('kamerleden.csv'), delimiter=';')
 politicusoutput = []
+contactsoutput = []
 i=0
 c.next()
 for politicus in c:
@@ -55,5 +56,21 @@ for politicus in c:
           ', '.join(politicus[12:31]).rstrip(', '),
           politicus[8]  == 'Man' and 'M' or 'F',
           dstimage))
+  if politicus[9] is not '':
+    contactsoutput.append("""
+    {
+      "model": "denhaag.PoliticianContactInfo",
+      "pk": %d,
+      "fields":{
+        "contact_method":1,
+        "address": "%s",
+        "politician": %d,
+      }
+    }""" % (i,
+            politicus[9].lower(),
+            i))
   
 print ','.join(politicusoutput)
+print ','.join(contactsoutput)
+
+
