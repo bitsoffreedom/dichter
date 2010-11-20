@@ -4,17 +4,20 @@ from django.conf import settings
 from dichter.denhaag.models import *
 from django.http import HttpResponse
 
+# non django imports
+import datetime
+
 def index(request, campaign_slug=None):
+  today = datetime.date.today().isoformat()
   try:
     if not campaign_slug:
-      c = Campaign.objects.all().order_by('-start_date')[:1]
+      c = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).order_by('-start_date')[:1]
     else:
       c = Campaign.objects.get(title_slug=campaign_slug)
-  except Campaign.DoesNotExist:
-    
+  except Campaign.DoesNotExist:    
     raise Http404
 
-  campaign_list = Campaign.objects.all().order_by('-start_date')[:5]
+  campaign_list = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).order_by('-start_date')
   politici_list = Politician.objects.all()
   for politicus in politici_list:
     politicus.contact_methods = PoliticianContactInfo.objects.filter(politician=politicus)
