@@ -8,16 +8,46 @@
 			"subtitle": "<i>\"Niet verbergen maar verwijderen\"</i>",
 			"hashtag": "#stopdezwartelijst",
 			"start_date": "2010-10-24",
-			"end_date": "2011-10-24",
+			"end_date": "2011-12-24",
 			"pica": "photos/2010/10/24/henk.jpg",
 			"intro": "Gefaciliteerd door het Ministerie van Justitie werken de grootste internetproviders samen aan het blokkeren van een zwarte lijst met verboden websites met afbeeldingen van seksueel kindermisbruik. Het project is met geheimzinnigheid omgeven, het doel en de effectiviteit is niet duidelijk en nog belangrijker het werkt averechts. Want de afbeeldingen van seksueel kindermisbruik blijven online staan, de criminelen worden niet opgespoord en de geldstromen worden niet stilgelegd. <br><br> Dit moet anders. Nederland moet afbeeldingen van seksueel misbruik verwijderen, niet verbergen. De Tweede Kamer moet niet accepteren dat haar bevoegdheid op deze manier wordt omzeild, en dat een excuus wordt gegeven aan de politie om deze afschuwelijke afbeeldingen op het internet te laten staan."
 		}
 	},
 	{
+		"model": "denhaag.campaign",
+		"pk": 2,
+		"fields": {
+			"title": "Stop de censuurknop",
+			"title_slug": "Stop_de_censuurknop",
+			"subtitle": "<i>\"Niet verbergen maar verwijderen\"</i>",
+			"hashtag": "#stopdezwartelijst",
+			"start_date": "2010-10-24",
+			"end_date": "2011-12-24",
+			"pica": "photos/2010/10/24/henk.jpg",
+			"intro": "Op dit moment kan het OM websites op zwart zetten, maar slechts na toetsing door de rechter. Afgelopen week lanceerde de demissionaire regering echter een nieuw concept-wetsvoorstel. De regering wil die voorafgaande rechterlijke toetsing schrappen. De overheid houdt hierover nu een consultatie, om te horen wat belanghebbenden hiervan vinden. Laat je stem horen, en stop de censuurknop.."
+		}
+	},
+	{
+		"model": "denhaag.campaign",
+		"pk": 3,
+		"fields": {
+			"title": "Stop het downloadverbod",
+			"title_slug": "Stop_het_downloadverbod",
+			"subtitle": "<i>\"Niet verbergen maar verwijderen\"</i>",
+			"hashtag": "#stopdezwartelijst",
+			"start_date": "2010-10-24",
+			"end_date": "2011-12-24",
+			"pica": "photos/2010/10/24/henk.jpg",
+			"intro": "Op dit moment is het downloaden van muziek en films uit illegale bron zonder toestemming van de rechthebbende nog toegestaan. Het kabinet heeft echter onlangs aangegeven dat zij een downloadverbod wil introduceren. Volgens Bits of Freedom is dat onwenselijk. Door de introductie van een downloadverbod zou de overheid miljoenen Nederlanders criminaliseren, terwijl dit verbod niet handhaafbaar is zonder internetgebruikers te bespioneren. Ook zal het creativiteit niet stimuleren. In plaats van het introduceren van dit soort repressieve maatregelen moet de contentindustrie naar de mening van Bits of Freedom nieuwe bedrijfsmodellen ontwikkelen. Laat je mening horen aan de politiek!"
+		}
+	},
+	
+	{
 	  "model": "denhaag.ContactMethod",
 	  "pk":1,
 	  "fields":{
-	    "name":"email"
+	    "name":"email",
+	    "enabled":"1"
 	  }
 	},
 	    {

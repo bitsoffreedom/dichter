@@ -44,6 +44,7 @@ class PoliticianCampaign(models.Model):
 
 class ContactMethod(models.Model):
   name = models.CharField(max_length=25)
+  enabled = models.BooleanField(default=True)
   def __unicode__(self):
     return self.name
 
