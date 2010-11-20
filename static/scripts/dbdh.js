@@ -33,7 +33,7 @@ $(document).ready(function(){
 	}
 	$('#targets .infoToggle a').click(function(e){
 		e.preventDefault();
-		$(this).closest('.infoToggle').prev().slideToggle();
+		$(this).closest('.infoToggle').prev().slideToggle(400,function () { $(this).trigger("scrollTo"); });
 		$(this).closest('.infoToggle').toggleClass('hide');
 		$(this).text($(this).text() == "Meer informatie" ? "Informatie verbergen" : "Meer informatie");
 	});
