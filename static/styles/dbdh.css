@@ -344,18 +344,20 @@ ul {
 				#targets .politicus {
 					border: 1px solid #6c6c6c;
 					float: left;
+					max-width: 96px;
 				}
 				
 				#targets .partij {
 					border: 1px solid #6c6c6c;
 					float: right;
+					max-width: 96px;
 				}
 				
 				#targets li .info {
 					overflow: auto;
-					border: 1px solid #6c6c6c;
+					border: none;
 					border-bottom: none;
-					padding: 3px 4px;				
+					padding: 0px;				
 				}
 
 				#targets li .extraInfo {
