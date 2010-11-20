@@ -30,9 +30,9 @@
             <div id="campagnes">
 				<div id="campagnes-list">
 					<ul>
-					{% for campaign in campaign_list %}
+					  {% for campaign in campaign_list %}
         					<li><a href="/campaign/{{ campaign.title_slug|slugify }}/" title="{{ campaign.title_slug|slugify }}">{{ campaign.title }}</a></li>
-    					{% endfor %}
+    			  {% endfor %}
 					</ul>
 				</div>
             </div> 
