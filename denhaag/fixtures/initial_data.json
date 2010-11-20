@@ -70,7 +70,7 @@
   },
   {
     "model": "denhaag.Static",
-    "pk": 1,
+    "pk": 2,
     "fields":{
       "slug":"over",
       "title":"Over deze site",
@@ -79,7 +79,7 @@
   },
   {
     "model": "denhaag.Static",
-    "pk": 1,
+    "pk": 3,
     "fields":{
       "slug":"privacy",
       "title":"Privacyverklaring",
