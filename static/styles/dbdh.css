@@ -165,7 +165,7 @@ ul {
 	
 		#hero img.aside {
 			float: right;
-			margin-bottom: 19px;
+			margin: 0 0 19px 19px;
 		}
 		
 		#hero p.intro {
