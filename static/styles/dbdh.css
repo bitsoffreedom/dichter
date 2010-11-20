@@ -234,6 +234,7 @@ ul {
 			line-height: 12px;
 			margin: 0px;
 			padding: 4px 7px;
+			min-height: 36px;
 		}
 	
 		#step1 {
@@ -634,6 +635,9 @@ ul {
 				text-transform: uppercase;
 				color: #fff;
 				margin: 0 0 13px 0;
+			}:first-child+html #reacties { /* ie7 teh suck */
+				float: left;
+				margin-left: -450px;
 			}
 			
 				#reacties a { color: #fff; }
