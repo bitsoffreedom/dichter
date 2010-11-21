@@ -62,6 +62,7 @@
                       <h4>{{ politician.name }}</h4>
                       <img class="politicus" src="{{ politician.pica.url }}" alt="{{ politician.name }}" />
                       <img class="partij" src="{{ politician.party.pica.url }}" alt="{{ politician.party.name }}" />
+                      {% if politician.contact_methods|length > 0 %}
                       <ul class="contactVia">
                         {% for contactmethod in politician.contact_methods %}
                           <li class="via{{ contactmethod.name }}">
@@ -69,6 +70,7 @@
                           </li>
                         {% endfor %}
                       </ul>
+                      {% endif %}
                     </div>
                     <div class="extraInfo">
                       <p>{{ politician.desc|linebreaks }}</p>
