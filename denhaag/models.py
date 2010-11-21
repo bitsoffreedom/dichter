@@ -39,8 +39,8 @@ class Politician(models.Model):
 class PoliticianCampaign(models.Model):
 	campaign = models.ForeignKey(Campaign)
 	politician = models.ForeignKey(Politician)
-	desc = models.TextField()
-	weight = models.IntegerField()
+	desc = models.TextField(blank=True)
+	weight = models.IntegerField(blank=True, null=True)
 
 class ContactMethod(models.Model):
   name = models.CharField(max_length=25)
