@@ -33,7 +33,7 @@ def index(request, campaign_slug=None):
 def politician_info(request, politician=None):
   if not politician:
     raise Http404
-  politician = Politician.objects.get(name=politician.replace('_', ' '))
+  politician = Politician.objects.get(name=unsluggify(politician))
   if not politician:
     raise Http404
   return render_to_response(

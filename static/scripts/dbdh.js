@@ -52,7 +52,7 @@ function field_size(field,size_field,limit) {
 
 
 
-$("#vectors li").click(){
+$("#vectors li").click(function(){
   // get the id for the element we clicked on
   if($(this).hasClass('disabled')){
     return;
@@ -65,40 +65,7 @@ $("#vectors li").click(){
   $("#vector .active").removeClass('active');
   // make the clicked vector active
   $(this).addClass('active');
-}
-
-/* Handle step 2 clicks */
-$("#viaMail").click(function(e) {
-	e.preventDefault();
-	$('#tweetform').hide(); 
-	$('#mailform').show(); 
-	return false;
-});
-$("#viaTwitter").addClass("active");
-$("#viaTwitter").click(function(e) {
-	e.preventDefault();
-	$('#tweetform').show(); 
-	$('#mailform').hide(); 
-	return false;
-});
-$("#viaPhone").click(function() {
-	$('#tweetform').hide(); 
-	$('#mailform').hide(); 
-	return false;
-});
-$("#viaHyves").click(function() {
-	$('#tweetform').hide(); 
-	$('#mailform').hide(); 
-	return false;
-});
-$("#viaFacebook").click(function() {
-	$('#tweetform').hide(); 
-	$('#mailform').hide(); 
-	return false;
-});
-
-
-
+})
 
 
 

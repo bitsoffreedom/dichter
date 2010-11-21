@@ -65,8 +65,8 @@
                       {% if politician.contact_methods|length > 0 %}
                       <ul class="contactVia">
                         {% for contactmethod in politician.contact_methods %}
-                          <li class="via{{ contactmethod.name }}">
-                              <a href="#">via {{ contactmethod.name }}</a>
+                          <li class="via{{ contactmethod.contact_method.name }}">
+                              <a href="#">via {{ contactmethod.contact_method.name }}</a>
                           </li>
                         {% endfor %}
                       </ul>

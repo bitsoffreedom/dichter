@@ -19,7 +19,7 @@ class Party(models.Model):
   pica = models.ImageField(upload_to='photos/%Y/%m/%d')
   def __unicode__(self):
     return self.name
-    
+
 class Politician(models.Model):
   GENDER_CHOICES = (
         	('M', 'Male'),
@@ -31,8 +31,8 @@ class Politician(models.Model):
   gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
   pica = models.ImageField(upload_to='photos/%Y/%m/%d')
   def name_slug(self):
-    return self.name.replace(' ','_')
-  
+    return sluggify(self.name)
+
   def __unicode__(self):
     return self.name
 
@@ -78,4 +78,10 @@ class Static(models.Model):
 	def __unicode__(self):
 		return self.slug
 
-	
+
+def sluggify(string):
+  return string.replace(' ', '_')
+
+
+def unsluggify(string):
+  return string.replace('_', ' ')
