@@ -52,6 +52,21 @@ function field_size(field,size_field,limit) {
 
 
 
+$("#vectors li").click(){
+  // get the id for the element we clicked on
+  if($(this).hasClass('disabled')){
+    return;
+  }
+  vector = $(this).id.substr(3);
+  // hide all form parents (by lack of classes)
+  $('#step3 form').each(function(){ $(this).parentNode.hide()});
+  $('#'+vector+'form').show();
+  // unset the current active vector
+  $("#vector .active").removeClass('active');
+  // make the clicked vector active
+  $(this).addClass('active');
+}
+
 /* Handle step 2 clicks */
 $("#viaMail").click(function(e) {
 	e.preventDefault();
