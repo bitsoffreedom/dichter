@@ -21,10 +21,8 @@ def index(request, campaign_slug=None):
 
   campaign_list = Campaign.objects.filter(
       start_date__lte=today, end_date__gte=today).order_by('-start_date')
-  politici_list = Politician.objects.all()
-  for politician in politici_list:
-    politician.contact_methods = PoliticianContactInfo.objects.filter(politician=politician)
-
+  politici_list = PoliticianCampaign.objects.filter(campaign=campaign)
+  
   return render_to_response(
       'index.html',
       {'campaign_list': campaign_list, 'politici_list': politici_list,
