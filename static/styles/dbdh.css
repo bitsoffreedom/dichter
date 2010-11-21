@@ -762,10 +762,11 @@ ul {
 	#followTwitter a { background-position: -586px -50px; }
 	#followRss a { background-position: -664px -50px; }
 	#followFacebook a { background-position: -742px -50px; }
-	
+	/*
 	p:empty {
 		display: none;
 	}
+	*/
 	
 	
 /* new clearfix */
