@@ -13,12 +13,11 @@ def index(request, campaign_slug=None):
     campaign = Campaign.objects.filter(
         start_date__lte=today, end_date__gte=today)
     if not campaign_slug:
-      campaign = campaign.order_by('-start_date')[:1]
+      campaign = campaign.order_by('-start_date')[0]
     else:
       campaign = campaign.get(title_slug=campaign_slug)
   except Campaign.DoesNotExist:
     raise Http404
-
   campaign_list = Campaign.objects.filter(
       start_date__lte=today, end_date__gte=today).order_by('-start_date')
   politicians_list = PoliticianCampaign.objects.filter(campaign=campaign)
