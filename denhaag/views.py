@@ -10,8 +10,8 @@ import datetime
 def index(request, campaign_slug=None):
   today = datetime.date.today().isoformat()
   try:
-    campaign = Campaign.objects.filter(start_date__lte=today,
-                                       end_date__gte=today)
+    campaign = Campaign.objects.filter(
+        start_date__lte=today, end_date__gte=today)
     if not campaign_slug:
       campaign = campaign.order_by('-start_date')[:1]
     else:
@@ -21,18 +21,14 @@ def index(request, campaign_slug=None):
 
   campaign_list = Campaign.objects.filter(
       start_date__lte=today, end_date__gte=today).order_by('-start_date')
-  politici_list = Politician.objects.all()
-  for politician in politici_list:
-    politician.contact_methods = PoliticianContactInfo.objects.filter(politician=politician)
+  politicians_list = PoliticianCampaign.objects.filter(campaign=campaign)
 
   return render_to_response(
       'index.html',
-      {'campaign_list': campaign_list, 'politici_list': politici_list,
+      {'campaign_list': campaign_list, 'politicians_list': politicians_list,
        'STATIC_PREFIX': settings.MEDIA_URL, 'campaign': campaign})
 
-def politician_info(request, politician=None):
-  if not politician:
-    raise Http404
+def politician_info(request, politician=''):
   politician = Politician.objects.get(name=unsluggify(politician))
   if not politician:
     raise Http404

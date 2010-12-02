@@ -37,10 +37,12 @@ class Politician(models.Model):
     return self.name
 
 class PoliticianCampaign(models.Model):
-	campaign = models.ForeignKey(Campaign)
-	politician = models.ForeignKey(Politician)
-	desc = models.TextField(blank=True)
-	weight = models.IntegerField(blank=True, null=True)
+  campaign = models.ForeignKey(Campaign)
+  politician = models.ForeignKey(Politician)
+  desc = models.TextField(blank=True)
+  weight = models.IntegerField(blank=True, null=True)
+  def __unicode__(self):
+    return '%s - %s ' % (self.politician.name, self.campaign.title)
 
 class ContactMethod(models.Model):
   name = models.CharField(max_length=25)
