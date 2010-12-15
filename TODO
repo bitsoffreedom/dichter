@@ -1,18 +1,26 @@
-Af =>	* Berichten naar politici versturen via Twitter - Floort
-		* Berichten naar politici versturen via email
-		* Berichten naar politici versturen via Facebook
-		* Berichten naar politici versturen viaHyves
-		* Admin 100% werkend maken
-		* GUI voor de bedank pagina afronden (voor een groot deel kan de index gebruikt worden).
-
-De MoSCoW:
-
-Must:
-         * Admin 100% werkend maken
-         * GUI voor de bedank pagina afronden (voor een groot deel kan
-         * de index gebruikt worden).
-         * Berichten naar politici versturen via email
+TODO:
+	Admin kan nog een uurtje liefde gebruiken om 100% te gaan werken
+	GUI voor de bedank pagina voltooien
+	Berichten naar politici versturen via email 
+	Er moeten nog een aantal js dingen gefixt worden 
+		In ieder geval het goed selecteren en highlighten van alle contact opties. 
+		Mogelijk ook nog wat js die pagina afhankelijk is 
+	niet meer de dbdh server mailen, ivm mogelijk misbruik 
+	Per politicus een campagne specifieke reactie/standpunt hebben en weergeven 
+		De tekst hiervoor maken
+		Zorgen dat de tekst uit de database gelezen kan worden 
+	twitter accounts en telefoon nummers importeren bij de politici 
+	twitter accounts van de file van Jeroen aan de politici te koppelen 
 
 Kan eventueel in versie 1.1:
-         * Berichten naar politici versturen via Facebook
-         * Berichten naar politici versturen viaHyves
+	Berichten naar politici versturen via Facebook 
+	Berichten naar politici versturen via Hyves
+
+Af:
+	Berichten naar politici versturen via Twitter - Floort 
+	Berichten naar politici versturen via email
+	Berichten naar politici versturen via Facebook 
+	Berichten naar politici versturen via Hyves 
+	Admin 100% werkend maken 
+	GUI voor de bedank pagina afronden (voor een groot deel kan de index gebruikt worden). 
+
