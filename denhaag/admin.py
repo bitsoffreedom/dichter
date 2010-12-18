@@ -12,13 +12,13 @@ class PoliticianAdmin(admin.ModelAdmin):
   search_fields = ('name', 'party')
   ordering = ('name', 'party')
 admin.site.register(Politician, PoliticianAdmin)
-
+  
 class PartyAdmin(admin.ModelAdmin):
   list_display = ('name',)
 admin.site.register(Party, PartyAdmin)
 
 class ContactMethodAdmin(admin.ModelAdmin):
-  list_display = ('name',)
+  list_display = ('name','enabled')
 admin.site.register(ContactMethod, ContactMethodAdmin)
 
 admin.site.register(CampaignContact)

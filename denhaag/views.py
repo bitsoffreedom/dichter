@@ -10,58 +10,59 @@ import datetime
 def index(request, campaign_slug=None):
   today = datetime.date.today().isoformat()
   try:
+    campaign = Campaign.objects.filter(
+        start_date__lte=today, end_date__gte=today)
     if not campaign_slug:
-      c = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).order_by('-start_date')[:1]
+      campaign = campaign.order_by('-start_date')[0]
     else:
-      c = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).get(title_slug=campaign_slug)
+      campaign = campaign.get(title_slug=campaign_slug)
   except Campaign.DoesNotExist:
     raise Http404
+  campaign_list = Campaign.objects.filter(
+      start_date__lte=today, end_date__gte=today).order_by('-start_date')
+  politicians_list = PoliticianCampaign.objects.filter(campaign=campaign)
 
-  campaign_list = Campaign.objects.filter(start_date__lte = today, end_date__gte = today).order_by('-start_date')
-  politici_list = Politician.objects.all()
-  for politicus in politici_list:
-    politicus.contact_methods = PoliticianContactInfo.objects.filter(politician=politicus)
+  return render_to_response(
+      'index.html',
+      {'campaign_list': campaign_list, 'politicians_list': politicians_list,
+       'STATIC_PREFIX': settings.MEDIA_URL, 'campaign': campaign})
 
-  return render_to_response('index.html', {'campaign_list': campaign_list, 'politici_list': politici_list, 'STATIC_PREFIX': settings.MEDIA_URL, 'campaign': c})
-
-def politicus_info(request, politicus=None):
-  if not politicus:
+def politician_info(request, politician=''):
+  politician = Politician.objects.get(name=unsluggify(politician))
+  if not politician:
     raise Http404
-  p = Politician.objects.get(name=politicus.replace('_', ' '))
-  if not p:
-    raise Http404
-  return render_to_response('politicus.html', {'STATIC_PREFIX': settings.MEDIA_URL, 'politicus': p})
-  
-def send_message_mail(request, politicus):
+  return render_to_response(
+      'politician.html',
+      {'STATIC_PREFIX': settings.MEDIA_URL, 'politician': politician})
+
+def send_message_mail(request, politician):
   try:
-    p = Politician.objects.get(name=politicus)
+    politician = Politician.objects.get(name=politician)
   except Politician.DoesNotExist:
     raise Http404
-  return render_to_response('form_mail.html', {'politicus': p})
+  return render_to_response('form_mail.html', {'politician': politician})
 
-def send_message_facebook(request, politicus):
+def send_message_facebook(request, politician):
   try:
-    p = Politician.objects.get(name=politicus)
+    politician = Politician.objects.get(name=politician)
   except Politician.DoesNotExist:
     raise Http404
-  return render_to_response('form_facebook.html', {'politicus': p})
+  return render_to_response('form_facebook.html', {'politician': politician})
 
-def send_message_hyves(request, politicus):
+def send_message_hyves(request, politician):
   try:
-    p = Politician.objects.get(name=politicus)
+    politician = Politician.objects.get(name=politician)
   except Politician.DoesNotExist:
     raise Http404
-  return render_to_response('form_hyves.html', {'politicus': p})
+  return render_to_response('form_hyves.html', {'politician': politician})
 
 
 def static(request, slug):
-	try:
-		p = Static.objects.get(slug=slug)
-		print p.slug
-	except Static.DoesNotExist:
-		raise Http404
-	return render_to_response('static.html', {
-		'page': p,
-		'STATIC_PREFIX': settings.MEDIA_URL,
-	})
-
+  try:
+    politician = Static.objects.get(slug=slug)
+    print politician.slug
+  except Static.DoesNotExist:
+    raise Http404
+  return render_to_response(
+      'static.html',
+      {'page': politician, 'STATIC_PREFIX': settings.MEDIA_URL})

@@ -8,10 +8,47 @@
 			"subtitle": "<i>\"Niet verbergen maar verwijderen\"</i>",
 			"hashtag": "#stopdezwartelijst",
 			"start_date": "2010-10-24",
-			"end_date": "2011-10-24",
+			"end_date": "2011-12-24",
 			"pica": "photos/2010/10/24/henk.jpg",
 			"intro": "Gefaciliteerd door het Ministerie van Justitie werken de grootste internetproviders samen aan het blokkeren van een zwarte lijst met verboden websites met afbeeldingen van seksueel kindermisbruik. Het project is met geheimzinnigheid omgeven, het doel en de effectiviteit is niet duidelijk en nog belangrijker het werkt averechts. Want de afbeeldingen van seksueel kindermisbruik blijven online staan, de criminelen worden niet opgespoord en de geldstromen worden niet stilgelegd. <br><br> Dit moet anders. Nederland moet afbeeldingen van seksueel misbruik verwijderen, niet verbergen. De Tweede Kamer moet niet accepteren dat haar bevoegdheid op deze manier wordt omzeild, en dat een excuus wordt gegeven aan de politie om deze afschuwelijke afbeeldingen op het internet te laten staan."
 		}
+	},
+	{
+		"model": "denhaag.campaign",
+		"pk": 2,
+		"fields": {
+			"title": "Stop de censuurknop",
+			"title_slug": "Stop_de_censuurknop",
+			"subtitle": "<i>\"Niet noodzakelijk echt gevaarlijk\"</i>",
+			"hashtag": "#stopdezwartelijst",
+			"start_date": "2010-10-24",
+			"end_date": "2011-12-24",
+			"pica": "photos/2010/10/24/henk.jpg",
+			"intro": "Op dit moment kan het OM websites op zwart zetten, maar slechts na toetsing door de rechter. Afgelopen week lanceerde de demissionaire regering echter een nieuw concept-wetsvoorstel. De regering wil die voorafgaande rechterlijke toetsing schrappen. De overheid houdt hierover nu een consultatie, om te horen wat belanghebbenden hiervan vinden. Laat je stem horen, en stop de censuurknop.."
+		}
+	},
+	{
+		"model": "denhaag.campaign",
+		"pk": 3,
+		"fields": {
+			"title": "Stop het downloadverbod",
+			"title_slug": "Stop_het_downloadverbod",
+			"subtitle": "<i>\"Miljoenen nederlanders criminaliseren?\"</i>",
+			"hashtag": "#stopdezwartelijst",
+			"start_date": "2010-10-24",
+			"end_date": "2011-12-24",
+			"pica": "photos/2010/10/24/henk.jpg",
+			"intro": "Op dit moment is het downloaden van muziek en films uit illegale bron zonder toestemming van de rechthebbende nog toegestaan. Het kabinet heeft echter onlangs aangegeven dat zij een downloadverbod wil introduceren. Volgens Bits of Freedom is dat onwenselijk. Door de introductie van een downloadverbod zou de overheid miljoenen Nederlanders criminaliseren, terwijl dit verbod niet handhaafbaar is zonder internetgebruikers te bespioneren. Ook zal het creativiteit niet stimuleren. In plaats van het introduceren van dit soort repressieve maatregelen moet de contentindustrie naar de mening van Bits of Freedom nieuwe bedrijfsmodellen ontwikkelen. Laat je mening horen aan de politiek!"
+		}
+	},
+	
+	{
+	  "model": "denhaag.ContactMethod",
+	  "pk":1,
+	  "fields":{
+	    "name":"email",
+	    "enabled":"1"
+	  }
 	},
 	    {
 	    "model": "denhaag.Party",
@@ -1565,6 +1602,1330 @@
     }
   },
   {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 2,
+    "fields":{
+      "contact_method":1,
+      "address": "n.albayrak@tweedekamer.nl",
+      "politician": 2
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 3,
+    "fields":{
+      "contact_method":1,
+      "address": "c.aptroot@tweedekamer.nl",
+      "politician": 3
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 4,
+    "fields":{
+      "contact_method":1,
+      "address": "k.arib@tweedekamer.nl",
+      "politician": 4
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 5,
+    "fields":{
+      "contact_method":1,
+      "address": "m.azmani@tweedekamer.nl",
+      "politician": 5
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 6,
+    "fields":{
+      "contact_method":1,
+      "address": "f.bashir@tweedekamer.nl",
+      "politician": 6
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 7,
+    "fields":{
+      "contact_method":1,
+      "address": "w.vanbeek@tweedekamer.nl",
+      "politician": 7
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 8,
+    "fields":{
+      "contact_method":1,
+      "address": "h.beertema@tweedekamer.nl",
+      "politician": 8
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 9,
+    "fields":{
+      "contact_method":1,
+      "address": "j.vbemmel@tweedekamer.nl",
+      "politician": 9
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 10,
+    "fields":{
+      "contact_method":1,
+      "address": "m.berndsen@tweedekamer.nl",
+      "politician": 10
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 11,
+    "fields":{
+      "contact_method":1,
+      "address": "a.bijleveld-schouten@tweedekamer.nl",
+      "politician": 11
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 12,
+    "fields":{
+      "contact_method":1,
+      "address": "j.biskop@tweedekamer.nl",
+      "politician": 12
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 13,
+    "fields":{
+      "contact_method":1,
+      "address": "e.blanksma@tweedekamer.nl",
+      "politician": 13
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 14,
+    "fields":{
+      "contact_method":1,
+      "address": "s.blok@tweedekamer.nl",
+      "politician": 14
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 15,
+    "fields":{
+      "contact_method":1,
+      "address": "b.vbochove@tweedekamer.nl",
+      "politician": 15
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 16,
+    "fields":{
+      "contact_method":1,
+      "address": "b.dboer@tweedekamer.nl",
+      "politician": 16
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 17,
+    "fields":{
+      "contact_method":1,
+      "address": "hvbommel@sp.nl",
+      "politician": 17
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 18,
+    "fields":{
+      "contact_method":1,
+      "address": "l.bontes@tweedekamer.nl",
+      "politician": 18
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 19,
+    "fields":{
+      "contact_method":1,
+      "address": "",
+      "politician": 19
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 20,
+    "fields":{
+      "contact_method":1,
+      "address": "a.bosman@tweedekamer.nl",
+      "politician": 20
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 21,
+    "fields":{
+      "contact_method":1,
+      "address": "l.bouwmeester@tweedekamer.nl",
+      "politician": 21
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 22,
+    "fields":{
+      "contact_method":1,
+      "address": "b.braakhuis@tweedekamer.nl",
+      "politician": 22
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 23,
+    "fields":{
+      "contact_method":1,
+      "address": "",
+      "politician": 23
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 24,
+    "fields":{
+      "contact_method":1,
+      "address": "hantenbroeke@tweedekamer.nl",
+      "politician": 24
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 25,
+    "fields":{
+      "contact_method":1,
+      "address": "h.bruins-slot@tweedekamer.nl",
+      "politician": 25
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 26,
+    "fields":{
+      "contact_method":1,
+      "address": "brigitte.vdburg@tweedekamer.nl",
+      "politician": 26
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 27,
+    "fields":{
+      "contact_method":1,
+      "address": "m.celik@tweedekamer.nl",
+      "politician": 27
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 28,
+    "fields":{
+      "contact_method":1,
+      "address": "j.cohen@tweedekamer.nl",
+      "politician": 28
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 29,
+    "fields":{
+      "contact_method":1,
+      "address": "c.coruz@tweedekamer.nl",
+      "politician": 29
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 30,
+    "fields":{
+      "contact_method":1,
+      "address": "m.vdam@tweedekamer.nl",
+      "politician": 30
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 31,
+    "fields":{
+      "contact_method":1,
+      "address": "t.vdekken@tweedekamer.nl",
+      "politician": 31
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 32,
+    "fields":{
+      "contact_method":1,
+      "address": "i.dezentjehamming@tweedekamer.nl",
+      "politician": 32
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 33,
+    "fields":{
+      "contact_method":1,
+      "address": "",
+      "politician": 33
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 34,
+    "fields":{
+      "contact_method":1,
+      "address": "t.vdijck@tweedekamer.nl",
+      "politician": 34
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 35,
+    "fields":{
+      "contact_method":1,
+      "address": "jasper.vdijk@tweedekamer.nl",
+      "politician": 35
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 36,
+    "fields":{
+      "contact_method":1,
+      "address": "e.dijkgraaf@tweedekamer.nl",
+      "politician": 36
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 37,
+    "fields":{
+      "contact_method":1,
+      "address": "k.dijkhoff@tweedekamer.nl",
+      "politician": 37
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 38,
+    "fields":{
+      "contact_method":1,
+      "address": "s.dijksma@tweedekamer.nl",
+      "politician": 38
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 39,
+    "fields":{
+      "contact_method":1,
+      "address": "p.dijkstra@tweedekamer.nl",
+      "politician": 39
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 40,
+    "fields":{
+      "contact_method":1,
+      "address": "j.dijsselbloem@tweedekamer.nl",
+      "politician": 40
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 41,
+    "fields":{
+      "contact_method":1,
+      "address": "s.dikkers@tweedekamer.nl",
+      "politician": 41
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 42,
+    "fields":{
+      "contact_method":1,
+      "address": "w.dille@tweedekamer.nl",
+      "politician": 42
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 43,
+    "fields":{
+      "contact_method":1,
+      "address": "j.driessen@tweedekamer.nl",
+      "politician": 43
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 44,
+    "fields":{
+      "contact_method":1,
+      "address": "a.eijsink@tweedekamer.nl",
+      "politician": 44
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 45,
+    "fields":{
+      "contact_method":1,
+      "address": "a.elfassed@tweedekamer.nl",
+      "politician": 45
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 46,
+    "fields":{
+      "contact_method":1,
+      "address": "m.vhasselt@tweedekamer.nl",
+      "politician": 46
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 47,
+    "fields":{
+      "contact_method":1,
+      "address": "a.elissen@tweedekamer.nl",
+      "politician": 47
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 48,
+    "fields":{
+      "contact_method":1,
+      "address": "k.ferrier@tweedekamer.nl",
+      "politician": 48
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 49,
+    "fields":{
+      "contact_method":1,
+      "address": "",
+      "politician": 49
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 50,
+    "fields":{
+      "contact_method":1,
+      "address": "w.vgent@tweedekamer.nl",
+      "politician": 50
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 51,
+    "fields":{
+      "contact_method":1,
+      "address": "k.gerbrands@tweedekamer.nl",
+      "politician": 51
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 52,
+    "fields":{
+      "contact_method":1,
+      "address": "h.vgerven@tweedekamer.nl",
+      "politician": 52
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 53,
+    "fields":{
+      "contact_method":1,
+      "address": "s.gesthuizen@tweedekamer.nl",
+      "politician": 53
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 54,
+    "fields":{
+      "contact_method":1,
+      "address": "d.graus@tweedekamer.nl",
+      "politician": 54
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 55,
+    "fields":{
+      "contact_method":1,
+      "address": "e.groot@tweedekamer.nl",
+      "politician": 55
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 56,
+    "fields":{
+      "contact_method":1,
+      "address": "w.hachchi@tweedekamer.nl",
+      "politician": 56
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 57,
+    "fields":{
+      "contact_method":1,
+      "address": "s.buma@tweedekamer.nl",
+      "politician": 57
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 58,
+    "fields":{
+      "contact_method":1,
+      "address": "f.halsema@tweedekamer.nl",
+      "politician": 58
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 59,
+    "fields":{
+      "contact_method":1,
+      "address": "b.vham@tweedekamer.nl",
+      "politician": 59
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 60,
+    "fields":{
+      "contact_method":1,
+      "address": "m.hamer@tweedekamer.nl",
+      "politician": 60
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 61,
+    "fields":{
+      "contact_method":1,
+      "address": "m.harbers@tweedekamer.nl",
+      "politician": 61
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 62,
+    "fields":{
+      "contact_method":1,
+      "address": "m.haverkamp@tweedekamer.nl",
+      "politician": 62
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 63,
+    "fields":{
+      "contact_method":1,
+      "address": "p.heijnen@tweedekamer.nl",
+      "politician": 63
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 64,
+    "fields":{
+      "contact_method":1,
+      "address": "l.helder@tweedekamer.nl",
+      "politician": 64
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 65,
+    "fields":{
+      "contact_method":1,
+      "address": "j.hennis-plasschaert@tweedekamer.nl",
+      "politician": 65
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 66,
+    "fields":{
+      "contact_method":1,
+      "address": "m.hernandez@tweedekamer.nl",
+      "politician": 66
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 67,
+    "fields":{
+      "contact_method":1,
+      "address": "e.vhijum@tweedekamer.nl",
+      "politician": 67
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 68,
+    "fields":{
+      "contact_method":1,
+      "address": "j.houwers@tweedekamer.nl",
+      "politician": 68
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 69,
+    "fields":{
+      "contact_method":1,
+      "address": "m.huizing@tweedekamer.nl",
+      "politician": 69
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 70,
+    "fields":{
+      "contact_method":1,
+      "address": "e.irrgang@tweedekamer.nl",
+      "politician": 70
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 71,
+    "fields":{
+      "contact_method":1,
+      "address": "t.jadnanansing@tweedekamer.nl",
+      "politician": 71
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 72,
+    "fields":{
+      "contact_method":1,
+      "address": "pjansen@sp.nl",
+      "politician": 72
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 73,
+    "fields":{
+      "contact_method":1,
+      "address": "leon.djong@tweedekamer.nl",
+      "politician": 73
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 74,
+    "fields":{
+      "contact_method":1,
+      "address": "skarabulut@sp.nl",
+      "politician": 74
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 75,
+    "fields":{
+      "contact_method":1,
+      "address": "j.klaver@tweedekamer.nl",
+      "politician": 75
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 76,
+    "fields":{
+      "contact_method":1,
+      "address": "j.vklaveren@tweedekamer.nl",
+      "politician": 76
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 77,
+    "fields":{
+      "contact_method":1,
+      "address": "j.klijnsma@tweedekamer.nl",
+      "politician": 77
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 78,
+    "fields":{
+      "contact_method":1,
+      "address": "r.knops@tweedekamer.nl",
+      "politician": 78
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 79,
+    "fields":{
+      "contact_method":1,
+      "address": "n.kooiman@tweedekamer.nl",
+      "politician": 79
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 80,
+    "fields":{
+      "contact_method":1,
+      "address": "w.koolmees@tweedekamer.nl",
+      "politician": 80
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 81,
+    "fields":{
+      "contact_method":1,
+      "address": "g.koopmans@tweedekamer.nl",
+      "politician": 81
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 82,
+    "fields":{
+      "contact_method":1,
+      "address": "a.koppejan@tweedekamer.nl",
+      "politician": 82
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 83,
+    "fields":{
+      "contact_method":1,
+      "address": "w.kortenoeven@tweedekamer.nl",
+      "politician": 83
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 84,
+    "fields":{
+      "contact_method":1,
+      "address": "f.koserkaya@tweedekamer.nl",
+      "politician": 84
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 85,
+    "fields":{
+      "contact_method":1,
+      "address": "a.kuiken@tweedekamer.nl",
+      "politician": 85
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 86,
+    "fields":{
+      "contact_method":1,
+      "address": "r.leegte@tweedekamer.nl",
+      "politician": 86
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 87,
+    "fields":{
+      "contact_method":1,
+      "address": "r.leijten@tweedekamer.nl",
+      "politician": 87
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 88,
+    "fields":{
+      "contact_method":1,
+      "address": "b.dliefde@tweedekamer.nl",
+      "politician": 88
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 89,
+    "fields":{
+      "contact_method":1,
+      "address": "h.lodders@tweedekamer.nl",
+      "politician": 89
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 90,
+    "fields":{
+      "contact_method":1,
+      "address": "e.lucassen@tweedekamer.nl",
+      "politician": 90
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 91,
+    "fields":{
+      "contact_method":1,
+      "address": "a.lucas-smeerdijk@tweedekamer.nl",
+      "politician": 91
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 92,
+    "fields":{
+      "contact_method":1,
+      "address": "a.vmiltenburg@tweedekamer.nl",
+      "politician": 92
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 93,
+    "fields":{
+      "contact_method":1,
+      "address": "j.monasch@tweedekamer.nl",
+      "politician": 93
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 94,
+    "fields":{
+      "contact_method":1,
+      "address": "",
+      "politician": 94
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 95,
+    "fields":{
+      "contact_method":1,
+      "address": "a.mulder@tweedekamer.nl",
+      "politician": 95
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 96,
+    "fields":{
+      "contact_method":1,
+      "address": "h.nepperus@tweedekamer.nl",
+      "politician": 96
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 97,
+    "fields":{
+      "contact_method":1,
+      "address": "a.nicolai@tweedekamer.nl",
+      "politician": 97
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 98,
+    "fields":{
+      "contact_method":1,
+      "address": "c.vnieuwenhuizen@tweedekamer.nl",
+      "politician": 98
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 99,
+    "fields":{
+      "contact_method":1,
+      "address": "pieter.omtzigt@tweedekamer.nl",
+      "politician": 99
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 100,
+    "fields":{
+      "contact_method":1,
+      "address": "h.ormel@tweedekamer.nl",
+      "politician": 100
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 101,
+    "fields":{
+      "contact_method":1,
+      "address": "cynthia.ortega@tweedekamer.nl",
+      "politician": 101
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 102,
+    "fields":{
+      "contact_method":1,
+      "address": "",
+      "politician": 102
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 103,
+    "fields":{
+      "contact_method":1,
+      "address": "a.pechtold@tweedekamer.nl",
+      "politician": 103
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 104,
+    "fields":{
+      "contact_method":1,
+      "address": "m.peters@tweedekamer.nl",
+      "politician": 104
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 105,
+    "fields":{
+      "contact_method":1,
+      "address": "r.plasterk@tweedekamer.nl",
+      "politician": 105
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 106,
+    "fields":{
+      "contact_method":1,
+      "address": "rvraak@sp.nl",
+      "politician": 106
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 107,
+    "fields":{
+      "contact_method":1,
+      "address": "j.recourt@tweedekamer.nl",
+      "politician": 107
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 108,
+    "fields":{
+      "contact_method":1,
+      "address": "e.roemer@tweedekamer.nl",
+      "politician": 108
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 109,
+    "fields":{
+      "contact_method":1,
+      "address": "r.deroon@tweedekamer.nl",
+      "politician": 109
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 110,
+    "fields":{
+      "contact_method":1,
+      "address": "a.rouvoet@tweedekamer.nl",
+      "politician": 110
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 111,
+    "fields":{
+      "contact_method":1,
+      "address": "s.derouwe@tweedekamer.nl",
+      "politician": 111
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 112,
+    "fields":{
+      "contact_method":1,
+      "address": "d.samsom@tweedekamer.nl",
+      "politician": 112
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 113,
+    "fields":{
+      "contact_method":1,
+      "address": "j.sap@tweedekamer.nl",
+      "politician": 113
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 114,
+    "fields":{
+      "contact_method":1,
+      "address": "afke.schaart@tweedekamer.nl",
+      "politician": 114
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 115,
+    "fields":{
+      "contact_method":1,
+      "address": "g.schouw@tweedekamer.nl",
+      "politician": 115
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 116,
+    "fields":{
+      "contact_method":1,
+      "address": "j.sharpe@tweedekamer.nl",
+      "politician": 116
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 117,
+    "fields":{
+      "contact_method":1,
+      "address": "a.slob@tweedekamer.nl",
+      "politician": 117
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 118,
+    "fields":{
+      "contact_method":1,
+      "address": "p.smeets@tweedekamer.nl",
+      "politician": 118
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 119,
+    "fields":{
+      "contact_method":1,
+      "address": "m.smilde@tweedekamer.nl",
+      "politician": 119
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 120,
+    "fields":{
+      "contact_method":1,
+      "address": "m.smits@tweedekamer.nl",
+      "politician": 120
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 121,
+    "fields":{
+      "contact_method":1,
+      "address": "j.snijder@tweedekamer.nl",
+      "politician": 121
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 122,
+    "fields":{
+      "contact_method":1,
+      "address": "h.spekman@tweedekamer.nl",
+      "politician": 122
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 123,
+    "fields":{
+      "contact_method":1,
+      "address": "c.vdstaaij@tweedekamer.nl",
+      "politician": 123
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 124,
+    "fields":{
+      "contact_method":1,
+      "address": "m.sterk@tweedekamer.nl",
+      "politician": 124
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 125,
+    "fields":{
+      "contact_method":1,
+      "address": "secretariaat.vdsteur@tweedekamer.nl",
+      "politician": 125
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 126,
+    "fields":{
+      "contact_method":1,
+      "address": "k.straus@tweedekamer.nl",
+      "politician": 126
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 127,
+    "fields":{
+      "contact_method":1,
+      "address": "j.taverne@tweedekamer.nl",
+      "politician": 127
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 128,
+    "fields":{
+      "contact_method":1,
+      "address": "",
+      "politician": 128
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 129,
+    "fields":{
+      "contact_method":1,
+      "address": "f.timmermans@tweedekamer.nl",
+      "politician": 129
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 130,
+    "fields":{
+      "contact_method":1,
+      "address": "l.vtongeren@tweedekamer.nl",
+      "politician": 130
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 131,
+    "fields":{
+      "contact_method":1,
+      "address": "m.vtoorenburg@tweedekamer.nl",
+      "politician": 131
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 132,
+    "fields":{
+      "contact_method":1,
+      "address": "sabine.uitslag@tweedekamer.nl",
+      "politician": 132
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 133,
+    "fields":{
+      "contact_method":1,
+      "address": "p.ulenbelt@tweedekamer.nl",
+      "politician": 133
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 134,
+    "fields":{
+      "contact_method":1,
+      "address": "e.vdveen@tweedekamer.nl",
+      "politician": 134
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 135,
+    "fields":{
+      "contact_method":1,
+      "address": "s.vveldhoven@tweedekamer.nl",
+      "politician": 135
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 136,
+    "fields":{
+      "contact_method":1,
+      "address": "t.venrooy-vanark@tweedekamer.nl",
+      "politician": 136
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 137,
+    "fields":{
+      "contact_method":1,
+      "address": "voorzitter@tweedekamer.nl",
+      "politician": 137
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 138,
+    "fields":{
+      "contact_method":1,
+      "address": "g.verburg@tweedekamer.nl",
+      "politician": 138
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 139,
+    "fields":{
+      "contact_method":1,
+      "address": "k.verhoeven@tweedekamer.nl",
+      "politician": 139
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 140,
+    "fields":{
+      "contact_method":1,
+      "address": "r.vermeij@tweedekamer.nl",
+      "politician": 140
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 141,
+    "fields":{
+      "contact_method":1,
+      "address": "r.vvliet@tweedekamer.nl",
+      "politician": 141
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 142,
+    "fields":{
+      "contact_method":1,
+      "address": "j.voordewind@tweedekamer.nl",
+      "politician": 142
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 143,
+    "fields":{
+      "contact_method":1,
+      "address": "l.voortman@tweedekamer.nl",
+      "politician": 143
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 144,
+    "fields":{
+      "contact_method":1,
+      "address": "e.wiegman@tweedekamer.nl",
+      "politician": 144
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 145,
+    "fields":{
+      "contact_method":1,
+      "address": "g.wilders@tweedekamer.nl",
+      "politician": 145
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 146,
+    "fields":{
+      "contact_method":1,
+      "address": "jdewit@sp.nl",
+      "politician": 146
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 147,
+    "fields":{
+      "contact_method":1,
+      "address": "a.wolbert@tweedekamer.nl",
+      "politician": 147
+    }
+  },
+  {
+    "model": "denhaag.PoliticianContactInfo",
+    "pk": 148,
+    "fields":{
+      "contact_method":1,
+      "address": "e.ziengs@tweedekamer.nl",
+      "politician": 148
+    }
+  },
+  
+  {
     "model": "denhaag.Static",
     "pk": 1,
     "fields":{
@@ -1599,5 +2960,44 @@
       "title":"Huisregels",
       "page":"<h2>Huisregels voor deze website</h2><p><strong>Bedankt dat je meedoet op onze site! We zijn grote voorstanders van het delen van kennis en de vrijheid van meningsuiting. Deel je zorgen met politici. Ga met ze in discussie. Maar doe dat kritisch, opbouwend, informatief zodat politici ook naar je luisteren.</strong></p><p>Weet jij meer over een onderwerp? Deel je kennis, laat het ons weten. En deel je ervaringen met een campagne in de reacties. We en de andere bezoekers leren graag van je. Maken we feitelijke fouten? Stuur dan gelijk de bron mee waaruit de fout blijkt. We zullen de fout dan zo snel mogelijk herstellen. En zijn er nieuwe ontwikkelingen? Hou ons op de hoogte.</p><p>Maar gebruik Dichter bij Den Haag verstandig; zorg dat politici ook blijven luisteren:</p><ul><li>Gebruik Dichter bij Den Haag niet om discriminerende opmerkingen, zoals racistische, seksistische of homofobe opmerkingen naar politici te sturen of in de reacties achter te laten.</li><li>Gebruik geen grof taalgebruik in je boodschappen aan politici of in de reacties.</li><li>Gebruik Dichter bij Den Haag niet als reclamezuil.</li><li>Gebruik Dichter bij Den Haag niet voor teksten waar met alle goede wil van de wereld geen touw aan vast te knopen.</li></ul><p>Wij schrijven onze eigen teksten, of gebruiken materiaal dat beschikbaar is onder een <a href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/nl/\">Creative Commons-licentie</a> en proberen zoveel mogelijk onze bronnen te vermelden. Doe dat zelf ook in je reacties.</p>"
      }
+  },
+  
+  {
+    "model":"denhaag.PoliticianCampaign",
+    "pk":1,
+    "fields":{
+      "campaign":1,
+      "politician":2,
+      "desc":"Campage specifieke text"
+    }
+  },
+  {
+    "model":"denhaag.PoliticianCampaign",
+    "pk":2,
+    "fields":{
+      "campaign":1,
+      "politician":4,
+      "desc":"Campage specifieke text"
+    }
+  },
+  {
+    "model":"denhaag.PoliticianCampaign",
+    "pk":3,
+    "fields":{
+      "campaign":2,
+      "politician":5,
+      "desc":"Campage specifieke text"
+    }
+  },
+  {
+    "model":"denhaag.PoliticianCampaign",
+    "pk":4,
+    "fields":{
+      "campaign":3,
+      "politician":17,
+      "desc":"Campage specifieke text"
+    }
   }
+  
+  
 ]

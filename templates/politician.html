@@ -19,15 +19,22 @@
         <h1 id="logo"><a href="/">Dichter bij Den Haag</a></h1>
         <a id="boflogo">Bits of Freedom</a>
       </div>
-      <div id="navbar">
-        <ul id="nav">
-          <li><a id="nav-home" href="/">Home</a></li>
-          <li><a id="nav-over" href="/static/over/">Over</a></li>
-          <li><a id="nav-contact" href="/static/contact/">Contact / Pers</a></li>
-        </ul>
-       </div>
+        <div id="navbar">
+          <ul id="nav">
+            <li><a id="nav-home" href="/">Home</a></li>
+            <li><a id="nav-over" href="/static/over/">Over</a></li>
+            <li><a id="nav-contact" href="/static/contact/">Contact / Pers</a></li>
+          </ul>
+         </div>
       <div id="content">
-        {{ page.page|safe }}<br /><br />
+        <div id="hero">
+          <h2>{{ politician.name }}</h2>
+          <img class="politicus" src="{{ politician.pica.url }}" alt="{{ politician.name }}" />
+          <img class="partij" src="{{ politician.party.pica.url }}" alt="{{ politician.party.name }}" />
+          <p>
+            {{ politician.desc }}
+          </p>
+        </div>
       </div><!-- //content -->
       <div id="footer">
         <div id="footerText">
