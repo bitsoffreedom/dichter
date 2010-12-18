@@ -19,6 +19,9 @@ class Party(models.Model):
   pica = models.ImageField(upload_to='photos/%Y/%m/%d')
   def __unicode__(self):
     return self.name
+  def admin_image(self):
+    return '<img src="%s" alt="%s"/>' % (self.pica.url, self.name)
+  admin_image.allow_tags = True
 
 class Politician(models.Model):
   GENDER_CHOICES = (
