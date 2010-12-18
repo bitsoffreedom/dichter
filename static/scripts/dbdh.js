@@ -7,12 +7,10 @@ function hero() {
 		$(this).text($(this).text() == "Meer lezen" ? "Verbergen" : "Meer lezen");
 
 	});
-	
-	
-	//$('#targets .extraInfo').hide();
+
 	var targets = $('#targets .extraInfo');
 
-	for (i=0; i < targets.length; i++) {
+	for (var i=0; i < targets.length; i++) {
 		var src = targets[i];
 		var dst = src.cloneNode(false);
 		src.parentNode.insertBefore(dst,src);
@@ -20,7 +18,7 @@ function hero() {
 		
 		var children = $(src).children()
 		var length = 0;
-		for (j=0; j < children.length; j++) {
+		for (var j=0; j < children.length; j++) {
 			if (length < 200) {
 				dst.appendChild(children[j]);
 				length = length + $(children[j]).text().length
@@ -28,13 +26,22 @@ function hero() {
 		}
 		$(src).hide();
 	}
-	
+	 
 	$('#targets .infoToggle a').click(function(e){
 		e.preventDefault();
 		$(this).closest('.infoToggle').prev().slideToggle(400,function () { $(this).trigger("scrollTo"); });
 		$(this).closest('.infoToggle').toggleClass('hide');
 		$(this).text($(this).text() == "Meer informatie" ? "Informatie verbergen" : "Meer informatie");
 	});	
+	
+	$('#targets .info a').click(function(){
+	  $("#vectors li").addClass('disabled');
+    $(this).parent().find('.contactVia li').each(function(){
+	    var vector = this.className.substr(3).toLowerCase();
+	    $("#via"+vector).removeClass('disabled');
+	  });
+	  return false;
+	});
 	
 	$("#vectors li").click(function(){
     // get the id for the element we clicked on

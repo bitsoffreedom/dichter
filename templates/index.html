@@ -67,13 +67,13 @@
                   <li>
                     <div class="info">
                       <h4>{{ politician.politician.name }}</h4>
-                      <img class="politicus" src="{{ politician.politician.pica.url }}" alt="{{ politician.politician.name }}" />
-                      <img class="partij" src="{{ politician.politician.party.pica.url }}" alt="{{ politician.politician.party.name }}" />
+                      <a href="/politicus/{{ politician.politician.name_slug }}"><img class="politicus" src="{{ politician.politician.pica.url }}" alt="{{ politician.politician.name }}" /></a>
+                      <a href="/politicus/{{ politician.politician.name_slug }}"><img class="partij" src="{{ politician.politician.party.pica.url }}" alt="{{ politician.politician.party.name }}" /></a>
                       {% if politician.politician.contact_info %}
                       <ul class="contactVia">
                         {% for contactmethod in politician.politician.contact_info.all %}
                           <li class="via{{ contactmethod.contact_method.name }}">
-                              <a href="#">via {{ contactmethod.contact_method.name }}</a>
+                              <a href="{{ politician.politician.contact_info }}">via {{ contactmethod.contact_method.name }}</a>
                           </li>
                         {% endfor %}
                       </ul>
@@ -101,16 +101,16 @@
               <p class="intro">Kies hier hoe je die politicus wilt bereiken.</p>
               <div class="stepContent">
                 <ul id="vectors">
-                  <li id="viaMail">
+                  <li id="viaemail">
                       <a href="#">via Mail</a>
                   </li>
-                  <li id="viaPhone">
+                  <li id="viaphone">
                       <a href="#">via Phone</a>
                   </li>
-                  <li id="viaTwitter">
+                  <li id="viatwitter">
                       <a href="#">via Twitter</a>
                   </li>
-                  <li id="viaFacebook" class="disabled">
+                  <li id="viafacebook" class="disabled">
                       <a href="#">via Facebook</a>
                   </li>
                 </ul>
@@ -123,7 +123,7 @@
                 Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er ook het meeste aan.
               </p>
               <div class="stepContent">
-                <div id="mailform">
+                <div id="emailform">
                   <form action="" enctype="multipart/form-data" method="post">
                     <span class="onderwerp unit">
                       <label for="description">Onderwerp</label>

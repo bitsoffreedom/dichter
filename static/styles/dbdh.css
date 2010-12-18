@@ -482,11 +482,10 @@ ul {
 			#vectors .disabled{
 			  display:none;
 			}
-				#viaMail a,
-				#viaPhone a,
-				#viaTwitter a,
-				#viaHyves a,
-				#viaFacebook a {
+				#viaemail a,
+				#viaphone a,
+				#viatwitter a,
+				#viafacebook a {
 					width: 85px;
 					height: 86px;
 					display: block;
@@ -496,26 +495,23 @@ ul {
 					margin: 15px 0 0 0;
 				}
 
-				#viaMail a { background-position: 0px 0px; }
+				#viaemail a { background-position: 0px 0px; }
 
-					#viaMail.selected a,
-					#viaMail a:hover { background-position: -85px 0px; }
+					#viaemail.selected a,
+					#viaemail a:hover { background-position: -85px 0px; }
 					
-				#viaPhone a { background-position: 0px -101px;}
-					#viaPhone.selected a,
-					#viaPhone a:hover { background-position: -85px -101px; }
+				#viaphone a { background-position: 0px -101px;}
+					#viaphone.selected a,
+					#viaphone a:hover { background-position: -85px -101px; }
 					
-				#viaTwitter a { background-position: 0px -202px;}
-					#viaTwitter.selected a,
-					#viaTwitter a:hover { background-position: -85px  -202px;}
+				#viatwitter a { background-position: 0px -202px;}
+					#viatwitter.selected a,
+					#viatwitter a:hover { background-position: -85px  -202px;}
 					
-				#viaHyves a { background-position: 0px -303px;}
-					#viaHyves.selected a,
-					#viaHyves a:hover { background-position:  -85px -303px;}
 					
-				#viaFacebook a { background-position: 0px -404px;}
-					#viaFacebook.selected a,
-					#viaFacebook a:hover { background-position:  -85px -404px;}
+				#viafacebook a { background-position: 0px -404px;}
+					#viafacebook.selected a,
+					#viafacebook a:hover { background-position:  -85px -404px;}
 
 		#step3 {
 			width: 352px;
