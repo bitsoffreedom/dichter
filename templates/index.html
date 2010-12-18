@@ -75,7 +75,11 @@
                       {% endif %}
                     </div>
                     <div class="extraInfo">
-                      {{ politician.desc|linebreaks }}
+                      {% if politician.desc|length > 0 %}
+                        {{ politician.desc|linebreaks }}
+                      {% else %}  
+                        {{ politician.politician.desc }}
+                      {% endif %}
                     </div>
                     <div class="infoToggle">
                       <span><span><a href="/politicus/{{ politician.politician.name_slug }}">Meer informatie</a></span></span>
