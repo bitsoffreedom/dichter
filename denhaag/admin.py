@@ -5,6 +5,7 @@ class CampaignAdmin(admin.ModelAdmin):
   list_display = ('title', 'start_date', 'end_date')
   search_fields = ('title',)
   ordering = ('title',)
+  date_hierarchy = 'start_date'
 admin.site.register(Campaign, CampaignAdmin)
 
 class PoliticianAdmin(admin.ModelAdmin):
