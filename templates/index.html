@@ -66,7 +66,7 @@
                       <h4>{{ politician.politician.name }}</h4>
                       <img class="politicus" src="{{ politician.politician.pica.url }}" alt="{{ politician.politician.name }}" />
                       <img class="partij" src="{{ politician.politician.party.pica.url }}" alt="{{ politician.politician.party.name }}" />
-                      {{ politician.politician.contactinfo|length }}
+                      {{ politician.politician.contact_methods|length }}
                       {% if politician.politician.contact_methods %}
                       <ul class="contactVia">
                         {% for contactmethod in politician.politician.contact_methods %}
@@ -102,7 +102,7 @@
                   <li id="viaMail">
                       <a href="#">via Mail</a>
                   </li>
-                  <li id="viaPhone" class="selected">
+                  <li id="viaPhone">
                       <a href="#">via Phone</a>
                   </li>
                   <li id="viaTwitter">
@@ -121,37 +121,42 @@
                 Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er ook het meeste aan.
               </p>
               <div class="stepContent">
-                <div id="mailform"><form action="" enctype="multipart/form-data" method="post">
-                  <span class="onderwerp unit">
-                    <label for="description">Onderwerp</label>
-                    <input name="description"  id="description" type="text" />
-                  </span>
-                  <span class="bericht unit">
-                    <label>Bericht</label>
-                    <textarea>Sed enim erat, accumsan quis auctor at, ultrices faucibus quam. Vestibulum congue ligula ac mi auctor placerat. Curabitur nisi quam, gravida at vestibulum ut, convallis a dolor. Nulla facilisi. Duis turpis ligula, laoreet nec eleifend id, suscipit eget mi. Pellentesque eget neque nisl, eu viverra diam. Cras tincidunt ornare nibh at laoreet. Proin arcu lacus, varius nec cursus vel, gravida eget arcu. Duis non elit sit amet tellus pellentesque egestas. Sed vulputate massa in nisl accumsan porta. Quisque non dolor at mi laoreet bibendum et tincidunt orci. Aliquam erat volutpat. Nullam eleifend purus nec magna consequat aliquet. Vestibulum in velit libero, at commodo metus.</textarea>
-                  </span>
-                  <span class="naam unit">
-                      <label for="name">Uw Naam</label>
-                      <input type="text" id="name" name="name" />
-                  </span>
-                  <span class="versturen">
-                    <input type="submit" value="Versturen" />
-                  </span>
-                </form>
-              </div>
-              <div id="tweetform" style="display:none;">
-                <form action="https://www.twitter.com/" enctype="multiform/form-data" method="GET" name="tweetform">
-                  <span class="bericht unit">
-                    <label id="message">Bericht</label>
-                    <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)"></textarea>
-                    <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" value="140" size="3"/>
-                    karakters over.
-                  </span>
-                  <span class="versturen">
-                    <input type="submit" value="Tweet" />
-                  </span>
-                </form>
-              </div>
+                <div id="mailform">
+                  <form action="" enctype="multipart/form-data" method="post">
+                    <span class="onderwerp unit">
+                      <label for="description">Onderwerp</label>
+                      <input name="description"  id="description" type="text" />
+                    </span>
+                    <span class="bericht unit">
+                      <label>Bericht</label>
+                      <textarea>Sed enim erat, accumsan quis auctor at, ultrices faucibus quam. Vestibulum congue ligula ac mi auctor placerat. Curabitur nisi quam, gravida at vestibulum ut, convallis a dolor. Nulla facilisi. Duis turpis ligula, laoreet nec eleifend id, suscipit eget mi. Pellentesque eget neque nisl, eu viverra diam. Cras tincidunt ornare nibh at laoreet. Proin arcu lacus, varius nec cursus vel, gravida eget arcu. Duis non elit sit amet tellus pellentesque egestas. Sed vulputate massa in nisl accumsan porta. Quisque non dolor at mi laoreet bibendum et tincidunt orci. Aliquam erat volutpat. Nullam eleifend purus nec magna consequat aliquet. Vestibulum in velit libero, at commodo metus.</textarea>
+                    </span>
+                    <span class="naam unit">
+                        <label for="name">Uw Naam</label>
+                        <input type="text" id="name" name="name" />
+                    </span>
+                    <span class="versturen">
+                      <input type="submit" value="Versturen" />
+                    </span>
+                  </form>
+                </div>
+                <div id="twitterform" style="display:none;">
+                  <form action="https://www.twitter.com/" enctype="multiform/form-data" method="GET" name="tweetform">
+                    <span class="bericht unit">
+                      <label id="message">Bericht</label>
+                      <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)"></textarea>
+                      <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" value="140" size="3"/>
+                      karakters over.
+                    </span>
+                    <span class="versturen">
+                      <input type="submit" value="Tweet" />
+                    </span>
+                  </form>
+                </div>
+                
+                 <div id="phoneform" style="display:none;">
+                  Bel nu: <span class="tel"></span>
+                </div>
               <p id="bedankt">Bedankt! We stellen je inzet en betrokkenheid enorm op prijs!</p>
               <h5>Wil je nog meer doen? Top!</h5>
               <ul>

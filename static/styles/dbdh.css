@@ -497,19 +497,24 @@ ul {
 				}
 				
 				#viaMail a { background-position: 0px 0px; }
-					#viaMail.selected a { background-position: -85px 0px; }
+					#viaMail.selected a,
+					#viaMail a:hover { background-position: -85px 0px; }
 					
 				#viaPhone a { background-position: 0px -101px;}
-					#viaPhone.selected a { background-position: -85px -101px; }
+					#viaPhone.selected a,
+					#viaPhone a:hover { background-position: -85px -101px; }
 					
 				#viaTwitter a { background-position: 0px -202px;}
-					#viaTwitter.selected a { background-position: -85px  -202px;}
+					#viaTwitter.selected a,
+					#viaTwitter a:hover { background-position: -85px  -202px;}
 					
 				#viaHyves a { background-position: 0px -303px;}
-					#viaHyves.selected a { background-position:  -85px -303px;}
+					#viaHyves.selected a,
+					#viaHyves a:hover { background-position:  -85px -303px;}
 					
 				#viaFacebook a { background-position: 0px -404px;}
-					#viaFacebook.selected a { background-position:  -85px -404px;}
+					#viaFacebook.selected a,
+					#viaFacebook a:hover { background-position:  -85px -404px;}
 					
 		
 		#step3 {
@@ -652,11 +657,11 @@ ul {
 				}
 				
 				#deelTwitter a{ background-position: -10px 0px }
-					#deelTwitter a:hover{ background-position: -10px -45px } 
+				#deelTwitter a:hover{ background-position: -10px -45px } 
 				#deelFacebook a{ background-position: -45px 0px; width: 35px;}
-					#deelFacebook a:hover{ background-position: -45px -45px}
+				#deelFacebook a:hover{ background-position: -45px -45px}
 				#deelHyves a{ background-position: -85px 0px}
-					#deelHyves a:hover{ background-position: -85px -45px}
+				#deelHyves a:hover{ background-position: -85px -45px}
 				
 		#reageren {
 			float: right;
