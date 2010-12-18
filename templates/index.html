@@ -32,7 +32,7 @@
         <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
           {% for campaign in campaign_list %}
           <li class="ui-state-default ui-corner-top">
-            <a href="/campaign/{{ campaign.title_slug|slugify }}/" title="{{ campaign.title_slug|slugify }}">{{ campaign.title }}</a>
+            <a href="/campaign/{{ campaign.title_slug }}/" title="{{ campaign.title }}">{{ campaign.title }}</a>
           </li>
           {% endfor %}
         </ul>
@@ -42,7 +42,7 @@
       <div id="hero">
       <h2>{{ campaign.title }}</h2>
       <img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
-      <span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
+      <span class="bijschrift">{{ campaign.subtitle|safe }}</span>
       <p class="intro">{{ campaign.intro|safe }}</p>
       {% if campaign.desc %}
         <div class="extraInfo">{{ campaign.desc|safe }}</div>
@@ -64,7 +64,8 @@
                       <h4>{{ politician.politician.name }}</h4>
                       <img class="politicus" src="{{ politician.politician.pica.url }}" alt="{{ politician.politician.name }}" />
                       <img class="partij" src="{{ politician.politician.party.pica.url }}" alt="{{ politician.politician.party.name }}" />
-                      {% if politician.politician.contact_methods|length > 0 %}
+                      {{ politician.politician.contactinfo|length }}
+                      {% if politician.politician.contact_methods %}
                       <ul class="contactVia">
                         {% for contactmethod in politician.politician.contact_methods %}
                           <li class="via{{ contactmethod.contact_method.name }}">
@@ -75,7 +76,7 @@
                       {% endif %}
                     </div>
                     <div class="extraInfo">
-                      {% if politician.desc|length > 0 %}
+                      {% if politician.desc %}
                         {{ politician.desc|linebreaks }}
                       {% else %}  
                         {{ politician.politician.desc }}
