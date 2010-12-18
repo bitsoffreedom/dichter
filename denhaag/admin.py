@@ -31,7 +31,7 @@ class PoliticianCampaignAdmin(admin.ModelAdmin):
 admin.site.register(PoliticianCampaign, PoliticianCampaignAdmin)
 
 class PoliticianContactInfoAdmin(admin.ModelAdmin):
-  list_display = ('politician', 'address', 'contact_method')
+  list_display = ('contact_method', 'address')
 admin.site.register(PoliticianContactInfo, PoliticianContactInfoAdmin)
 
 class ActionAdmin(admin.ModelAdmin):
