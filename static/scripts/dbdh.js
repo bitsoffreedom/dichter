@@ -37,7 +37,25 @@ $(document).ready(function(){
 		$(this).closest('.infoToggle').prev().slideToggle(400,function () { $(this).trigger("scrollTo"); });
 		$(this).closest('.infoToggle').toggleClass('hide');
 		$(this).text($(this).text() == "Meer informatie" ? "Informatie verbergen" : "Meer informatie");
-	});
+	});	
+	
+	$("#vectors li").click(function(){
+    // get the id for the element we clicked on
+    if($(this).hasClass('disabled')){
+      return;
+    }
+    var vector = $(this).attr('id').substr(3).toLowerCase();
+    // hide all form parents (by lack of classes)
+    $('#step3 .stepContent>div').each(function(){ 
+      $(this).hide();
+    });
+    $('#'+vector+'form').show();
+    // unset the current active vector
+    $("#vectors .selected").removeClass('selected');
+    // make the clicked vector active
+    $(this).addClass('selected');
+    return false;
+  });
 	
 });
 
@@ -49,27 +67,3 @@ function field_size(field,size_field,limit) {
 		size_field.value = limit - field.value.length;
 	}
 }
-
-
-
-$("#vectors li").click(function(){
-  // get the id for the element we clicked on
-  if($(this).hasClass('disabled')){
-    return;
-  }
-  vector = $(this).id.substr(3);
-  // hide all form parents (by lack of classes)
-  $('#step3 form').each(function(){ $(this).parentNode.hide()});
-  $('#'+vector+'form').show();
-  // unset the current active vector
-  $("#vector .active").removeClass('active');
-  // make the clicked vector active
-  $(this).addClass('active');
-})
-
-
-
-
-
-
-

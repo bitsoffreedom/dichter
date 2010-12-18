@@ -47,6 +47,7 @@ $(function () {
 			} else if (($(e.currentTarget).position().top + $(e.currentTarget).height()) > ($("#targets").position().top + $("#targets").height())) {
 				$(e.currentTarget).parent("ul").scrollTo(e.currentTarget, 500, {offset: {top: 20 - ( $("#targets").height() - $(e.currentTarget).height() ), left: 0} })
 			}
+			navEnabler(0);
 		});
 
 		$(targets[i]).click(function (e) {

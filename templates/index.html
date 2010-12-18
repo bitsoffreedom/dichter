@@ -18,7 +18,7 @@
     <div id="wrapper">
       <div id="header">
         <h1 id="logo"><a href="/">Dichter bij Den Haag</a></h1>
-        <a id="boflogo">Bits of Freedom</a>
+        <a id="boflogo" href="http://bof.nl">Bits of Freedom</a>
       </div>
     <div id="navbar">
       <ul id="nav">
@@ -28,21 +28,26 @@
       </ul>
     </div>
     <div id="campagnes">
+	  <div id="campagnesScrollLeft"></div>
       <div id="campagnes-list" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
         <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
           {% for campaign in campaign_list %}
           <li class="ui-state-default ui-corner-top">
-            <a href="/campaign/{{ campaign.title_slug|slugify }}/" title="{{ campaign.title_slug|slugify }}">{{ campaign.title }}</a>
+            <a href="/campaign/{{ campaign.title_slug }}/" title="{{ campaign.title }}">{{ campaign.title }}</a>
           </li>
           {% endfor %}
+<!--      <li class="ui-state-default ui-corner-top">
+			  <a href="/blog/campaign" title="Voltooide campagnes">Voltooide campagnes</a>
+		  </li>-->
         </ul>
       </div>
+	  <div id="campagnesScrollRight"></div>
     </div>
     <div id="content">
       <div id="hero">
       <h2>{{ campaign.title }}</h2>
       <img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
-      <span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
+      <span class="bijschrift">{{ campaign.subtitle|safe }}</span>
       <p class="intro">{{ campaign.intro|safe }}</p>
       {% if campaign.desc %}
         <div class="extraInfo">{{ campaign.desc|safe }}</div>
@@ -64,7 +69,8 @@
                       <h4>{{ politician.politician.name }}</h4>
                       <img class="politicus" src="{{ politician.politician.pica.url }}" alt="{{ politician.politician.name }}" />
                       <img class="partij" src="{{ politician.politician.party.pica.url }}" alt="{{ politician.politician.party.name }}" />
-                      {% if politician.politician.contact_methods|length > 0 %}
+                      {{ politician.politician.contact_methods|length }}
+                      {% if politician.politician.contact_methods %}
                       <ul class="contactVia">
                         {% for contactmethod in politician.politician.contact_methods %}
                           <li class="via{{ contactmethod.contact_method.name }}">
@@ -75,9 +81,9 @@
                       {% endif %}
                     </div>
                     <div class="extraInfo">
-                      {% if politician.desc|length > 0 %}
+                      {% if politician.desc %}
                         {{ politician.desc|linebreaks }}
-                      {% else %}  
+                      {% else %}
                         {{ politician.politician.desc }}
                       {% endif %}
                     </div>
@@ -99,7 +105,7 @@
                   <li id="viaMail">
                       <a href="#">via Mail</a>
                   </li>
-                  <li id="viaPhone" class="selected">
+                  <li id="viaPhone">
                       <a href="#">via Phone</a>
                   </li>
                   <li id="viaTwitter">
@@ -110,7 +116,7 @@
                   </li>
                 </ul>
               </div>
-              
+
             </div>
             <div id="step3">
               <h3>Stap 3: Wat</h3>
@@ -118,37 +124,42 @@
                 Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er ook het meeste aan.
               </p>
               <div class="stepContent">
-                <div id="mailform"><form action="" enctype="multipart/form-data" method="post">
-                  <span class="onderwerp unit">
-                    <label for="description">Onderwerp</label>
-                    <input name="description"  id="description" type="text" />
-                  </span>
-                  <span class="bericht unit">
-                    <label>Bericht</label>
-                    <textarea>Sed enim erat, accumsan quis auctor at, ultrices faucibus quam. Vestibulum congue ligula ac mi auctor placerat. Curabitur nisi quam, gravida at vestibulum ut, convallis a dolor. Nulla facilisi. Duis turpis ligula, laoreet nec eleifend id, suscipit eget mi. Pellentesque eget neque nisl, eu viverra diam. Cras tincidunt ornare nibh at laoreet. Proin arcu lacus, varius nec cursus vel, gravida eget arcu. Duis non elit sit amet tellus pellentesque egestas. Sed vulputate massa in nisl accumsan porta. Quisque non dolor at mi laoreet bibendum et tincidunt orci. Aliquam erat volutpat. Nullam eleifend purus nec magna consequat aliquet. Vestibulum in velit libero, at commodo metus.</textarea>
-                  </span>
-                  <span class="naam unit">
-                      <label for="name">Uw Naam</label>
-                      <input type="text" id="name" name="name" />
-                  </span>
-                  <span class="versturen">
-                    <input type="submit" value="Versturen" />
-                  </span>
-                </form>
-              </div>
-              <div id="tweetform" style="display:none;">
-                <form action="https://www.twitter.com/" enctype="multiform/form-data" method="GET" name="tweetform">
-                  <span class="bericht unit">
-                    <label id="message">Bericht</label>
-                    <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)"></textarea>
-                    <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" value="140" size="3"/>
-                    karakters over.
-                  </span>
-                  <span class="versturen">
-                    <input type="submit" value="Tweet" />
-                  </span>
-                </form>
-              </div>
+                <div id="mailform">
+                  <form action="" enctype="multipart/form-data" method="post">
+                    <span class="onderwerp unit">
+                      <label for="description">Onderwerp</label>
+                      <input name="description"  id="description" type="text" />
+                    </span>
+                    <span class="bericht unit">
+                      <label>Bericht</label>
+                      <textarea>Sed enim erat, accumsan quis auctor at, ultrices faucibus quam. Vestibulum congue ligula ac mi auctor placerat. Curabitur nisi quam, gravida at vestibulum ut, convallis a dolor. Nulla facilisi. Duis turpis ligula, laoreet nec eleifend id, suscipit eget mi. Pellentesque eget neque nisl, eu viverra diam. Cras tincidunt ornare nibh at laoreet. Proin arcu lacus, varius nec cursus vel, gravida eget arcu. Duis non elit sit amet tellus pellentesque egestas. Sed vulputate massa in nisl accumsan porta. Quisque non dolor at mi laoreet bibendum et tincidunt orci. Aliquam erat volutpat. Nullam eleifend purus nec magna consequat aliquet. Vestibulum in velit libero, at commodo metus.</textarea>
+                    </span>
+                    <span class="naam unit">
+                        <label for="name">Uw Naam</label>
+                        <input type="text" id="name" name="name" />
+                    </span>
+                    <span class="versturen">
+                      <input type="submit" value="Versturen" />
+                    </span>
+                  </form>
+                </div>
+                <div id="twitterform" style="display:none;">
+                  <form action="https://www.twitter.com/" enctype="multiform/form-data" method="GET" name="tweetform">
+                    <span class="bericht unit">
+                      <label id="message">Bericht</label>
+                      <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)"></textarea>
+                      <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" value="140" size="3"/>
+                      karakters over.
+                    </span>
+                    <span class="versturen">
+                      <input type="submit" value="Tweet" />
+                    </span>
+                  </form>
+                </div>
+                
+                 <div id="phoneform" style="display:none;">
+                  Bel nu: <span class="tel"></span>
+                </div>
               <p id="bedankt">Bedankt! We stellen je inzet en betrokkenheid enorm op prijs!</p>
               <h5>Wil je nog meer doen? Top!</h5>
               <ul>
@@ -163,7 +174,6 @@
         <div id="deelreageer">
           <div id="reageren">
             <p id="kloptniet">Kloppen contactgegevens niet? Mis je iets? <a href="#">Laat het ons weten!</a></p>
-            <span id="reacties"><a href="#">24 Reacties</a></span>
           </div>
           <ul id="delen">
             <li id="deelTwitter"><a href="http://twitter.com/?status=Doe%20mee%20aan%20de%20campagne%20voor%20{{campaign.title}}%20http://www.dichterbijdenhaag.nl/campaign/{{campaign.title_slug}}">Twitter</a></li>
@@ -181,8 +191,8 @@
               <li><a href="/static/privacy/">Privacy-verklaring</a>&nbsp;|&nbsp;</li>
               <li><a href="/static/regels/">Huisregels</a>&nbsp;|&nbsp;</li>
               <li><a href="mailto:info@bof.nl">info@bof.nl</a>&nbsp;|&nbsp;</li>
-              <li>design: <a href="#">Martijn</a>&nbsp;|&nbsp;</li>
-              <li>techniek: <a href="#">iemand anders</a></li>
+              <li>design: Martijn&nbsp;|&nbsp;</li>
+              <li>techniek: Bof vrijwilligers</li>
             </ul>
           </div>
         <ul id="followLinks">
