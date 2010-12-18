@@ -10,7 +10,6 @@ urlpatterns = patterns('',
   # (r'^dichter/', include('dichter.foo.urls')),
   (r'^$', 'dichter.denhaag.views.index'),
 
-  (r'^action/(?P<campaign_id>\d+)/(?P<user>\w+)/hyves/$', 'dichter.denhaag.views.send_message_hyves'),
   (r'^action/(?P<campaign_id>\d+)/(?P<user>\w+)/mail/$', 'dichter.denhaag.views.send_message_mail'),
   (r'^action/(?P<campaign_id>\d+)/(?P<user>\w+)/facebook/$', 'dichter.denhaag.views.send_message_facebook'),
 
