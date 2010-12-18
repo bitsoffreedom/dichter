@@ -220,10 +220,33 @@ ul {
 	}
 	#campagnes-list {
 		overflow: hidden;
-		width: 650px;
+		float: left;
+		width: 600px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	#campagnes-list ul {
 		width: 6000px;	
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#campagnesScrollLeft {
+		background: url(../images/arrow-left.png) no-repeat;
+		float: left;
+		margin-top: 7px;
+		width: 19px;
+		height: 25px;
+		margin-right: 2px;
+/*		margin: 13px 0 0 2px;*/
+	}
+	#campagnesScrollRight {
+		background: url(../images/arrow-right.png) no-repeat;
+		float: left;
+		margin-top: 7px;
+		width: 19px;
+		height: 25px;
+		margin-left: 2px;
+/*		margin: 13px 0 0 2px;*/
 	}
 	
 	
