@@ -1,4 +1,4 @@
-/* 
+/*
 eth0 bof
 */
 
@@ -27,15 +27,15 @@ h2 {
 	font-size: 26px;
 	margin: 12px 0;
 }
-	
+
 h5 {
 	font-size: 15px;
 	margin: 6px 0 0 0;
 }
-	
+
 p {
 	margin-top: 19px;
-}	
+}
 
 a {
 	color: #37abdb;
@@ -43,7 +43,7 @@ a {
 	outline: none;
 }
 
-a:hover, 
+a:hover,
 a:active {
 	text-decoration: underline;
 }
@@ -65,15 +65,15 @@ ul {
 	float: left;
 	margin: 0 0 0 -120px;
 }
-		
-#logo a {	
-	display: block;			
+
+#logo a {
+	display: block;
 	width: 331px;
 	height: 98px;
 	background: url(../images/h1-dbdh-logo.png) no-repeat;
 	text-indent: -9999px;
 }
-	
+
 #boflogo {
   display: block;
 	float: right;
@@ -102,14 +102,14 @@ ul {
 	width: 794px;
 	margin: 0 auto;
 }
-		
+
 #nav li {
 	display: block;
 	float: left;
 	width: 122px;
 	padding:.1em 0;
 }
-	
+
 #nav li a {
 	height:24px;
 	color:#fff;
@@ -129,30 +129,30 @@ ul {
 	margin: 4px 0 0 0;
 	display: block;
 }
-	
+
 #hero img.aside {
 	float: right;
 	margin: 0 0 19px 19px;
 }
-		
+
 #hero p.intro {
 	font-weight: bold;
 	margin: 2px 0;
 }
-		
+
 #hero img.politicus,
 #hero img.partij {
-	float: right; 
+	float: right;
 	margin: -30px 0px 19px 19px;
 }
-		
+
 #meer {
 	margin: 15px 0 0 0;
 	border-top: 2px solid #36abdb;
 	clear: both;
 	overflow: auto;
 }
-	
+
 #meer span {
 	display: block;
 	width: 92px;
@@ -161,7 +161,7 @@ ul {
 	background: url(../images/bg-a-meer.png) no-repeat bottom #36abdb;
 	color: #fff;
 }
-				
+
 #meer a {
 	background: url(../images/bg-meer-arrow.png) no-repeat 2px 7px;
 	color: #fff;
@@ -176,11 +176,11 @@ ul {
 #meer a:hover {
 	text-decoration: underline;
 }
-					
+
 #meer.open a {
 	background: url(../images/bg-meer-arrow-open.png) no-repeat 2px 7px;
 }
-			
+
 #campagnes {
 	width: 654px;
 	padding-left: 140px;
@@ -190,7 +190,7 @@ ul {
 	margin-top: 0px;
 	font-weight: bold !important;
 }
-	
+
 #campagnes-list {
 	overflow: hidden;
 	float: left;
@@ -199,7 +199,7 @@ ul {
 	padding-right: 0;
 }
 #campagnes-list ul {
-	width: 6000px;	
+	width: 6000px;
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -219,19 +219,19 @@ ul {
 	height: 25px;
 	margin-left: 2px;
 }
-	
+
 #steps {
 	clear: both;
 	margin: 20px 0 50px 0;
 	overflow: auto;
 }
-	
+
 #steps .stepContent {
 	background: url(../images/bg-panel-narrow.png) no-repeat 0px 0px;
 	min-height: 370px;
 	overflow: hidden;
 }
-		
+
 #steps p.intro {
 	color: #fff;
 	background: #7c7c7c;
@@ -241,54 +241,54 @@ ul {
 	padding: 4px 7px;
 	min-height: 36px;
 }
-	
+
 #step1 {
 	width: 212px;
 	float: left;
 	margin: 0 9px 0 0;
 }
-		
+
 #step1 h3 {
 	background: url(../images/bg-stap1.png) no-repeat;
 	width: 212px;
 	height: 42px;
   text-indent: -9999px
 }
-			
+
 #targetScrollUp {
 	background: url(../images/bg-stap1-scrollup.png) no-repeat;
 	width: 207px;
 	height: 27px;
 	margin: 13px 0 0 2px;
 }
-			
+
 #targetScrollUp:hover {
 	background: url(../images/bg-stap1-scrollup.png) no-repeat 0px -27px;
 	cursor: pointer;
 }
-				
+
 #targetScrollUp.ui-state-disabled:hover {
 	background: url(../images/bg-stap1-scrollup.png) no-repeat;
 	cursor: default;
 }
-			
+
 #targetScrollDown {
 	background: url(../images/bg-stap1-scrolldown.png) no-repeat;
 	width: 207px;
 	height: 27px;
 	margin: 0px 0 13px 2px;
 }
-			
+
 #targetScrollDown:hover {
 	background: url(../images/bg-stap1-scrolldown.png) no-repeat 0px -27px;
 	cursor: pointer;
 }
-				
+
 #targetScrollDown.ui-state-disabled:hover {
 	background: url(../images/bg-stap1-scrolldown.png) no-repeat;
 	cursor: default;
 }
-			
+
 #targets {
 	list-style: none;
 	margin: 0;
@@ -301,7 +301,7 @@ ul {
 #targets li:first-child {
 	margin-top: 13px;
 }
-			
+
 #targets li {
 	border: 1px solid #6c6c6c;
 	padding: 3px 4px;
@@ -309,10 +309,10 @@ ul {
 	margin: 0 0 13px 0;
 	width: 197px;
 }
-				
+
 #targets li.selected { background: #36abdb; }
 #targets li.disabled { background: #676767; }
-				
+
 #targets ul.contactVia {
 	clear: right;
 	list-style: none;
@@ -320,7 +320,7 @@ ul {
 	float: right;
 	margin: 4px 0 0 0;
 }
-					
+
 #targets .contactVia li {
 	border: none;
 	width: 20px;
@@ -334,7 +334,7 @@ ul {
 	padding: 0px;
 	margin: 0px;
 }
-					
+
 #targets li.viaMail { background-position: 0px 0px; }
 
 #targets .selected li.viaMail,
@@ -359,34 +359,34 @@ ul {
 
 #targets .selected li.viaFacebook,
 #targets .disabled li.viaFacebook { background-position: -80px -17px; }
-	
+
 #targets h4 {
 	font-size: 13px;
 	text-transform: uppercase;
 }
-				
+
 #targets .selected h4 { color: #fff; }
 #targets .disabled h4 { color: #cdcdcd; }
-				
+
 #targets .politicus {
 	border: 1px solid #6c6c6c;
 	border-bottom: none;
 	float: left;
 	max-width: 76px;
 }
-			
+
 #targets .partij {
 	border: none;
 	float: right;
 	max-width: 96px;
 	margin-right: 8px;
 }
-				
+
 #targets li .info {
 	overflow: auto;
 	border: none;
 	border-bottom: none;
-	padding: 0px;				
+	padding: 0px;
 }
 
 #targets li .extraInfo {
@@ -395,35 +395,35 @@ ul {
 	line-height: 13px;
 	background: #444;
 	color: #fff;
-	padding: 3px 4px;					
+	padding: 3px 4px;
 }
-				
+
 #targets li .extraInfo.first {
   background: url(../images/bg-politicus-extrainfo.png) no-repeat #444;
-	padding: 13px 4px 3px;					
+	padding: 13px 4px 3px;
 }
 
 #targets li .extraInfo p {
 	margin: 0 0 1px 0;
 }
-					
+
 #targets li .infoToggle {
 	border-top: 1px solid #6c6c6c;
 }
-				
-				
+
+
 #targets li .infoToggle span {
 	display: block;
 	background: url(../images/bg-politici-meer-info.png) no-repeat top right;
 	float: left;
 }
-				
+
 #targets li .infoToggle span span {
 	display: block;
 	background: url(../images/bg-politici-meer-info.png) no-repeat top left;
 	margin: 0 5px 0 0;
 }
-				
+
 #targets li .infoToggle span span a  {
 	color: #fff;
 	font-size: 12px;
@@ -431,17 +431,17 @@ ul {
 	line-height: 16px;
 	background: url(../images/bg-a-meer-info.png) no-repeat 4px 4px;
 }
-				
+
 #targets li .infoToggle.hide span span a {
 	background: url(../images/bg-a-hide-info.png) no-repeat 4px 4px;
 				}
-				
-				
+
+
 		#steps div.nietbeschikbaar {
 			width: 172px;
 			margin: 13px auto;
 		}
-		
+
 		#steps div.nietbeschikbaar h4 {
 			background: url(../images/bg-nietbeschikbaar.png) no-repeat;
 			font-size: 19px;
@@ -449,7 +449,7 @@ ul {
 			padding: 5px 0 0 25px;
 			color: #fff;
 		}
-		
+
 		#steps div.nietbeschikbaar p {
 			background: url(../images/bg-nietbeschikbaar.png) no-repeat bottom;
 			margin: 0;
@@ -458,26 +458,26 @@ ul {
 			line-height: 13px;
 			padding: 6px;
 		}
-		
+
 		#step2 {
 			width: 212px;
 			float: left;
 			margin: 0 9px 0 0;
 		}
-		
+
 			#step2 h3 {
 				background: url(../images/bg-stap2.png) no-repeat;
 				width: 212px;
 				height: 42px;
 				text-indent: -9999px
 			}
-		
+
 			#vectors {
 				list-style: none;
 				width: 85px;
 				margin: 0 auto;
 			}
-			
+
 			#vectors  li { list-style-image: none; margin: 0;}
 			#vectors .disabled{
 			  display:none;
@@ -495,52 +495,52 @@ ul {
 					background-repeat:  no-repeat;
 					margin: 15px 0 0 0;
 				}
-				
+
 				#viaMail a { background-position: 0px 0px; }
 					#viaMail.selected a { background-position: -85px 0px; }
-					
+
 				#viaPhone a { background-position: 0px -101px;}
 					#viaPhone.selected a { background-position: -85px -101px; }
-					
+
 				#viaTwitter a { background-position: 0px -202px;}
 					#viaTwitter.selected a { background-position: -85px  -202px;}
-					
+
 				#viaHyves a { background-position: 0px -303px;}
 					#viaHyves.selected a { background-position:  -85px -303px;}
-					
+
 				#viaFacebook a { background-position: 0px -404px;}
 					#viaFacebook.selected a { background-position:  -85px -404px;}
-					
-		
+
+
 		#step3 {
 			width: 352px;
 			float: left;
 		}
-		
+
 			#step3 .stepContent {
 			background: url(../images/bg-panel-wide.png) no-repeat 0px 0px;
 			}
-		
+
 			#step3 h3 {
 				background: url(../images/bg-stap3.png) no-repeat;
 				width: 352px;
 				height: 42px;
 				text-indent: -9999px
 			}
-			
+
 			#step3 form {
 				margin: 0px 7px;
 				padding: 0 0 20px 0;
 				border-bottom: 1px dotted #a59d9d;
 			}
-			
+
 			#step3 form .unit {
 				margin: 15px 0  0 0;
 				display: block;
 				width: 100%;
 				overflow: hidden;
 			}
-			
+
 			#step3 .onderwerp label,
 			#step3 .naam label {
 				display: block;
@@ -551,7 +551,7 @@ ul {
 				padding: 1px 5px;
 				float: left;
 			}
-			
+
 			#step3 .onderwerp input,
 			#step3 .naam input {
 				border: 1px solid #a59d9d;
@@ -561,7 +561,7 @@ ul {
 				height: 18px;
 				padding: 1px 5px;
 			}
-			
+
 			#step3 .bericht label {
 				display: block;
 				background: url(../images/bg-label-v.png) no-repeat;
@@ -571,7 +571,7 @@ ul {
 				padding: 1px 5px;
 				float: left;
 			}
-			
+
 			#step3 .bericht textarea,
 			#tweetform textarea {
 				border: 1px solid #a59d9d;
@@ -587,12 +587,12 @@ ul {
 			#tweetform .bericht textarea {
 				height: 52px;
 			}
-			
+
 			#tweetsizedisplay {
 				border: none;
 				font-weight: bold;
 			}
-			
+
 			#step3 .versturen input {
 				background: url(../images/bg-btn-versturen.png) no-repeat;
 				display: block;
@@ -606,25 +606,25 @@ ul {
 				text-align: left;
 				padding: 0 9px;
 			}
-			
+
 				#step3 .versturen input:hover {
 					color: #37abdb;
 					background-position: 0px -31px;
 				}
-			
+
 		#bedankt {
 			background: url(../images/bg-bedankt.png) no-repeat;
 			width: 345px;
 			height: 81px;
 			text-indent: -9999px;
-			
+
 		}
-		
-		
+
+
 		#deelreageer {
 			width: 100%;
 		}
-		
+
 		#delen {
 			background: url(../images/bg-delen.png) no-repeat;
 			width: 130px;
@@ -633,14 +633,14 @@ ul {
 			padding: 0 0 0 300px;
 			float: left;
 		}
-		
+
 			#delen li {
 				list-style: none;
 				margin: none;
 				float: left;
 			}
-				
-				#deelTwitter a, 
+
+				#deelTwitter a,
 				#deelFacebook a,
 				#deelHyves a{
 					display: block;
@@ -650,44 +650,26 @@ ul {
 					width: 30px;
 					height: 40px;
 				}
-				
+
 				#deelTwitter a{ background-position: -10px 0px }
-					#deelTwitter a:hover{ background-position: -10px -45px } 
+					#deelTwitter a:hover{ background-position: -10px -45px }
 				#deelFacebook a{ background-position: -45px 0px; width: 35px;}
 					#deelFacebook a:hover{ background-position: -45px -45px}
 				#deelHyves a{ background-position: -85px 0px}
 					#deelHyves a:hover{ background-position: -85px -45px}
-				
+
 		#reageren {
 			float: right;
 			width: 346px;
 		}
-		
+
 			#kloptniet{
 				font-size: 11px;
 				color: #676767;
 				border-bottom: 1px dotted #676767;
 				margin: 0px 6px 13px 0;
-				
+
 			}
-			
-			#reacties{
-				display: block;
-				float: right;
-				width: 128px;
-				height: 27px;
-				background: url(../images/bg-reacties.png) no-repeat;
-				padding: 95px 0 0 670px;
-				font-size: 16px;
-				text-transform: uppercase;
-				color: #fff;
-				margin: 0 0 13px 0;
-			}:first-child+html #reacties { /* ie7 teh suck */
-				float: left;
-				margin-left: -450px;
-			}
-			
-				#reacties a { color: #fff; }
 
 #footer {
 	clear: both;
@@ -702,11 +684,11 @@ ul {
 		width: 500px;
 		float: left;
 	}
-	
+
 	#marquee {
 		border-bottom: 1px dotted #6a6a6a;
 	}
-	
+
 		#marquee p {
 			color: #6a6a6a;
 			font-weight: bold;
@@ -717,33 +699,33 @@ ul {
 		list-style: none;
 		margin: 8px 0 0 0;
 	}
-		
+
 		#footerlinks li {
 			display: block;
 			float: left;
 			color: #6a6a6a;
 			margin: 0;
 		}
-		
+
 			#footerlinks li a {
 				color: #6a6a6a;
 				text-decoration: none;
 			}
-		
+
 	#followLinks {
 		list-style: none;
 		width: 312px;
 		float: right;
 		margin: 50px -2px 0 0;
 	}
-	
+
 	#followLinks li {
 		display: block;
 		float: left;
 		margin: 0;
 		list-style-image: none;
 	}
-		
+
 	#followLinkedin a,
 	#followTwitter a,
 	#followRss a,
@@ -755,7 +737,7 @@ ul {
 		background-image: url(../images/bg-footer.png);
 		background-repeat: no-repeat;
 	}
-	
+
 	#followLinkedin a { background-position: -508px -50px; }
 	#followTwitter a { background-position: -586px -50px; }
 	#followRss a { background-position: -664px -50px; }
@@ -765,8 +747,8 @@ ul {
 		display: none;
 	}
 	*/
-	
-	
+
+
 /* new clearfix */
 .clearfix:after {
 	visibility: hidden;
