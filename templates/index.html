@@ -44,10 +44,12 @@
       <img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
       <span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
       <p class="intro">{{ campaign.intro|safe }}</p>
-      <div class="extraInfo">{{ campaign.desc|safe }}</div>
+      {% if campaign.desc %}
+        <div class="extraInfo">{{ campaign.desc|safe }}</div>
         <div id="meer">
           <span><a href="#">Meer lezen</a></span>
         </div>
+      {% endif %}
       </div>
       <div id="steps">
         <div id="step1">

@@ -22,7 +22,10 @@ class ContactMethodAdmin(admin.ModelAdmin):
   list_display = ('name','enabled')
 admin.site.register(ContactMethod, ContactMethodAdmin)
 
-admin.site.register(CampaignContact)
+class CampaignContactAdmin(admin.ModelAdmin):
+  list_display = ('campaign', 'contact_method')
+admin.site.register(CampaignContact, CampaignContactAdmin)
+
 class PoliticianCampaignAdmin(admin.ModelAdmin):
   list_display = ('politician', 'campaign', 'weight')
 admin.site.register(PoliticianCampaign, PoliticianCampaignAdmin)
@@ -30,8 +33,12 @@ admin.site.register(PoliticianCampaign, PoliticianCampaignAdmin)
 class PoliticianContactInfoAdmin(admin.ModelAdmin):
   list_display = ('politician', 'address', 'contact_method')
 admin.site.register(PoliticianContactInfo, PoliticianContactInfoAdmin)
-admin.site.register(Action)
+
+class ActionAdmin(admin.ModelAdmin):
+	list_display = ('campaign_contact', 'ip')
+admin.site.register(Action, ActionAdmin)
 admin.site.register(Response)
+
 class StaticAdmin(admin.ModelAdmin):
   list_display = ('title', 'slug')
 admin.site.register(Static, StaticAdmin)
