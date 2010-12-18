@@ -54,6 +54,7 @@ class PoliticianCampaign(models.Model):
 class ContactMethod(models.Model):
   name = models.CharField(max_length=25)
   enabled = models.BooleanField(default=True)
+  prefix = models.CharField(max_length=40)
   def __unicode__(self):
     return self.name
 
@@ -63,9 +64,12 @@ class CampaignContact(models.Model):
 	template = models.TextField()
 
 class PoliticianContactInfo(models.Model):
-	contact_method = models.ForeignKey(ContactMethod)
-	#politician = models.ForeignKey(Politician)
-	address = models.CharField(max_length=200)
+  contact_method = models.ForeignKey(ContactMethod)
+  #politician = models.ForeignKey(Politician)
+  address = models.CharField(max_length=200)
+  def __unicode__(self):
+    return self.contact_method.prefix + self.address
+
 
 class Action(models.Model):
 	campaign_contact = models.ForeignKey(CampaignContact)
