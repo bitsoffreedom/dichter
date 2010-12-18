@@ -69,10 +69,9 @@
                       <h4>{{ politician.politician.name }}</h4>
                       <img class="politicus" src="{{ politician.politician.pica.url }}" alt="{{ politician.politician.name }}" />
                       <img class="partij" src="{{ politician.politician.party.pica.url }}" alt="{{ politician.politician.party.name }}" />
-                      {{ politician.politician.contact_methods|length }}
-                      {% if politician.politician.contact_methods %}
+                      {% if politician.politician.contact_info %}
                       <ul class="contactVia">
-                        {% for contactmethod in politician.politician.contact_methods %}
+                        {% for contactmethod in politician.politician.contact_info.all %}
                           <li class="via{{ contactmethod.contact_method.name }}">
                               <a href="#">via {{ contactmethod.contact_method.name }}</a>
                           </li>
