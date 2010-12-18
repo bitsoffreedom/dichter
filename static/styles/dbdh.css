@@ -454,8 +454,12 @@ ul {
 				list-style: none;
 				width: 85px;
 				margin: 0 auto;
-			}#vectors  li { list-style-image: none; margin: 0;}
+			}
 			
+			#vectors  li { list-style-image: none; margin: 0;}
+			#vectors .disabled{
+			  display:none;
+			}
 				#viaMail a,
 				#viaPhone a,
 				#viaTwitter a,
@@ -472,19 +476,19 @@ ul {
 				
 				#viaMail a { background-position: 0px 0px; }
 					#viaMail.selected a { background-position: -85px 0px; }
-					#viaMail.disabled a { background-position: -170px 0px; width: 105px; }
+					
 				#viaPhone a { background-position: 0px -101px;}
 					#viaPhone.selected a { background-position: -85px -101px; }
-					#viaPhone.disabled a { background-position: -170px -101px; width: 105px; }
+					
 				#viaTwitter a { background-position: 0px -202px;}
 					#viaTwitter.selected a { background-position: -85px  -202px;}
-					#viaTwitter.disabled a { background-position: -170px -202px; width: 105px; }
+					
 				#viaHyves a { background-position: 0px -303px;}
 					#viaHyves.selected a { background-position:  -85px -303px;}
-					#viaHyves.disabled a { background-position: -170px -303px; width: 105px; }
+					
 				#viaFacebook a { background-position: 0px -404px;}
 					#viaFacebook.selected a { background-position:  -85px -404px;}
-					#viaFacebook.disabled a { background-position: -170px -404px; width: 105px; }
+					
 		
 		#step3 {
 			width: 352px;
