@@ -48,14 +48,16 @@ for politicus in c:
       "party": %d,
       "desc": "Actief in: %s",
       "gender": "%s",
-	    "pica": "%s"
+	    "pica": "%s",
+      "contact_info": [%d]
     }
   }""" % (i, 
           politicus[1],
           parties[politicus[10]],
           ', '.join(politicus[12:31]).rstrip(', '),
           politicus[8]  == 'Man' and 'M' or 'F',
-          dstimage))
+          dstimage,
+          i))
   if politicus[9] is not '':
     contactsoutput.append("""
     {
@@ -63,12 +65,10 @@ for politicus in c:
       "pk": %d,
       "fields":{
         "contact_method":1,
-        "address": "%s",
-        "politician": %d,
+        "address": "%s"
       }
     }""" % (i,
-            politicus[9].lower(),
-            i))
+            politicus[9].lower()))
   
 print ','.join(politicusoutput)
 print ','.join(contactsoutput)

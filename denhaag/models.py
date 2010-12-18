@@ -33,6 +33,7 @@ class Politician(models.Model):
   desc = models.TextField()
   gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
   pica = models.ImageField(upload_to='photos/%Y/%m/%d')
+  contact_info = models.ManyToManyField('PoliticianContactInfo')
   def name_slug(self):
     return sluggify(self.name)
 
@@ -63,7 +64,7 @@ class CampaignContact(models.Model):
 
 class PoliticianContactInfo(models.Model):
 	contact_method = models.ForeignKey(ContactMethod)
-	politician = models.ForeignKey(Politician)
+	#politician = models.ForeignKey(Politician)
 	address = models.CharField(max_length=200)
 
 class Action(models.Model):
