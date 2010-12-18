@@ -110,7 +110,10 @@ $(function () {
 	function hash_change () {
 		if (__hash_change_running) { return; }
 		var location = window.location.toString()
-		if (location.match(/#.+$/) && !location.match("#" + encodeURIComponent(current_fragment) + "$")){
+
+		var anchor = decodeURIComponent(location.match(/#(.+$)/));
+		
+		if (anchor && anchor.match(current_fragment + "$")[1]){
 			// Prevent from running multiple updates at once
 			__hash_change_running = true;
 

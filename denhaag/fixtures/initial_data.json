@@ -47,7 +47,8 @@
 	  "pk":1,
 	  "fields":{
 	    "name":"email",
-	    "enabled":"1"
+	    "enabled":"1",
+		"prefix":"mailto://"
 	  }
 	},
   {
