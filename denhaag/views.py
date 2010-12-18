@@ -49,14 +49,6 @@ def send_message_facebook(request, politician):
     raise Http404
   return render_to_response('form_facebook.html', {'politician': politician})
 
-def send_message_hyves(request, politician):
-  try:
-    politician = Politician.objects.get(name=politician)
-  except Politician.DoesNotExist:
-    raise Http404
-  return render_to_response('form_hyves.html', {'politician': politician})
-
-
 def static(request, slug):
   try:
     politician = Static.objects.get(slug=slug)
