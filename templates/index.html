@@ -28,7 +28,7 @@
       </ul>
     </div>
     <div id="campagnes">
-					<div id="campagnesScrollLeft"></div>
+	  <div id="campagnesScrollLeft"></div>
       <div id="campagnes-list" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
         <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
           {% for campaign in campaign_list %}
@@ -36,9 +36,12 @@
             <a href="/campaign/{{ campaign.title_slug }}/" title="{{ campaign.title }}">{{ campaign.title }}</a>
           </li>
           {% endfor %}
+<!--      <li class="ui-state-default ui-corner-top">
+			  <a href="/blog/campaign" title="Voltooide campagnes">Voltooide campagnes</a>
+		  </li>-->
         </ul>
       </div>
-				<div id="campagnesScrollRight"></div>
+	  <div id="campagnesScrollRight"></div>
     </div>
     <div id="content">
       <div id="hero">
@@ -80,7 +83,7 @@
                     <div class="extraInfo">
                       {% if politician.desc %}
                         {{ politician.desc|linebreaks }}
-                      {% else %}  
+                      {% else %}
                         {{ politician.politician.desc }}
                       {% endif %}
                     </div>
@@ -113,7 +116,7 @@
                   </li>
                 </ul>
               </div>
-              
+
             </div>
             <div id="step3">
               <h3>Stap 3: Wat</h3>
@@ -171,7 +174,6 @@
         <div id="deelreageer">
           <div id="reageren">
             <p id="kloptniet">Kloppen contactgegevens niet? Mis je iets? <a href="#">Laat het ons weten!</a></p>
-            <span id="reacties"><a href="#">24 Reacties</a></span>
           </div>
           <ul id="delen">
             <li id="deelTwitter"><a href="http://twitter.com/?status=Doe%20mee%20aan%20de%20campagne%20voor%20{{campaign.title}}%20http://www.dichterbijdenhaag.nl/campaign/{{campaign.title_slug}}">Twitter</a></li>

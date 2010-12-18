@@ -11,7 +11,9 @@ $(function () {
 	};
 
 	/* Utility functions */
+	/* Does not work for now */
 	function scrollPos () {
+		return false;
 		var $t = $("#campagnes-list");
 		if ($t.width() + $t[0].scrollLeft == $t[0].scrollWidth) {
 			return "right";
@@ -108,12 +110,12 @@ $(function () {
 	function hash_change () {
 		if (__hash_change_running) { return; }
 		var location = window.location.toString()
-		if (location.match(/#.+$/) && !location.match("#" + current_fragment + "$")){
+		if (location.match(/#.+$/) && !location.match("#" + encodeURIComponent(current_fragment) + "$")){
 			// Prevent from running multiple updates at once
 			__hash_change_running = true;
 
 
-			var link = $("a[title=" + window.location.toString().match(/#(.+)$/)[1] + "]")[0]
+			var link = $("a[title=" + decodeURIComponent(window.location.toString().match(/#(.+)$/)[1]) + "]")[0]
 			highlight_tab($(link).parent("li"));
 
 			if (link) {
