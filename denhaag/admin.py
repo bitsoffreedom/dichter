@@ -14,7 +14,7 @@ class PoliticianAdmin(admin.ModelAdmin):
 admin.site.register(Politician, PoliticianAdmin)
   
 class PartyAdmin(admin.ModelAdmin):
-  list_display = ('name', 'admin_image')
+  list_display = ('name',)
 admin.site.register(Party, PartyAdmin)
 
 class ContactMethodAdmin(admin.ModelAdmin):
