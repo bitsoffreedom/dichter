@@ -7,16 +7,13 @@ function hero() {
 		$(this).text($(this).text() == "Meer lezen" ? "Verbergen" : "Meer lezen");
 
 	});
-}
-$(document).ready(function(){
-	hero();	
-
+	
+	
 	//$('#targets .extraInfo').hide();
 	var targets = $('#targets .extraInfo');
 
 	for (i=0; i < targets.length; i++) {
 		var src = targets[i];
-//		var dst = $(targets[i]).prev()[0];
 		var dst = src.cloneNode(false);
 		src.parentNode.insertBefore(dst,src);
 		$(dst).addClass("first");
@@ -56,7 +53,9 @@ $(document).ready(function(){
     $(this).addClass('selected');
     return false;
   });
-	
+}
+$(document).ready(function(){
+	hero();		
 });
 
 /* Keep tract of form size */
