@@ -1,214 +1,198 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="nl_nl">
-	<head profile="http://gmpg.org/xfn/11">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Dichter bij Den Haag</title>
-		<link href="{{ STATIC_PREFIX }}styles/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Dichter bij Den Haag</title>
+    <link href="{{ STATIC_PREFIX }}styles/jquery-ui.css" rel="stylesheet" type="text/css"/>
     <link href="{{ STATIC_PREFIX }}styles/jquery-ui-override.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}styles/dbdh.css" />
-	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery-1.4.2.min.js'></script>
-	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery-ui-1.8.4.custom.min.js'></script>
-	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollTo.js'></script>
-	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletab.js'></script>
-	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletab.init.js'></script>
-	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletargets.js'></script>
-	<script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/dbdh.js'></script>
-</head>
-	<body class="">
-		<div id="wrapper">
-			<div id="header">
-				<h1 id="logo"><a href="/">Dichter bij Den Haag</a></h1>
-			        <a id="boflogo">Bits of Freedom</a>
-			</div>
-		         <div id="navbar">
-                		<ul id="nav">
-		                    <li><a id="nav-home" href="/">Home</a></li>
-                		    <li><a id="nav-over" href="/static/over/">Over</a></li>
-		                    <li><a id="nav-contact" href="/static/contact/">Contact / Pers</a></li>
-                		</ul>
-             		</div>
-            		<div id="campagnes">
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery-1.4.2.min.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery-ui-1.8.4.custom.min.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollTo.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletab.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletab.init.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletargets.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/dbdh.js'></script>
+  </head>
+  <body class="">
+    <div id="wrapper">
+      <div id="header">
+        <h1 id="logo"><a href="/">Dichter bij Den Haag</a></h1>
+        <a id="boflogo" href="http://bof.nl">Bits of Freedom</a>
+      </div>
+    <div id="navbar">
+      <ul id="nav">
+        <li><a id="nav-home" href="/">Home</a></li>
+        <li><a id="nav-over" href="/static/over/">Over</a></li>
+        <li><a id="nav-contact" href="/static/contact/">Contact / Pers</a></li>
+      </ul>
+    </div>
+    <div id="campagnes">
 					<div id="campagnesScrollLeft"></div>
-				<div id="campagnes-list" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
-					<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
-					  {% for campaign in campaign_list %}
-					  <li class="ui-state-default ui-corner-top"><a href="/campaign/{{ campaign.title_slug|slugify }}/" title="{{ campaign.title_slug|slugify }}">{{ campaign.title }}</a></li>
-    			  {% endfor %}
-					</ul>
-				</div>
+      <div id="campagnes-list" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+          {% for campaign in campaign_list %}
+					  <li class="ui-state-default ui-corner-top"><a href="/campaign/{{ campaign.title_slug }}/" title="{{ campaign.title }}">{{ campaign.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
 				<div id="campagnesScrollRight"></div>
-      </div> 
-			<div id="content">
-            	
-            	<div id="hero">
-                	<h2>{{ campaign.title }}</h2>
-                  	<img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
-                  	<span class="bijschrift">"{{ campaign.subtitle|safe }}"</span>
-			            <p class="intro">{{ campaign.intro }}</p>
-                	<div class="extraInfo">{{ campaign.desc|safe }}</div>
-                    <div id="meer">
-                    	<span><a href="#">Meer lezen</a></span>
+    </div>
+    <div id="content">
+      <div id="hero">
+      <h2>{{ campaign.title }}</h2>
+      <img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
+      <span class="bijschrift">{{ campaign.subtitle|safe }}</span>
+      <p class="intro">{{ campaign.intro|safe }}</p>
+      {% if campaign.desc %}
+        <div class="extraInfo">{{ campaign.desc|safe }}</div>
+        <div id="meer">
+          <span><a href="#">Meer lezen</a></span>
+        </div>
+      {% endif %}
+      </div>
+      <div id="steps">
+        <div id="step1">
+          <h3>Stap 1: Wie</h3>
+          <p class="intro">Kies hier welke politicus je wilt bereiken.</p>
+            <div class="stepContent">
+              <div id="targetScrollUp"></div>
+                <ul id="targets">
+                  {% for politician in politicians_list %}
+                  <li>
+                    <div class="info">
+                      <h4>{{ politician.politician.name }}</h4>
+                      <img class="politicus" src="{{ politician.politician.pica.url }}" alt="{{ politician.politician.name }}" />
+                      <img class="partij" src="{{ politician.politician.party.pica.url }}" alt="{{ politician.politician.party.name }}" />
+                      {{ politician.politician.contactinfo|length }}
+                      {% if politician.politician.contact_methods %}
+                      <ul class="contactVia">
+                        {% for contactmethod in politician.politician.contact_methods %}
+                          <li class="via{{ contactmethod.contact_method.name }}">
+                              <a href="#">via {{ contactmethod.contact_method.name }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
                     </div>
-                </div>
-                
-                <div id="steps">
-                	<div id="step1">
-                    	<h3>Stap 1: Wie</h3>
-                        <p class="intro">Kies hier welke politicus je wilt bereiken.</p>
-                       	<div class="stepContent">
-                            <div id="targetScrollUp"></div>
-                            <ul id="targets">
-                                {% for politicus in politici_list %}
-                                <li>
-                                   <div class="info">
-                                        <h4>{{ politicus.name }}</h4>
-                                        <img class="politicus" src="{{ politicus.pica.url }}" alt="{{ politicus.name }}" />
-                                        <img class="partij" src="{{ politicus.party.pica.url }}" alt="{{ politicus.party.name }}" />
-                                       <ul class="contactVia">
-                                          {% for contactmethod in politicus.contact_methods %}  
-                                            <li class="via{{ contactmethod.name }}">
-                                                <a href="#">via {{ contactmethod.name }}</a>
-                                            </li>                                          
-                                          {% endfor %}
-                                        </ul>
-                                    </div>
-                                    <div class="extraInfo">
-                                    	<p>{{ politicus.desc|linebreaks }}</p>
-                                    </div>
-                                    <div class="infoToggle">
-                                    	<span><span><a href="/politicus/{{ politicus.name_slug }}">Meer informatie</a></span></span>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                            <div id="targetScrollDown"></div>
-                         </div>
+                    <div class="extraInfo">
+                      {% if politician.desc %}
+                        {{ politician.desc|linebreaks }}
+                      {% else %}  
+                        {{ politician.politician.desc }}
+                      {% endif %}
                     </div>
-                    <div id="step2">
-                    	<h3>Stap 2: Hoe</h3>
-                        <p class="intro">Kies hier hoe je die politicus wilt bereiken.</p>
-                        <div class="stepContent">
-                            <ul id="vectors">
-                                <li id="viaMail">
-                                    <a href="#" onClick="$('#tweetform').hide(); $('#mailform').show(); return false">via Mail</a>
-                                </li>
-                                <li id="viaPhone" class="selected">
-                                    <a href="#">via Phone</a>
-                                </li>
-                                <li id="viaTwitter">
-                                    <a href="#" onClick="$('#tweetform').show(); $('#mailform').hide(); return false">via Twitter</a>
-                                </li>
-                                <li id="viaHyves">
-                                    <a href="#">via Hyves</a>
-                                </li>
-                                <li id="viaFacebook" class="disabled">
-                                    <a href="#">via Facebook</a>
-                                </li>
-                            </ul>
-                         </div>
-                         
-                         <div class="nietbeschikbaar">
-                         	<h4>niet beschikbaar</h4>
-                            <p>Een of meerdere van de geselecteerde politici is niet bereikbaar via dit medium. Deselecteer ze om hier gebruik van te kunnen maken.</p>
-                         </div>
+                    <div class="infoToggle">
+                      <span><span><a href="/politicus/{{ politician.politician.name_slug }}">Meer informatie</a></span></span>
                     </div>
-                    <div id="step3">
-                    	<h3>Stap 3: Wat</h3>
-                        <p class="intro">Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er ook het meeste aan.</p>
-                        <div class="stepContent">
-                            <div id="mailform"><form action="" enctype="multipart/form-data" method="post">
-                                <span class="onderwerp unit">
-                                    <label for="description">Onderwerp</label>
-                                    <input name="description"  id="description" type="text" />
-                                </span>
-                                <span class="bericht unit">
-                                    <label>Bericht</label>
-                                    <textarea>Sed enim erat, accumsan quis auctor at, ultrices faucibus quam. Vestibulum congue ligula ac mi auctor placerat. Curabitur nisi quam, gravida at vestibulum ut, convallis a dolor. Nulla facilisi. Duis turpis ligula, laoreet nec eleifend id, suscipit eget mi. Pellentesque eget neque nisl, eu viverra diam. Cras tincidunt ornare nibh at laoreet. Proin arcu lacus, varius nec cursus vel, gravida eget arcu. Duis non elit sit amet tellus pellentesque egestas. Sed vulputate massa in nisl accumsan porta. Quisque non dolor at mi laoreet bibendum et tincidunt orci. Aliquam erat volutpat. Nullam eleifend purus nec magna consequat aliquet. Vestibulum in velit libero, at commodo metus.</textarea>
-                                </span>
-                                <span class="naam unit">
-                                    <label for="name">Uw Naam</label>
-                                    <input type="text" id="name" name="name" />
-                                </span>
-                                <span class="versturen">
-                                	<input type="submit" value="Versturen" />
-                               </span>
-                                
-                            </form></div>
-							<div id="tweetform" style="display:none;">
-								<form action="https://www.twitter.com/"
-										enctype="multiform/form-data"
-										method="GET"
-										name="tweetform">
-									<span class="bericht unit">
-										<label id="message">Bericht</label>
-										<textarea id="message" name="status" rows="3"
-											onKeyDown="field_size(this, this.form.sizedisplay, 140)"
-											onKeyUp="field_size(this,this.form.sizedisplay, 140)"></textarea>
-										<input readonly type="text" name="sizedisplay" id="tweetsizedisplay" value="140" size="3"/>
-										karakters over.
-									</span>
-									<span class="versturen">
-										<input type="submit" value="Tweet" />
-									</span>
-								</form>
-							</div>
-                            <p id="bedankt">Bedankt! We stellen je inzet en betrokkenheid enorm op prijs!</p> 
-                           	<h5>Wil je nog meer doen? Top!</h5>
-                            <ul>
-                            	<li><a href="#">Nam aliquam commodo turpis sed commodo</a></li>
-                                <li><a href="#">Pellentesque purus odio</a></li>
-                                <li><a href="#">Placerat hendrerit laoreet vel</a></li>
-                                <li><a href="#">Vulputate at arcu</a></li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                </div>
-				<div id="deelreageer">                	
-                    <div id="reageren">
-                    	<p id="kloptniet">
-                        	Kloppen contactgegevens niet? Mis je iets? <a href="#">Laat het ons weten!</a>
-                        </p>
-                        <span id="reacties">
-                        	<a href="#">24 Reacties</a>
-                        </span>
-                    </div>
-                    <ul id="delen">
-                    	<li id="deelTwitter">
-                        	<a href="#">Twitter</a>
-                        </li>
-                        <li id="deelFacebook">
-                        	<a href="#">Facebook</a>
-                        </li>
-                        <li id="deelHyves">
-                        	<a href="#">Hyves</a>
-                        </li>
-                    </ul>
-                </div>	
-			</div><!-- //content -->
-			<div id="footer">
-            	<div id="footerText">
-                    <div id="marquee">
-                        <p>volg de laatste ontwikkelingen van deze en andere campagnes van Dichter...</p>
-                    </div>
-                    <ul id="footerlinks">
-                        <li><a href="/static/privacy/">Privacy-verklaring</a>&nbsp;|&nbsp;</li>
-                        <li><a href="/static/regels/">Huisregels</a>&nbsp;|&nbsp;</li>
-                        <li><a href="mailto:info@bof.nl">info@bof.nl</a>&nbsp;|&nbsp;</li>
-                        <li>design: <a href="#">Martijn</a>&nbsp;|&nbsp;</li>
-                        <li>techniek: <a href="#">iemand anders</a></li>
-                    </ul>
-                </div>
-                <ul id="followLinks">
-		    <li id="followLinkedin"><a href="https://www.linkedin.com/groups?home=&amp;gid=2677586"></a></li>
-                    <li id="followTwitter"><a href="https://twitter.com/bitsoffreedom"></a></li>
-                    <li id="followRss"><a href="https://www.bof.nl/rss/"></a></li>
-                    <li id="followFacebook"><a href="https://www.facebook.com/BitsofFreedom"></a></li>
+                  </li>
+                  {% endfor %}
                 </ul>
-                
-			</div><!-- //footer -->
-			
-		</div><!-- //wrapper -->
-
-	</body>
+                <div id="targetScrollDown">
+                </div>
+              </div>
+            </div>
+            <div id="step2">
+              <h3>Stap 2: Hoe</h3>
+              <p class="intro">Kies hier hoe je die politicus wilt bereiken.</p>
+              <div class="stepContent">
+                <ul id="vectors">
+                  <li id="viaMail">
+                      <a href="#">via Mail</a>
+                  </li>
+                  <li id="viaPhone" class="selected">
+                      <a href="#">via Phone</a>
+                  </li>
+                  <li id="viaTwitter">
+                      <a href="#">via Twitter</a>
+                  </li>
+                  <li id="viaFacebook" class="disabled">
+                      <a href="#">via Facebook</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            <div id="step3">
+              <h3>Stap 3: Wat</h3>
+              <p class="intro">
+                Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er ook het meeste aan.
+              </p>
+              <div class="stepContent">
+                <div id="mailform"><form action="" enctype="multipart/form-data" method="post">
+                  <span class="onderwerp unit">
+                    <label for="description">Onderwerp</label>
+                    <input name="description"  id="description" type="text" />
+                  </span>
+                  <span class="bericht unit">
+                    <label>Bericht</label>
+                    <textarea>Sed enim erat, accumsan quis auctor at, ultrices faucibus quam. Vestibulum congue ligula ac mi auctor placerat. Curabitur nisi quam, gravida at vestibulum ut, convallis a dolor. Nulla facilisi. Duis turpis ligula, laoreet nec eleifend id, suscipit eget mi. Pellentesque eget neque nisl, eu viverra diam. Cras tincidunt ornare nibh at laoreet. Proin arcu lacus, varius nec cursus vel, gravida eget arcu. Duis non elit sit amet tellus pellentesque egestas. Sed vulputate massa in nisl accumsan porta. Quisque non dolor at mi laoreet bibendum et tincidunt orci. Aliquam erat volutpat. Nullam eleifend purus nec magna consequat aliquet. Vestibulum in velit libero, at commodo metus.</textarea>
+                  </span>
+                  <span class="naam unit">
+                      <label for="name">Uw Naam</label>
+                      <input type="text" id="name" name="name" />
+                  </span>
+                  <span class="versturen">
+                    <input type="submit" value="Versturen" />
+                  </span>
+                </form>
+              </div>
+              <div id="tweetform" style="display:none;">
+                <form action="https://www.twitter.com/" enctype="multiform/form-data" method="GET" name="tweetform">
+                  <span class="bericht unit">
+                    <label id="message">Bericht</label>
+                    <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)"></textarea>
+                    <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" value="140" size="3"/>
+                    karakters over.
+                  </span>
+                  <span class="versturen">
+                    <input type="submit" value="Tweet" />
+                  </span>
+                </form>
+              </div>
+              <p id="bedankt">Bedankt! We stellen je inzet en betrokkenheid enorm op prijs!</p>
+              <h5>Wil je nog meer doen? Top!</h5>
+              <ul>
+                <li>Gebruik je hersenkracht voor andere campagnes van Dichterbij Den Haag (zie hierboven).</li>
+                <li>Abonneer je op de <a href="https://www.bof.nl/doe-mee/">nieuwsbrief</a> van Bits of Freedom.</li>
+                <li>Word <a href="https://www.bof.nl/doe-mee/">vrijwilliger</a> van Bits of Freedom.</li>
+                <li>Word <a href= "https://www.bof.nl/doe-mee/">donateur</a> van Bits of Freedom.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="deelreageer">
+          <div id="reageren">
+            <p id="kloptniet">Kloppen contactgegevens niet? Mis je iets? <a href="#">Laat het ons weten!</a></p>
+            <span id="reacties"><a href="#">24 Reacties</a></span>
+          </div>
+          <ul id="delen">
+            <li id="deelTwitter"><a href="http://twitter.com/?status=Doe%20mee%20aan%20de%20campagne%20voor%20{{campaign.title}}%20http://www.dichterbijdenhaag.nl/campaign/{{campaign.title_slug}}">Twitter</a></li>
+            <li id="deelFacebook"><a href="#">Facebook</a></li>
+            <li id="deelHyves"><a href="#">Hyves</a></li>
+          </ul>
+        </div>
+      </div><!-- //content -->
+      <div id="footer">
+        <div id="footerText">
+          <div id="marquee">
+            <p>volg de laatste ontwikkelingen van deze en andere campagnes van Dichter...</p>
+          </div>
+            <ul id="footerlinks">
+              <li><a href="/static/privacy/">Privacy-verklaring</a>&nbsp;|&nbsp;</li>
+              <li><a href="/static/regels/">Huisregels</a>&nbsp;|&nbsp;</li>
+              <li><a href="mailto:info@bof.nl">info@bof.nl</a>&nbsp;|&nbsp;</li>
+              <li>design: <a href="#">Martijn</a>&nbsp;|&nbsp;</li>
+              <li>techniek: <a href="#">iemand anders</a></li>
+            </ul>
+          </div>
+        <ul id="followLinks">
+          <li id="followLinkedin"><a href="https://www.linkedin.com/groups?home=&amp;gid=2677586"></a></li>
+          <li id="followTwitter"><a href="https://twitter.com/bitsoffreedom"></a></li>
+          <li id="followRss"><a href="https://www.bof.nl/rss/"></a></li>
+          <li id="followFacebook"><a href="https://www.facebook.com/BitsofFreedom"></a></li>
+        </ul>
+      </div><!-- //footer -->
+    </div><!-- //wrapper -->
+  </body>
 </html>
