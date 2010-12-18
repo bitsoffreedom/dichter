@@ -629,8 +629,8 @@ ul {
 			background: url(../images/bg-delen.png) no-repeat;
 			width: 130px;
 			height: 44px;
-			margin: 100px 0 0 0;
-			padding: 0 0 0 300px;
+			margin: 0;
+			padding: 0 0 0 305px;
 			float: left;
 		}
 
@@ -667,7 +667,7 @@ ul {
 				font-size: 11px;
 				color: #676767;
 				border-bottom: 1px dotted #676767;
-				margin: 0px 6px 13px 0;
+				margin: 23px 6px 2px 0;
 
 			}
 
