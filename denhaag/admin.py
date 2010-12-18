@@ -9,7 +9,7 @@ class CampaignAdmin(admin.ModelAdmin):
 admin.site.register(Campaign, CampaignAdmin)
 
 class PoliticianAdmin(admin.ModelAdmin):
-  list_display = ('name', 'party')
+  list_display = ('name', 'party', 'admin_image', 'gender')
   search_fields = ('name', 'party')
   ordering = ('name', 'party')
 admin.site.register(Politician, PoliticianAdmin)

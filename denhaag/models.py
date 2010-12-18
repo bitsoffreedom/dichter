@@ -38,6 +38,9 @@ class Politician(models.Model):
 
   def __unicode__(self):
     return self.name
+  def admin_image(self):
+    return '<img src="%s" alt="%s"/>' % (self.pica.url, self.name)
+  admin_image.allow_tags = True
 
 class PoliticianCampaign(models.Model):
   campaign = models.ForeignKey(Campaign)
