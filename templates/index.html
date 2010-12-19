@@ -146,7 +146,7 @@
                   <form action="https://www.twitter.com/" enctype="multiform/form-data" method="GET" name="tweetform">
                     <span class="bericht unit">
                       <label id="message">Bericht</label>
-                      <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)">Geachte {{ politician.twitter_account }}, [schrijf hier je oproep aan de politicus] {{ campaign.hashtag }}</textarea>
+                      <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)">Geachte {{ politician.contact_twitter }}, [schrijf hier je oproep aan {{ politician.name}}] {{ campaign.hashtag }}</textarea>
                       <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" size="3"/>
                       karakters over.
                     </span>
@@ -157,7 +157,7 @@
                 </div>
 
                  <div id="phoneform" style="display:none;">
-                  Bel nu: <span class="phone_number"> {{ politician.phone_number }} </span>
+                  Bel nu: <span class="phone_number"> {{ politician.contact_phone }} </span>
 			<p />
 			<span class="phone_text"> {{ campaign.phone_text }} </span>
                 </div>
