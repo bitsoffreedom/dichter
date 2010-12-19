@@ -146,7 +146,7 @@
                   <form action="https://www.twitter.com/" enctype="multiform/form-data" method="GET" name="tweetform">
                     <span class="bericht unit">
                       <label id="message">Bericht</label>
-                      <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)">Geachte @politicus, [schrijf hier je oproep aan de politicus] {{ campaign.hashtag }}</textarea>
+                      <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)">Geachte {{ politician.twitter_account }}, [schrijf hier je oproep aan de politicus] {{ campaign.hashtag }}</textarea>
                       <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" size="3"/>
                       karakters over.
                     </span>
