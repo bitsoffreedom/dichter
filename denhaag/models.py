@@ -45,6 +45,9 @@ class Politician(models.Model):
   def admin_image(self):
     return '<img src="%s" alt="%s"/>' % (self.pica.url, self.name)
   admin_image.allow_tags = True
+  def contact_email(self):
+    return self.contact_info.get(contact_method__name = "email")
+
 
 class PoliticianCampaign(models.Model):
   campaign = models.ForeignKey(Campaign)
