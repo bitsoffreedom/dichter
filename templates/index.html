@@ -120,22 +120,22 @@
             <div id="step3">
               <h3>Stap 3: Wat</h3>
               <p class="intro">
-                Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er ook het meeste aan.
+                Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er het meeste aan.
               </p>
               <div class="stepContent">
                 <div id="emailform">
                   <form action="" enctype="multipart/form-data" method="post">
                     <span class="onderwerp unit">
                       <label for="description">Onderwerp</label>
-                      <input name="description"  id="description" type="text" />
+                      <input name="description"  id="description" type="text" value="{{ campaign.email_subject }}"/>
                     </span>
                     <span class="bericht unit">
                       <label>Bericht</label>
-                      <textarea>Sed enim erat, accumsan quis auctor at, ultrices faucibus quam. Vestibulum congue ligula ac mi auctor placerat. Curabitur nisi quam, gravida at vestibulum ut, convallis a dolor. Nulla facilisi. Duis turpis ligula, laoreet nec eleifend id, suscipit eget mi. Pellentesque eget neque nisl, eu viverra diam. Cras tincidunt ornare nibh at laoreet. Proin arcu lacus, varius nec cursus vel, gravida eget arcu. Duis non elit sit amet tellus pellentesque egestas. Sed vulputate massa in nisl accumsan porta. Quisque non dolor at mi laoreet bibendum et tincidunt orci. Aliquam erat volutpat. Nullam eleifend purus nec magna consequat aliquet. Vestibulum in velit libero, at commodo metus.</textarea>
+                      <textarea>{{ campaign.email_text }}</textarea>
                     </span>
                     <span class="naam unit">
                         <label for="name">Uw Naam</label>
-                        <input type="text" id="name" name="name" />
+                        <input type="text" id="name" name="name" value="typ hier uw naam"/>
                     </span>
                     <span class="versturen">
                       <input type="submit" value="Versturen" />
@@ -146,8 +146,8 @@
                   <form action="https://www.twitter.com/" enctype="multiform/form-data" method="GET" name="tweetform">
                     <span class="bericht unit">
                       <label id="message">Bericht</label>
-                      <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)"></textarea>
-                      <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" value="140" size="3"/>
+                      <textarea id="message" name="status" rows="3" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)">Geachte @politicus, [schrijf hier je oproep aan de politicus] {{ campaign.hashtag }}</textarea>
+                      <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" size="3"/>
                       karakters over.
                     </span>
                     <span class="versturen">
@@ -160,7 +160,8 @@
                   Bel nu: <span class="tel"></span>
                 </div>
               <p id="bedankt">Bedankt! We stellen je inzet en betrokkenheid enorm op prijs!</p>
-              <h5>Wil je nog meer doen? Top!</h5>
+		<p />
+              <h5>Wil je nog meer doen? Dank je wel!</h5>
               <ul>
                 <li>Gebruik je hersenkracht voor andere campagnes van Dichterbij Den Haag (zie hierboven).</li>
                 <li>Abonneer je op de <a href="https://www.bof.nl/doe-mee/">nieuwsbrief</a> van Bits of Freedom.</li>
@@ -189,9 +190,8 @@
             <ul id="footerlinks">
               <li><a href="/static/privacy/">Privacy-verklaring</a></li>
               <li><a href="/static/regels/">Huisregels</a></li>
-              <li><a href="/static/contact">Contact</a></li>
-              <li>design: Martijn</li>
-              <li>techniek: BOF vrijwilligers</li>
+              <li>Design: <a href="http://www.martijnbroekman.nl/">Martijn Broekman</a></li>
+              <li>Techniek: Zie <a href="http://localhost:8000/static/over/">Over</a></li>
             </ul>
           </div>
         <ul id="followLinks">
