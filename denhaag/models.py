@@ -47,7 +47,10 @@ class Politician(models.Model):
   admin_image.allow_tags = True
   def contact_email(self):
     return self.contact_info.get(contact_method__name = "email")
-
+  def contact_phone(self):
+    return self.contact_info.get(contact_method__name = "phone")
+  def contact_twitter(self):
+    return self.contact_info.get(contact_method__name = "twitter")
 
 class PoliticianCampaign(models.Model):
   campaign = models.ForeignKey(Campaign)
