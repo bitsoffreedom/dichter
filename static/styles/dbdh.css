@@ -194,7 +194,7 @@ ul {
 #campagnes-list {
 	overflow: hidden;
 	float: left;
-	width: 600px;
+	width: 612px;
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -213,7 +213,7 @@ ul {
 }
 #campagnesScrollRight {
 	background: url(../images/arrow-right.png) no-repeat;
-	float: left;
+	float: right;
 	margin-top: 6px;
 	width: 19px;
 	height: 25px;
