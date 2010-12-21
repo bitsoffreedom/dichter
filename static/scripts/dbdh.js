@@ -46,6 +46,10 @@ function hero() {
 	});
 	
 	$("#vectors li").click(function(){
+	  if( $('#targets .selected').length == 0){
+	    $('#targets').fadeTo(400, '.2').fadeTo(400, '1').fadeTo(400, '.2').fadeTo(400, '1');
+	    return false;
+	  }
     // get the id for the element we clicked on
     if($(this).hasClass('disabled')){
       return;
@@ -55,7 +59,15 @@ function hero() {
     $('#step3 .stepContent>div').each(function(){ 
       $(this).hide();
     });
-    $('#'+vector+'form').show();
+    
+    if(vector == 'email'){
+      var payload = $('#targets .selected .viaemail a').attr('href');
+      if(payload.length > 0){
+        $('#emailform form').attr('action', payload);
+        $('#'+vector+'form').show();
+      }
+    }
+    
     // unset the current active vector
     $("#vectors .selected").removeClass('selected');
     // make the clicked vector active

@@ -124,14 +124,14 @@
               </p>
               <div class="stepContent">
                 <div id="emailform">
-                  <form action="" enctype="multipart/form-data" method="post">
+                  <form action="" enctype="text/plain" method="post">
                     <span class="onderwerp unit">
                       <label for="description">Onderwerp</label>
-                      <input name="description"  id="description" type="text" value="{{ campaign.email_subject }}"/>
+                      <input name="subject"  id="description" type="text" value="{{ campaign.email_subject }}"/>
                     </span>
                     <span class="bericht unit">
                       <label>Bericht</label>
-                      <textarea>{{ campaign.email_text }}</textarea>
+                      <textarea name="body">{{ campaign.email_text }}</textarea>
                     </span>
                     <span class="naam unit">
                         <label for="name">Uw Naam</label>
