@@ -67,6 +67,14 @@ function hero() {
       }
     }
     
+    if(vector == 'phone'){
+      var payload = $('#targets .selected .viaphone a').attr('href');
+      if(payload.length > 0){
+        $('#phone_number').html(payload);
+        $('#'+vector+'form').show();
+      }
+    }
+    
     // unset the current active vector
     $("#vectors .selected").removeClass('selected');
     // make the clicked vector active
