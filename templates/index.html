@@ -73,7 +73,7 @@
                       <ul class="contactVia">
                         {% for contactmethod in politician.politician.contact_info.all %}
                           <li class="via{{ contactmethod.contact_method.name }}">
-                              <a href="{{ politician.politician.contact_info }}">via {{ contactmethod.contact_method.name }}</a>
+                              <a href="{{ contactmethod }}">via {{ contactmethod.contact_method.name }}</a>
                           </li>
                         {% endfor %}
                       </ul>
