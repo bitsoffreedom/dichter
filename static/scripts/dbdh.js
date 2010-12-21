@@ -35,6 +35,8 @@ function hero() {
 	});	
 	
 	$('#targets .info a').click(function(){
+	  $('#targets li').removeClass('selected');
+	  $(this).parent().parent().addClass('selected');
 	  $("#vectors li").addClass('disabled');
     $(this).parent().find('.contactVia li').each(function(){
 	    var vector = this.className.substr(3).toLowerCase();
