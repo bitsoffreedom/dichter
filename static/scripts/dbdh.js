@@ -75,6 +75,20 @@ function hero() {
       }
     }
     
+    if(vector == 'twitter'){
+      var payload = $('#targets .selected .viatwitter a').attr('href');
+      if(payload.length > 0){
+        payload = "Geachte "+payload+
+          ", [schrijf hier je oproep aan "+
+          $('#targets .selected h4').html()+
+          "] "+
+          $('#hero .hashtag').html();
+      
+        $('#twitterform textarea').value = payload;
+        $('#'+vector+'form').show();
+      }     
+    } 
+    
     // unset the current active vector
     $("#vectors .selected").removeClass('selected');
     // make the clicked vector active
