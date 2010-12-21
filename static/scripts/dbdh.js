@@ -36,8 +36,10 @@ function hero() {
 	
 	$('#targets .info a').click(function(){
 	  $('#targets li').removeClass('selected');
+	  $('#vectors .selected').removeClass('selected');
 	  $(this).parent().parent().addClass('selected');
 	  $("#vectors li").addClass('disabled');
+	  hidestepthree();
     $(this).parent().find('.contactVia li').each(function(){
 	    var vector = this.className.substr(3).toLowerCase();
 	    $("#via"+vector).removeClass('disabled');
@@ -55,10 +57,7 @@ function hero() {
       return;
     }
     var vector = $(this).attr('id').substr(3).toLowerCase();
-    // hide all form parents (by lack of classes)
-    $('#step3 .stepContent>div').each(function(){ 
-      $(this).hide();
-    });
+    hidestepthree();
     
     if(vector == 'email'){
       var payload = $('#targets .selected .viaemail a').attr('href');
@@ -74,7 +73,25 @@ function hero() {
     $(this).addClass('selected');
     return false;
   });
+  
+  // form validation #TODO
+  $('#emailform .versturen input[type=submit]').click(function(){
+    if($('#emailform textarea').value == ''){
+      $('#emailform textarea').fadeTo(400, '.2').fadeTo(400, '1');      
+      return false;
+    };
+    $('#thnx').show();
+  });
 }
+
+function hidestepthree(){
+  // hide all form parents (by lack of classes)
+  $('#step3 .stepContent>div').each(function(){ 
+    $(this).hide();
+  });
+  $('#thnx').hide();
+}
+
 $(document).ready(function(){
 	hero();		
 });
