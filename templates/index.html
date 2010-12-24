@@ -45,9 +45,10 @@
     </div>
     <div id="content">
       <div id="hero">
+      <img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
       <h2>{{ campaign.title }}</h2>
       <span class="hashtag">{{ campaign.hashtag }}</span>
-      <img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
+
       <span class="bijschrift">{{ campaign.subtitle|safe }}</span>
       <p class="intro">{{ campaign.intro|safe }}</p>
       {% if campaign.desc %}

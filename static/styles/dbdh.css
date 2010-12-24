@@ -133,6 +133,8 @@ ul {
 #hero img.aside {
 	float: right;
 	margin: 0 0 19px 19px;
+	widt: 225px;
+	
 }
 
 #hero p.intro {
@@ -208,7 +210,7 @@ ul {
 #campagnesScrollLeft {
 	background: url(../images/arrow-left.png) no-repeat;
 	float: left;
-	margin-top: 6px;
+	margin-top: 7px;
 	width: 19px;
 	height: 25px;
 	margin-right: 2px;
@@ -216,7 +218,7 @@ ul {
 #campagnesScrollRight {
 	background: url(../images/arrow-right.png) no-repeat;
 	float: right;
-	margin-top: 6px;
+	margin-top: 7px;
 	width: 19px;
 	height: 25px;
 	margin-left: 2px;
