@@ -606,14 +606,10 @@ ul {
 				border: none;
 				margin: 20px auto 0;
 				color: #fff;
-				font-size: 15px;
-				text-transform: uppercase;
-				text-align: left;
 				padding: 0 9px;
 			}
 
 				#step3 .versturen input:hover {
-					color: #37abdb;
 					background-position: 0px -31px;
 				}
 
