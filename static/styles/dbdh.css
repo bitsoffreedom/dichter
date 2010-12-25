@@ -133,12 +133,11 @@ ul {
 #hero img.aside {
 	float: right;
 	margin: 0 0 19px 19px;
-	widt: 225px;
+	height: 130px;
 
 }
 
 #hero p.intro {
-	font-weight: bold;
 	margin: 2px 0;
 }
 
@@ -186,9 +185,12 @@ ul {
 }
 
 .preamble{
-	width: 720px;
-	margin: 12px auto 9px;
-	font-style:italic;
+	width: 794px;
+	background: #7c7c7c;
+	margin: 0px auto 6px;
+	padding: 2px 237px 2px 236px;	
+	font-weight: bold;
+	color: #fff; 
 }
 
 #campagnes {
@@ -199,6 +201,7 @@ ul {
 	height: 30px;
 	margin-top: 0px;
 	font-weight: bold !important;
+	font-size: 12px;
 }
 
 #campagnes-list {
