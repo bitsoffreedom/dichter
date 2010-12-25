@@ -70,7 +70,7 @@
                   {% for politician in politicians_list %}
                   <li>
                     <div class="info">
-                      <h4>{{ politician.politician.name }}</h4>
+                      <a href="/politicus/{{ politician.politician.name_slug }}"><h4>{{ politician.politician.name }}</h4></a>
                       <a href="/politicus/{{ politician.politician.name_slug }}"><img class="politicus" src="{{ politician.politician.pica.url }}" alt="{{ politician.politician.name }}" /></a>
                       <a href="/politicus/{{ politician.politician.name_slug }}"><img class="partij" src="{{ politician.politician.party.pica.url }}" alt="{{ politician.politician.party.name }}" /></a>
                       {% if politician.politician.contact_info %}

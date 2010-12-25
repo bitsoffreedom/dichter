@@ -375,6 +375,7 @@ ul {
 	text-transform: uppercase;
 }
 
+#targets a h4 {color:#000;}
 #targets .selected h4 { color: #fff; }
 #targets .disabled h4 { color: #cdcdcd; }
 
