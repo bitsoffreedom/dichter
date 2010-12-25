@@ -134,7 +134,7 @@ ul {
 	float: right;
 	margin: 0 0 19px 19px;
 	widt: 225px;
-	
+
 }
 
 #hero p.intro {
@@ -183,6 +183,12 @@ ul {
 
 #meer.open a {
 	background: url(../images/bg-meer-arrow-open.png) no-repeat 2px 7px;
+}
+
+.preamble{
+	width: 720px;
+	margin: 12px auto 9px;
+	font-style:italic;
 }
 
 #campagnes {
@@ -503,16 +509,16 @@ ul {
 
 					#viaemail.selected a,
 					#viaemail a:hover { background-position: -85px 0px; }
-					
+
 				#viaphone a { background-position: 0px -101px;}
 					#viaphone.selected a,
 					#viaphone a:hover { background-position: -85px -101px; }
-					
+
 				#viatwitter a { background-position: 0px -202px;}
 					#viatwitter.selected a,
 					#viatwitter a:hover { background-position: -85px  -202px;}
-					
-					
+
+
 				#viafacebook a { background-position: 0px -404px;}
 					#viafacebook.selected a,
 					#viafacebook a:hover { background-position:  -85px -404px;}
