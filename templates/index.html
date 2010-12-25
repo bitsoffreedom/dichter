@@ -20,161 +20,151 @@
         <h1 id="logo"><a href="/">Dichter bij Den Haag</a></h1>
         <a id="boflogo" href="https://bof.nl">Bits of Freedom</a>
       </div>
-    <div id="navbar">
-      <ul id="nav">
-        <li><a id="nav-home" href="/">Home</a></li>
-        <li><a id="nav-over" href="/static/over/">Over</a></li>
-        <li><a id="nav-contact" href="/static/contact/">Contact / Pers</a></li>
-      </ul>
-    </div>
-    <p class="preamble">
-      Welkom bij Dichter Bij Den Haag - de snelste manier om je stem te laten horen. Kies hieronder wie je wilt bereiken, hoe je diegene wilt bereiken, wat je wil zeggen en verstuur je boodschap. Klik <a href="static/over/">hier</a> voor meer informatie over Dichter Bij Den Haag.</p>
-    <div id="campagnes">
-	  <div id="campagnesScrollLeft"></div>
-      <div id="campagnes-list" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
-        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
-          {% for campaign in campaign_list %}
-          <li class="ui-state-default ui-corner-top">
-            <a href="/campaign/{{ campaign.title_slug }}/" title="{{ campaign.title }}">{{ campaign.title }}</a>
-          </li>
-          {% endfor %}
-<!--      <li class="ui-state-default ui-corner-top">
-			  <a href="/blog/campaign" title="Voltooide campagnes">Voltooide campagnes</a>
-		  </li>-->
+      <div id="navbar">
+        <ul id="nav">
+          <li><a id="nav-home" href="/">Home</a></li>
+          <li><a id="nav-over" href="/static/over/">Over</a></li>
+          <li><a id="nav-contact" href="/static/contact/">Contact / Pers</a></li>
         </ul>
       </div>
-	  <div id="campagnesScrollRight"></div>
-    </div>
-    <div id="content">
-      <div id="hero">
-      <img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
-      <h2>{{ campaign.title }}</h2>
-      <span class="hashtag">{{ campaign.hashtag }}</span>
-
-      <span class="bijschrift">{{ campaign.subtitle|safe }}</span>
-      <p class="intro">{{ campaign.intro|safe }}</p>
-      {% if campaign.desc %}
-        <div class="extraInfo">{{ campaign.desc|safe }}</div>
-        <div id="meer">
-          <span><a href="#">Meer lezen</a></span>
+      <p class="preamble">
+        Welkom bij Dichter Bij Den Haag - de snelste manier om je stem te laten horen. Kies hieronder wie je wilt bereiken, hoe je diegene wilt bereiken, wat je wil zeggen en verstuur je boodschap. Klik <a href="static/over/">hier</a> voor meer informatie over Dichter Bij Den Haag.
+      </p>
+      <div id="campagnes">
+	      <div id="campagnesScrollLeft"></div>
+        <div id="campagnes-list" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+          <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+            {% for campaign in campaign_list %}
+            <li class="ui-state-default ui-corner-top">
+              <a href="/campaign/{{ campaign.title_slug }}/" title="{{ campaign.title }}">{{ campaign.title }}</a>
+            </li>
+            {% endfor %}
+            <!--
+            <li class="ui-state-default ui-corner-top">
+		          <a href="/blog/campaign" title="Voltooide campagnes">Voltooide campagnes</a>
+    		    </li>
+    		    -->
+          </ul>
         </div>
-      {% endif %}
+	      <div id="campagnesScrollRight"></div>
       </div>
-      <div id="steps">
-        <div id="step1">
-          <h3>Stap 1: Wie</h3>
-          <p class="intro">Kies hier welke politicus je wilt bereiken.</p>
+      <div id="content">
+        <div id="hero">
+          <img class="aside" src="{{ campaign.pica.url }}" alt="{{ campaign.title }}" />
+          <h2>{{ campaign.title }}</h2>
+          <span class="hashtag">{{ campaign.hashtag }}</span>
+          <span class="bijschrift">{{ campaign.subtitle|safe }}</span>
+          <p class="intro">{{ campaign.intro|safe }}</p>
+          {% if campaign.desc %}
+          <div class="extraInfo">{{ campaign.desc|safe }}</div>
+          <div id="meer">
+            <span><a href="#">Meer lezen</a></span>
+          </div>
+          {% endif %}
+        </div>
+        <div id="steps">
+          <div id="step1">
+            <h3>Stap 1: Wie</h3>
+            <p class="intro">Kies hier welke politicus je wilt bereiken.</p>
             <div class="stepContent">
               <div id="targetScrollUp"></div>
-                <ul id="targets">
-                  {% for politician in politicians_list %}
-                  <li>
-                    <div class="info">
-                      <a href="/politicus/{{ politician.politician.name_slug }}"><h4>{{ politician.politician.name }}</h4></a>
-                      <a href="/politicus/{{ politician.politician.name_slug }}"><img class="politicus" src="{{ politician.politician.pica.url }}" alt="{{ politician.politician.name }}" /></a>
-                      <a href="/politicus/{{ politician.politician.name_slug }}"><img class="partij" src="{{ politician.politician.party.pica.url }}" alt="{{ politician.politician.party.name }}" /></a>
-                      {% if politician.politician.contact_info %}
-                      <ul class="contactVia">
-                        {% for contactmethod in politician.politician.contact_info.all %}
-                          <li class="via{{ contactmethod.contact_method.name }}">
-                              <a href="{{ contactmethod }}">via {{ contactmethod.contact_method.name }}</a>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                      {% endif %}
-                    </div>
-                    <div class="extraInfo">
-                      {% if politician.desc %}
-                        {{ politician.desc|linebreaks }}
-                      {% else %}
-                        {{ politician.politician.desc }}
-                      {% endif %}
-                    </div>
-                    <div class="infoToggle">
-                      <span><span><a href="/politicus/{{ politician.politician.name_slug }}">Meer informatie</a></span></span>
-                    </div>
-                  </li>
-                  {% endfor %}
-                </ul>
-                <div id="targetScrollDown">
-                </div>
-              </div>
-            </div>
-            <div id="step2">
-              <h3>Stap 2: Hoe</h3>
-              <p class="intro">Kies hier hoe je die politicus wilt bereiken.</p>
-              <div class="stepContent">
-                <ul id="vectors">
-                  <li id="viaemail">
-                      <a href="#">via Mail</a>
-                  </li>
-                  <li id="viaphone">
-                      <a href="#">via Phone</a>
-                  </li>
-                  <li id="viatwitter">
-                      <a href="#">via Twitter</a>
-                  </li>
-                  <li id="viafacebook" class="disabled">
-                      <a href="#">via Facebook</a>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-            <div id="step3">
-              <h3>Stap 3: Wat</h3>
-              <p class="intro">
-                Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er het meeste aan.
-              </p>
-              <div class="stepContent">
-                <div id="emailform">
-                  <form action="" enctype="text/plain" method="post">
-                    <span class="onderwerp unit">
-                      <label for="description">Onderwerp</label>
-                      <input name="subject"  id="description" type="text" value="{{ campaign.email_subject }}"/>
-                    </span>
-                    <span class="bericht unit">
-                      <label>Bericht</label>
-                      <textarea name="body">{{ campaign.email_text }}</textarea>
-                    </span>
-                    <span class="naam unit">
-                        <label for="name">Uw Naam</label>
-                        <input type="text" id="name" name="name" value="typ hier uw naam"/>
-                    </span>
-                    <span class="versturen">
-                      <input type="submit" value="" />
-                    </span>
-                  </form>
-                </div>
-                <div id="twitterform" style="display:none;">
-                  <form action="https://www.twitter.com/" enctype="multiform/form-data" method="GET" name="tweetform">
-                    <span class="bericht unit">
-                      <label id="message">Bericht</label>
-                      <textarea id="message" name="status" rows="3" onLoad="field_size(this, this.form.sizedisplay, 140)" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)">Geachte,{{ politician.contact_twitter }} [schrijf hier je oproep] {{ campaign.hashtag }}</textarea>
-                      <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" size="3"/>
-                      karakters over.
-                    </span>
-                    <span class="versturen">
-                      <input type="submit" value="" />
-                    </span>
-                  </form>
-                </div>
-
-                 <div id="phoneform" style="display:none;">
-                  Bel nu: <span class="phone_number"></span>
-			<p />
-			<span class="phone_text"> {{ campaign.phone_text }} </span>
-                </div>
-              <div id="thnx">
-                <p id="bedankt">Bedankt! We stellen je inzet en betrokkenheid enorm op prijs!</p>
-		<p />
-              <h5>Wil je nog meer doen? Dank je wel!</h5>
-              <ul>
-                <li>Gebruik je hersenkracht voor andere campagnes van Dichterbij Den Haag (zie hierboven).</li>
-                <li>Abonneer je op de <a href="https://www.bof.nl/doe-mee/">nieuwsbrief</a> van Bits of Freedom.</li>
-                <li>Word <a href="https://www.bof.nl/doe-mee/">vrijwilliger</a> van Bits of Freedom.</li>
-                <li>Word <a href= "https://www.bof.nl/doe-mee/">donateur</a> van Bits of Freedom.</li>
+              <ul id="targets">
+                {% for politician in politicians_list %}
+                <li>
+                  <div class="info">
+                    <a href="/politicus/{{ politician.politician.name_slug }}"><h4>{{ politician.politician.name }}</h4></a>
+                    <a href="/politicus/{{ politician.politician.name_slug }}"><img class="politicus" src="{{ politician.politician.pica.url }}" alt="{{ politician.politician.name }}" /></a>
+                    <a href="/politicus/{{ politician.politician.name_slug }}"><img class="partij" src="{{ politician.politician.party.pica.url }}" alt="{{ politician.politician.party.name }}" /></a>
+                    {% if politician.politician.contact_info %}
+                    <ul class="contactVia">
+                      {% for contactmethod in politician.politician.contact_info.all %}
+                      <li class="via{{ contactmethod.contact_method.name }}">
+                        <a href="{{ contactmethod }}">via {{ contactmethod.contact_method.name }}</a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                    {% endif %}
+                  </div>
+                  <div class="extraInfo">
+                    {% if politician.desc %}
+                      {{ politician.desc|linebreaks }}
+                    {% else %}
+                      {{ politician.politician.desc }}
+                    {% endif %}
+                  </div>
+                  <div class="infoToggle">
+                    <span><span><a href="/politicus/{{ politician.politician.name_slug }}">Meer informatie</a></span></span>
+                  </div>
+                </li>
+                {% endfor %}
               </ul>
+              <div id="targetScrollDown"></div>
+            </div>
+          </div>
+          <div id="step2">
+            <h3>Stap 2: Hoe</h3>
+            <p class="intro">Kies hier hoe je die politicus wilt bereiken.</p>
+            <div class="stepContent">
+              <ul id="vectors">
+                <li id="viaemail"><a href="#">via Mail</a></li>
+                <li id="viaphone"><a href="#">via Phone</a></li>
+                <li id="viatwitter"><a href="#">via Twitter</a></li>
+                <li id="viafacebook" class="disabled"><a href="#">via Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="step3">
+            <h3>Stap 3: Wat</h3>
+            <p class="intro">
+              Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er het meeste aan.
+            </p>
+            <div class="stepContent">
+              <div id="emailform">
+                <form action="" enctype="text/plain" method="post">
+                  <span class="onderwerp unit">
+                    <label for="description">Onderwerp</label>
+                    <input name="subject"  id="description" type="text" value="{{ campaign.email_subject }}"/>
+                  </span>
+                  <span class="bericht unit">
+                    <label>Bericht</label>
+                    <textarea name="body">{{ campaign.email_text }}</textarea>
+                  </span>
+                  <span class="naam unit">
+                    <label for="name">Uw Naam</label>
+                    <input type="text" id="name" name="name" value="typ hier uw naam"/>
+                  </span>
+                  <span class="versturen">
+                    <input type="submit" value="" />
+                  </span>
+                </form>
+              </div>
+              <div id="twitterform" style="display:none;">
+                <form action="https://www.twitter.com/" enctype="multiform/form-data" method="GET" name="tweetform">
+                  <span class="bericht unit">
+                    <label id="message">Bericht</label>
+                    <textarea id="message" name="status" rows="3" onLoad="field_size(this, this.form.sizedisplay, 140)" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)">Geachte,{{ politician.contact_twitter }} [schrijf hier je oproep] {{ campaign.hashtag }}</textarea>
+                    <input readonly type="text" name="sizedisplay" id="tweetsizedisplay" size="3"/>
+                    karakters over.
+                  </span>
+                  <span class="versturen">
+                    <input type="submit" value="" />
+                  </span>
+                </form>
+              </div>
+              <div id="phoneform" style="display:none;">
+                Bel nu: <span class="phone_number"></span>
+        			  <br />
+		            <span class="phone_text"> {{ campaign.phone_text }}</span>
+              </div>
+              <div id="thnx">
+                <p id="bedankt">Bedankt! We stellen je inzet en betrokkenheid enorm op prijs!</p><br />
+                <h5>Wil je nog meer doen? Dank je wel!</h5>
+                <ul>
+                  <li>Gebruik je hersenkracht voor andere campagnes van Dichterbij Den Haag (zie hierboven).</li>
+                  <li>Abonneer je op de <a href="https://www.bof.nl/doe-mee/">nieuwsbrief</a> van Bits of Freedom.</li>
+                  <li>Word <a href="https://www.bof.nl/doe-mee/">vrijwilliger</a> van Bits of Freedom.</li>
+                  <li>Word <a href= "https://www.bof.nl/doe-mee/">donateur</a> van Bits of Freedom.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -195,13 +185,13 @@
           <div id="marquee">
             <p>volg de laatste ontwikkelingen van Dichter bij Den Haag...</p>
           </div>
-            <ul id="footerlinks">
-              <li><a href="/static/privacy/">Privacy-verklaring</a></li>
-              <li><a href="/static/regels/">Huisregels</a></li>
-              <li>Design: <a href="http://www.martijnbroekman.nl/">Martijn Broekman</a></li>
-              <li>Techniek: Zie <a href="http://localhost:8000/static/over/">Over</a></li>
-            </ul>
-          </div>
+          <ul id="footerlinks">
+            <li><a href="/static/privacy/">Privacy-verklaring</a></li>
+            <li><a href="/static/regels/">Huisregels</a></li>
+            <li>Design: <a href="http://www.martijnbroekman.nl/">Martijn Broekman</a></li>
+            <li>Techniek: Zie <a href="http://localhost:8000/static/over/">Over</a></li>
+          </ul>
+        </div>
         <ul id="followLinks">
           <li id="followLinkedin"><a href="https://www.linkedin.com/groups?home=&amp;gid=2677586"></a></li>
           <li id="followTwitter"><a href="https://twitter.com/bitsoffreedom"></a></li>
