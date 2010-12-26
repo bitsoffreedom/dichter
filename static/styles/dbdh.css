@@ -185,14 +185,14 @@ ul {
 }
 
 .preamble{
-	width: 794px;
 	background: #7c7c7c;
-	margin: 0px auto 6px;
-	padding: 2px 237px 2px 236px;	
-	font-weight: bold;
-	color: #fff; 
 }
-
+.preamble p{
+	font-weight: bold;
+	color:#fff;
+	margin:0 auto;
+	width:774px;
+}
 #campagnes {
 	width: 654px;
 	padding-left: 140px;
