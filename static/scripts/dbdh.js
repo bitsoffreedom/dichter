@@ -59,8 +59,8 @@ function hero() {
     var vector = $(this).attr('id').substr(3).toLowerCase();
     hidestepthree();
     var payload = $('#targets .selected .via'+vector+' a').attr('href');
-    if(vector == 'email'){
-      
+    var politician_name = $('#targets .selected h4').html();
+    if(vector == 'email'){      
       if(payload.length > 0){
         $('#emailform form').attr('action', payload);
       }
@@ -68,16 +68,16 @@ function hero() {
     
     if(vector == 'phone'){
       if(payload.length > 0){
+        $('#phone_name').html(politician_name);
         $('#phone_number').html(payload);
       }
     }
     
-    if(vector == 'twitter'){
-      
+    if(vector == 'twitter'){      
       if(payload.length > 0){
         payload = "Geachte "+payload+
           ", [schrijf hier je oproep aan "+
-          $('#targets .selected h4').html()+
+          politician_name+
           "] "+
           $('#hero .hashtag').html();
       

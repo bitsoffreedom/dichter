@@ -607,7 +607,16 @@ ul {
 				border: none;
 				font-weight: bold;
 			}
-
+      #phoneform {
+        display: block;
+        font-size: 1.2em;
+        margin: 4em 0;
+        text-align: center;
+      }
+      #phoneform span{
+        font-weight:bold;
+        font-size:1.1em;
+      }
 			#step3 .versturen input {
 				background: url(../images/bg-btn-versturen.png) no-repeat;
 				display: block;
