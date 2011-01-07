@@ -58,25 +58,22 @@ function hero() {
     }
     var vector = $(this).attr('id').substr(3).toLowerCase();
     hidestepthree();
-    
+    var payload = $('#targets .selected .via'+vector+' a').attr('href');
     if(vector == 'email'){
-      var payload = $('#targets .selected .viaemail a').attr('href');
+      
       if(payload.length > 0){
         $('#emailform form').attr('action', payload);
-        $('#'+vector+'form').show();
       }
     }
     
     if(vector == 'phone'){
-      var payload = $('#targets .selected .viaphone a').attr('href');
       if(payload.length > 0){
         $('#phone_number').html(payload);
-        $('#'+vector+'form').show();
       }
     }
     
     if(vector == 'twitter'){
-      var payload = $('#targets .selected .viatwitter a').attr('href');
+      
       if(payload.length > 0){
         payload = "Geachte "+payload+
           ", [schrijf hier je oproep aan "+
@@ -84,11 +81,10 @@ function hero() {
           "] "+
           $('#hero .hashtag').html();
       
-        $('#twitterform textarea').value = payload;
-        $('#'+vector+'form').show();
+        $('#'+vector+'form textarea').attr('value', payload);
       }     
     } 
-    
+    $('#'+vector+'form').show();
     // unset the current active vector
     $("#vectors .selected").removeClass('selected');
     // make the clicked vector active

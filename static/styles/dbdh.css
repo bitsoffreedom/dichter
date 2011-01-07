@@ -348,20 +348,20 @@ ul {
 	margin: 0px;
 }
 
-#targets li.viaMail { background-position: 0px 0px; }
+#targets li.viaemail { background-position: 0px 0px; }
 
-#targets .selected li.viaMail,
-#targets .disabled li.viaMail { background-position: 0px -17px; }
+#targets .selected li.viaemail,
+#targets .disabled li.viaemail { background-position: 0px -17px; }
 
-#targets li.viaPhone { background-position: -20px 0px;  width: 18px;}
+#targets li.viaphone { background-position: -20px 0px;  width: 18px;}
 
-#targets .selected li.viaPhone,
-#targets .disabled li.viaPhone { background-position: -20px -17px; }
+#targets .selected li.viaphone,
+#targets .disabled li.viaphone { background-position: -20px -17px; }
 
-#targets li.viaTwitter { background-position: -40px 0px;}
+#targets li.viatwitter { background-position: -40px 0px;}
 
-#targets .selected li.viaTwitter,
-#targets .disabled li.viaTwitter { background-position: -40px -17px; }
+#targets .selected li.viatwitter,
+#targets .disabled li.viatwitter { background-position: -40px -17px; }
 
 #targets li.viaHyves { background-position: -60px 0px;}
 

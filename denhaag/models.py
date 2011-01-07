@@ -63,7 +63,7 @@ class PoliticianCampaign(models.Model):
 class ContactMethod(models.Model):
   name = models.CharField(max_length=25)
   enabled = models.BooleanField(default=True)
-  prefix = models.CharField(max_length=40)
+  prefix = models.CharField(max_length=40, blank=True)
   def __unicode__(self):
     return self.name
 
@@ -74,7 +74,7 @@ class CampaignContact(models.Model):
 
 class PoliticianContactInfo(models.Model):
   contact_method = models.ForeignKey(ContactMethod)
-  #politician = models.ForeignKey(Politician)
+  #  politician = models.ForeignKey(Politician)
   address = models.CharField(max_length=200)
   def __unicode__(self):
     return self.contact_method.prefix + self.address
