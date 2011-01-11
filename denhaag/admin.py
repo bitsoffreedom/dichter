@@ -6,6 +6,11 @@ class PoliticianCampaignInline(admin.TabularInline):
 	extra = 1
 	fields = ['politician', 'desc', 'weight']
 
+class PoliticianContactInfoInline(admin.TabularInline):
+	model = Politician.contact_info.through
+	extra = 1
+	# TODO: Set fields = ['bla', 'bla', ...]
+
 class CampaignAdmin(admin.ModelAdmin):
   list_display = ('title', 'start_date', 'end_date')
   search_fields = ('title',)
@@ -18,6 +23,15 @@ class PoliticianAdmin(admin.ModelAdmin):
   list_display = ('name', 'party', 'admin_image', 'gender')
   search_fields = ('name', 'party')
   ordering = ('name', 'party')
+  fieldsets = [(None, {
+  	'fields': [
+		'name',
+		'party',
+		'desc',
+		'gender',
+		'pica',
+  ]})]
+  inlines = [PoliticianContactInfoInline,]
 admin.site.register(Politician, PoliticianAdmin)
   
 class PartyAdmin(admin.ModelAdmin):
