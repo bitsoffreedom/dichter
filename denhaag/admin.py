@@ -1,11 +1,17 @@
 from dichter.denhaag.models import *
 from django.contrib import admin
 
+class PoliticianCampaignInline(admin.TabularInline):
+	model = PoliticianCampaign
+	extra = 1
+	fields = ['politician', 'desc', 'weight']
+
 class CampaignAdmin(admin.ModelAdmin):
   list_display = ('title', 'start_date', 'end_date')
   search_fields = ('title',)
   ordering = ('title',)
   date_hierarchy = 'start_date'
+  inlines = [PoliticianCampaignInline,]
 admin.site.register(Campaign, CampaignAdmin)
 
 class PoliticianAdmin(admin.ModelAdmin):
