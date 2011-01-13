@@ -143,6 +143,20 @@ $(function () {
 		hash_change_check_interval = setInterval(hash_change, 200);
 	}
 
+	/* XXX quick hack
+	 * Hide nav buttons entirely if the list is smaller then it's container 
+	 */
+	(function () {
+		var campagnes_width = 0;
+		var campagnes = $("#campagnes-list li");
+		for (var i = 0; i < campagnes.length; ++i) {
+			campagnes_width += $(campagnes[i]).width();
+		}
+		if (campagnes_width < $("#campagnes-list").width()) {
+			$("#campagnesScrollLeft").hide();
+			$("#campagnesScrollRight").hide();
+		}
+	})();
 	/* Enable correct nav buttons */	
 	navEnabler();
 })
