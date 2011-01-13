@@ -70,14 +70,29 @@ $(function () {
 		});
 
 		$(targets[i]).click(function (e) {
-			$(e.currentTarget).trigger("scrollTo");
 			var link = $(e.currentTarget).find("a")[0]
-			highlight_tab(e.currentTarget);
-			load_content(link);
+			load_tab(link);
 			return false;
 		});
 	}
 
+	function load_tab (link) {
+		__change_running = true;
+
+		highlight_tab($(link).parent("li"));
+		$(link).parent("li").trigger("scrollTo");
+
+		window.location = window.location.href.replace(/#?.*$/,"#" + link.title)
+
+		if (link) {
+			load_content(link);
+		} 
+	
+		current_fragment = link.title;
+
+		__change_running = false;
+	}
+	
 	function load_content (link) {
 		$('#content').customFadeTo("slow",0.01, function () {
 			$('#content').load(link.href + " #content", function () {
@@ -87,14 +102,10 @@ $(function () {
 				// Working around issues with jQuery related to naming the ID after the fragment
 				$("#"+anchor).attr("id", "__fid");
 
-				current_fragment = anchor;
-				window.location = window.location.href.replace(/#?.*$/,"#" + anchor)
-				
 				hero();
 
 				$('#content').customFadeTo("slow",1);
 				// Release hash change lock here due to asynchronicity
-				__hash_change_running = false;
 			});
 		});
 	}
@@ -106,36 +117,29 @@ $(function () {
 	}
 
 	// Handle forward/backwards navigation 
-	__hash_change_running = false;
+	__change_running = false;
 	function hash_change () {
-		if (__hash_change_running) { return; }
+		if (__change_running) { return; }
 		var location = window.location.toString()
+	
+		if (location.match(/#(.+$)/)) {
+			var anchor = decodeURIComponent(location.match(/#(.+$)/)[1]);
+		} else if (current_fragment != "") {
+			__change_running = true;
 
-		var anchor = decodeURIComponent(location.match(/#(.+$)/));
-		
-		if (anchor && anchor.match(current_fragment + "$")[1]){
-			// Prevent from running multiple updates at once
-			__hash_change_running = true;
+			var link = $("#campagnes-list a:first-child")[0];
 
-
-			var link = $("a[title=" + decodeURIComponent(window.location.toString().match(/#(.+)$/)[1]) + "]")[0]
 			highlight_tab($(link).parent("li"));
+			load_content(link);
+			current_fragment = "";
+			__change_running = false;
+		}
+		
+		if (anchor && !anchor.match("^" + current_fragment + "$")){
+			var link = $("a[title=" + decodeURIComponent(window.location.toString().match(/#(.+)$/)[1]) + "]")[0]
 
-			if (link) {
-				load_content(link);
-			} else {
-				return;
-			}
-		}/* else if (location.match("/$") && !location.match("/" + current_fragment + "/$") && !location.match("//[^/]/$)) {
-			__hash_change_running = true;
-
-			var link = $("#logo a")[0];
-			if (link) {
-				load_content(link);
-			} else {
-				return;
-			}
-		}*/
+			load_tab(link);
+		}
 	}
 	if ("onhashchange" in window) {
 		window.onhashchange = hash_change;
@@ -157,6 +161,9 @@ $(function () {
 			$("#campagnesScrollRight").hide();
 		}
 	})();
+	/* First campaign highlighted, should be done in CSS, isn't */
+	$("#campagnes-list li:first-child").addClass("ui-state-active");
+
 	/* Enable correct nav buttons */	
 	navEnabler();
 })
