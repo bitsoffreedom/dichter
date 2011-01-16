@@ -94,7 +94,7 @@ ul {
 	background: #000;
 	color: #fff;
 	width: 100%;
-	overflow: auto;
+	overflow: hidden;
 }
 
 #nav {
