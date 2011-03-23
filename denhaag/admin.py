@@ -21,7 +21,7 @@ admin.site.register(Campaign, CampaignAdmin)
 
 class PoliticianAdmin(admin.ModelAdmin):
   list_display = ('name', 'party', 'admin_image', 'gender')
-  search_fields = ('name', 'party')
+  search_fields = ('name', 'party__name')
   ordering = ('name', 'party')
   fieldsets = [(None, {
   	'fields': [
@@ -48,11 +48,11 @@ admin.site.register(CampaignContact, CampaignContactAdmin)
 
 class PoliticianCampaignAdmin(admin.ModelAdmin):
   list_display = ('politician', 'campaign', 'weight')
-admin.site.register(PoliticianCampaign, PoliticianCampaignAdmin)
+#admin.site.register(PoliticianCampaign, PoliticianCampaignAdmin)
 
 class PoliticianContactInfoAdmin(admin.ModelAdmin):
   list_display = ('contact_method', 'address')
-admin.site.register(PoliticianContactInfo, PoliticianContactInfoAdmin)
+#admin.site.register(PoliticianContactInfo, PoliticianContactInfoAdmin)
 
 class ActionAdmin(admin.ModelAdmin):
 	list_display = ('campaign_contact', 'ip')
