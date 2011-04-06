@@ -20,6 +20,7 @@ import json
 import os
 
 FIXTURES_FILE = "fixtures"
+PARLIAMENT_FILE = "kamerleden.csv"
 
 
 # If fixtures file is present: load it
@@ -29,12 +30,30 @@ else:
     old_fixtures = []
 
 
+parliament = csv.reader(open(PARLIAMENT_FILE), delimiter=";")
+parties_json = []
+party2id = {}
+i = 0
+for member in parliament:
+    afko = member[10][member[10].find('(')+1:-1].lower()
+    if not party2id.has_key(afko):
+        party2id[afko] = i
+        parties_json.append({
+            "model": "denhaag.Party",
+            "pk": i,
+            "fields": {
+                "name": member[10],
+                "pica": "images/partij_logos/%s.gif" % (afko)
+            }
+        })
+        i += 1
+
 
 
 
 # Write the new fixtures to file
 with open(FIXTURES_FILE, "w") as f:
-    json.dump(old_fixtures, f, indent="\t")
+    json.dump(old_fixtures+parties_json, f, indent=4)
 
 
 
