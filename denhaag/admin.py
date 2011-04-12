@@ -63,4 +63,6 @@ class StaticAdmin(admin.ModelAdmin):
   list_display = ('title', 'slug')
 admin.site.register(Static, StaticAdmin)
 
+# XXX tmp fix
+admin.site.register(PoliticianCampaign)
 
