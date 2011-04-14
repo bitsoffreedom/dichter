@@ -36,10 +36,10 @@ else:
 parliament = csv.reader(open(PARLIAMENT_FILE), delimiter=";")
 parties_json = []
 parties = {}
-partyid = 0
+partyid = 1
 members_json = []
 members = {}
-memberid = 0
+memberid = 1
 contact_json = []
 for member in parliament:
     # Skip header
