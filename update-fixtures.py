@@ -105,6 +105,15 @@ for tweep in twitter_csv:
         })
         memberid += 1
 
+# filter empty contact methods
+empty = set()
+for cm in contact_json:
+    if not cm["fields"]["address"]: empty.add(cm["pk"])
+contact_json = filter(lambda cm: cm["pk"] not in empty, conotact_json)
+for i in xrange(len(members_json)):
+    members_json[i]["fields"]["contact_info"] = filter(lambda id: id not in empty, members_json[i]["fields"]["contact_info"])
+
+
 new_json = old_fixtures + parties_json + members_json + contact_json
 
 
