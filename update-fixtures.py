@@ -17,110 +17,77 @@
 
 import csv
 import difflib
-import json
-import os
+import os, sys
 import urllib2
+
+os.environ["DJANGO_SETTINGS_MODULE"] = "dichter.settings"
+
+import django
+from django.core.management import setup_environ
+import settings
+setup_environ(settings)
+from denhaag.models import *
 
 FIXTURES_FILE = "fixtures"
 PARLIAMENT_FILE = "kamerleden.csv"
 TWITTER_URL = "http://politieklive.nl/~dbdhcsv.php"
 
 
-# If fixtures file is present: load it
-if os.path.exists(FIXTURES_FILE):
-    old_fixtures = json.load(open(FIXTURES_FILE))
-else:
-    old_fixtures = []
+# Setup default stuff
+twitter_cm = ContactMethod(id=1, name="Twitter", prefix="@")
+twitter_cm.save()
+email_cm = ContactMethod(id=2, name="Email", prefix="mailto://")
+email_cm.save()
 
 
 parliament = csv.reader(open(PARLIAMENT_FILE), delimiter=";")
-parties_json = []
 parties = {}
-partyid = 1
-members_json = []
 members = {}
-memberid = 1
-contact_json = []
 for member in parliament:
     # Skip header
     if member[0] == "image": continue
     afko = member[10][member[10].find('(')+1:-1].lower()
     if not parties.has_key(afko):
-        parties[afko] = partyid
-        parties_json.append({
-            "model": "denhaag.Party",
-            "pk": partyid,
-            "fields": {
-                "name": member[10],
-                "pica": "images/partij_logos/%s.gif" % (afko)
-            }
-        })
-        partyid += 1
+        p = Party(name=member[10], pica="images/partij_logos/%s.gif" %(afko))
+        p.save()
+        parties[afko] = p.id
     dstimage = 'politici/%s.jpg' % member[1].replace('/', '-')
     if not os.path.exists('static/%s' % dstimage):
         print 'http://www.tweedekamer.nl%s' % (member[0])
         srcimage = urllib2.urlopen('http://www.tweedekamer.nl%s' % member[0]).read()
         open('static/%s' % dstimage, 'w').write(srcimage)
-    contact_json.append({
-        "model": "denhaag.PoliticianContactInfo",
-        "pk": memberid,
-        "fields": {
-            "contact_method": 1,
-            "address": member[9].lower()
-        }
-    })
-    members[member[1]] = memberid
-    members_json.append({
-        "model": "denhaag.Politician",
-        "pk": memberid,
-        "fields": {
-            "name": member[1],
-            "party": parties[afko],
-            "desc": "Actief in: " + ",".join(member[12:31]).rstrip(","),
-            "gender": member[8]  == 'Man' and 'M' or 'F',
-            "pica": dstimage,
-            "contact_info": [memberid, ]
-        }
-    })
-    memberid += 1
+    pci = PoliticianContactInfo(
+        contact_method = email_cm,
+        address = member[9].lower()
+    )
+    pci.save()
+    p = Politician(
+        name = member[1],
+        party = Party.objects.get(id=parties[afko]),
+        desc = "Actief in: " + ",".join(member[12:31]).rstrip(","),
+        gender = member[8]  == 'Man' and 'M' or 'F',
+        pica = dstimage,
+    )
+    p.save()
+    p.contact_info.add(pci)
+    p.save()
+    members[member[1]] = p.id
 
 # Now add the twitter accounts
 twitter_csv = csv.reader(urllib2.urlopen(TWITTER_URL), delimiter=",")
 for tweep in twitter_csv:
     if len(tweep) == 2: # Has twitter account
+        if not tweep[1]: continue
         match = difflib.get_close_matches(tweep[0], members.keys())
         if not match: continue
         match = match[0]
-        for i in range(len(members_json)):
-            if members_json[i]["pk"] == members[match]:
-                members_json[i]["fields"]["contact_info"].append(memberid)
-                break
-        contact_json.append({
-            "model": "denhaag.PoliticianContactInfo",
-            "pk": memberid,
-            "fields": {
-                "contact_method": 2,
-                "address": tweep[1]
-            }
-        })
-        memberid += 1
-
-# filter empty contact methods
-empty = set()
-for cm in contact_json:
-    if not cm["fields"]["address"]: empty.add(cm["pk"])
-contact_json = filter(lambda cm: cm["pk"] not in empty, conotact_json)
-for i in xrange(len(members_json)):
-    members_json[i]["fields"]["contact_info"] = filter(lambda id: id not in empty, members_json[i]["fields"]["contact_info"])
-
-
-new_json = old_fixtures + parties_json + members_json + contact_json
-
-
-
-# Write the new fixtures to file
-with open(FIXTURES_FILE, "w") as f:
-    json.dump(new_json, f, indent=4)
-
+        pci = PoliticianContactInfo(
+            contact_method = twitter_cm,
+            address = tweep[1]
+        )
+        pci.save()
+        p = Politician.objects.get(id=members[match])
+        p.contact_info.add(pci)
+        p.save()
 
 
