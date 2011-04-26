@@ -41,7 +41,7 @@ class Politician(models.Model):
     return sluggify(self.name)
 
   def __unicode__(self):
-    return self.name
+    return self.name.decode("utf_8")
   def admin_image(self):
     return '<img src="%s" alt="%s"/>' % (self.pica.url, self.name)
   admin_image.allow_tags = True
