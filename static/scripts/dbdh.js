@@ -61,19 +61,7 @@ function hero() {
     var payload = $('#targets .selected .via'+vector+' a').attr('href');
     var politician_name = $('#targets .selected h4').html();
     if(vector == 'email'){      
-      if(payload.length > 0){
-        $('#emailform form').attr('action', payload);
-      }
-	  $("#name").bind("focus", function (e) { 
-	    if (e.currentTarget.value == e.currentTarget.getAttribute("value")) {
-		  e.currentTarget.value = "";
-		}
-	  });
-	  $("#name").bind("blur", function (e) { 
-	    if (e.currentTarget.value == "") {
-		  e.currentTarget.value = e.currentTarget.getAttribute("value");
-		}
-	  });
+      // do nothing for now, using the mailto: is unstable
     }
     
     if(vector == 'phone'){
