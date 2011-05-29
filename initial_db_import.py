@@ -36,7 +36,7 @@ TWITTER_URL = "http://politieklive.nl/~dbdhcsv.php"
 # Setup default stuff
 twitter_cm = ContactMethod(id=1, name="twitter", prefix="@")
 twitter_cm.save()
-email_cm = ContactMethod(id=2, name="email", prefix="mailto://")
+email_cm = ContactMethod(id=2, name="email", prefix="")
 email_cm.save()
 
 

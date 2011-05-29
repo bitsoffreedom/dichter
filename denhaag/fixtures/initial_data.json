@@ -48,7 +48,7 @@
 	  "fields":{
 	    "name":"email",
 	    "enabled":"1",
-		"prefix":"mailto:"
+		"prefix":""
 	  }
 	},
   {

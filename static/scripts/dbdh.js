@@ -61,7 +61,10 @@ function hero() {
     var payload = $('#targets .selected .via'+vector+' a').attr('href');
     var politician_name = $('#targets .selected h4').html();
     if(vector == 'email'){      
-      // do nothing for now, using the mailto: is unstable
+      if(payload.length > 0){
+        $('#email_name').html(politician_name);
+        $('#email_address').html(payload);
+      }
     }
     
     if(vector == 'phone'){
@@ -88,15 +91,6 @@ function hero() {
     // make the clicked vector active
     $(this).addClass('selected');
     return false;
-  });
-  
-  // form validation #TODO
-  $('#emailform .versturen input[type=submit]').click(function(){
-    if($('#emailform textarea').value == ''){
-      $('#emailform textarea').fadeTo(400, '.2').fadeTo(400, '1');      
-      return false;
-    };
-    $('#thnx').show();
   });
 }
 
