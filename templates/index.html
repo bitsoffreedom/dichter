@@ -93,9 +93,9 @@
                   </div>
                   <div class="extraInfo">
                     {% if politician.desc %}
-                      {{ politician.desc|linebreaks }}
+                      {{ politician.desc|safe }}
                     {% else %}
-                      {{ politician.politician.desc }}
+                      {{ politician.politician.desc|safe }}
                     {% endif %}
                   </div>
                   <div class="infoToggle">
@@ -125,7 +125,7 @@
               Pas hier de boodschap aan en verstuur die. Maak je boodschap zo persoonlijk en feitelijk mogelijk, want dan hebben politici er het meeste aan.
             </p>
             <div class="stepContent">
-              <div id="emailform">
+              <div id="emailform" style="display:none;">
                 <form action="" enctype="text/plain" method="post">
                   <span class="onderwerp unit">
                     <label for="description">Onderwerp</label>
@@ -178,8 +178,8 @@
           </div>
           <ul id="delen">
             <li id="deelTwitter"><a href="http://twitter.com/?status=Doe%20mee%20aan%20de%20campagne%20voor%20{{campaign.title}}%20http://www.dichterbijdenhaag.nl/campaign/{{campaign.title_slug}}">Twitter</a></li>
-            <li id="deelFacebook"><a href="#">Facebook</a></li>
-            <li id="deelHyves"><a href="#">Hyves</a></li>
+            <li id="deelFacebook"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.dichterbijdenhaag.nl%2Fcampaign%2F{{campaign.title_slug}}&t=Doe%20mee%20aan%20de%20campagne%20voor%20{{campaign.title}}%20http://www.dichterbijdenhaag.nl/campaign/{{campaign.title_slug}}">Facebook</a></li>
+            <li id="deelHyves"><a href="http://hyves.nl">Hyves</a></li>
           </ul>
         </div>
       </div><!-- //content -->
