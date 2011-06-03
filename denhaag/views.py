@@ -20,7 +20,7 @@ def index(request, campaign_slug=None):
     raise Http404
   campaign_list = Campaign.objects.filter(
       start_date__lte=today, end_date__gte=today).order_by('-start_date')
-  politicians_list = PoliticianCampaign.objects.filter(campaign=campaign)
+  politicians_list = PoliticianCampaign.objects.filter(campaign=campaign).order_by('weight')
 
   return render_to_response(
       'index.html',
