@@ -1,5 +1,5 @@
 function hero() {
-	$('#hero .extraInfo').hide();
+	$('.extraInfo').hide();
 	$('#meer a').click(function(e){
 		e.preventDefault();
 		$('#hero .extraInfo').slideToggle();
