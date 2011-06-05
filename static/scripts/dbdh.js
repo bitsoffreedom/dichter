@@ -7,30 +7,11 @@ function hero() {
 		$(this).text($(this).text() == "Meer lezen" ? "Verbergen" : "Meer lezen");
 
 	});
-
-	var targets = $('#targets .extraInfo');
-
-	for (var i=0; i < targets.length; i++) {
-		var src = targets[i];
-		var dst = src.cloneNode(false);
-		src.parentNode.insertBefore(dst,src);
-		$(dst).addClass("first");
-		
-		var children = $(src).children()
-		var length = 0;
-		for (var j=0; j < children.length; j++) {
-			if (length < 200) {
-				dst.appendChild(children[j]);
-				length = length + $(children[j]).text().length
-			}
-		}
-		$(src).hide();
-	}
 	 
 	$('#targets .infoToggle a').click(function(e){
 		e.preventDefault();
 		$(this).closest('.infoToggle').prev().slideToggle(400,function () { $(this).trigger("scrollTo"); });
-		$(this).closest('.infoToggle').toggleClass('hide');
+		$(this).closest('.infoToggle').toggleClass('small');
 		$(this).text($(this).text() == "Meer informatie" ? "Informatie verbergen" : "Meer informatie");
 	});	
 	

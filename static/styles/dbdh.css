@@ -411,10 +411,9 @@ ul {
 	color: #fff;
 	padding: 3px 4px;
 }
-
-#targets li .extraInfo.first {
-  background: url(../images/bg-politicus-extrainfo.png) no-repeat #444;
-	padding: 13px 4px 3px;
+#targets li .extrainfo.small{
+  max-height:50px;
+	overflow:hidden;
 }
 
 #targets li .extraInfo p {
