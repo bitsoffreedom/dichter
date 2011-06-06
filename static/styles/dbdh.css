@@ -535,6 +535,10 @@ ul {
 			background: url(../images/bg-panel-wide.png) no-repeat 0px 0px;
 			}
 
+            #step3 sub {
+                margin-left: 7px;
+            }
+
 			#step3 h3 {
 				background: url(../images/bg-stap3.png) no-repeat;
 				width: 352px;
