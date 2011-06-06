@@ -142,10 +142,10 @@
               </div>
               <div id="twitterform" style="display:none;">
                 <sub>Je moet ingelogd zijn op Twitter om een tweet automatisch te kunnen versturen.</sub>
-                <form action="https://twitter.com/" enctype="multiform/form-data" method="get" name="tweetform">
+                <form action="https://twitter.com/intent/tweet" enctype="multiform/form-data" method="get" name="tweetform">
                   <span class="bericht unit">
                     <label for="message">Bericht</label>
-                    <textarea id="message" name="status" rows="3" onLoad="field_size(this, this.form.sizedisplay, 140)" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)">Geachte,{{ politician.contact_twitter }} [schrijf hier je oproep] {{ campaign.hashtag }}</textarea>
+                    <textarea id="message" name="text" rows="3" onLoad="field_size(this, this.form.sizedisplay, 140)" onKeyDown="field_size(this, this.form.sizedisplay, 140)" onKeyUp="field_size(this,this.form.sizedisplay, 140)">Geachte,{{ politician.contact_twitter }} [schrijf hier je oproep] {{ campaign.hashtag }}</textarea>
                     <input readonly="readonly" type="text" name="sizedisplay" id="tweetsizedisplay" size="3"/>
                     karakters over.
                   </span>
