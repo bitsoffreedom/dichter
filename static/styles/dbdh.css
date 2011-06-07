@@ -773,6 +773,10 @@ ul {
 	}
 	*/
 
+#twitterform sub{
+  display:block;
+  margin: 1em 1em 0;
+}
 
 
 /* new clearfix */
