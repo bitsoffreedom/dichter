@@ -90,9 +90,15 @@ $(document).ready(function(){
 /* Keep tract of form size */
 function field_size(field,size_field,limit) {
 	if (field.value.length > limit) {
-		$(size_field).addClass("lengthExceeded");
+		if (!$(size_field).hasClass("lengthExceeded") || !$(field).parents("form").find("input[type=submit]").disabled){
+			$(size_field).addClass("lengthExceeded");
+			$(field).parents("form").find("input[type=submit]").fadeTo(500,0.1)[0].disabled = true
+		}
 	} else {
-		$(size_field).removeClass("lengthExceeded");
+		if ($(size_field).hasClass("lengthExceeded" ) || $(field).parents("form").find("input[type=submit]").disabled){
+			$(size_field).removeClass("lengthExceeded");
+			$(field).parents("form").find("input[type=submit]").fadeTo(500,1)[0].disabled = false
+		}
 	}
 	size_field.value = limit - field.value.length;
 }
