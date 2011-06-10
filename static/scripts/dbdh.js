@@ -90,8 +90,9 @@ $(document).ready(function(){
 /* Keep tract of form size */
 function field_size(field,size_field,limit) {
 	if (field.value.length > limit) {
-		field.value = field.value.substring(0, limit);
+		$(size_field).addClass("lengthExceeded");
 	} else {
-		size_field.value = limit - field.value.length;
+		$(size_field).removeClass("lengthExceeded");
 	}
+	size_field.value = limit - field.value.length;
 }

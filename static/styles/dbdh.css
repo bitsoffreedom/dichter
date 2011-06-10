@@ -606,6 +606,9 @@ ul {
 				border: none;
 				font-weight: bold;
 			}
+			.lengthExceeded {
+				color: red;
+			}
       #phoneform {
         display: block;
         font-size: 1.2em;
