@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="nl_nl">
+  <head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Dichter Bij Den Haag</title>
+    <link href="{{ STATIC_PREFIX }}styles/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ STATIC_PREFIX }}styles/jquery-ui-override.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}styles/dbdh.css" />
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery-1.4.2.min.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery-ui-1.8.4.custom.min.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollTo.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletab.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletab.init.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/jquery.scrollabletargets.js'></script>
+    <script type='text/javascript' src='{{ STATIC_PREFIX }}scripts/dbdh.js'></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1 id="logo"><a href="/">Dichter Bij Den Haag</a></h1>
+        <a id="boflogo" href="https://bof.nl">Bits of Freedom</a>
+      </div>
+      <div id="navbar">
+        <ul id="nav">
+          <li><a id="nav-home" href="/">Home</a></li>
+          <li><a id="nav-over" href="/static/over/">Over</a></li>
+          <li><a id="nav-contact" href="/static/contact/">Contact / Pers</a></li>
+        </ul>
+      </div>
+      <div class="preamble">
+        <p>
+          Welkom bij Dichter Bij Den Haag: de snelste manier om je stem
+          te laten horen. Kies hieronder wie je wilt bereiken, hoe je
+          diegene wilt bereiken, wat je wil zeggen en verstuur je
+          boodschap. Klik <a href="/static/over/">hier</a> voor meer
+          informatie over Dichter Bij Den Haag.
+        </p>
+      </div>
+     
+      <div id="content">
+        <div id="nothintodo">
+          <h2>Het internet en onze vrijheden zijn voor nu veilig!</h2>
+          <p>Momenteel zijn er geen actieve campagnes waar we jouw hulp bij nodig hebben. Als je wilt kunnen we je op de hoogte houden van nieuwe campagnes via <a href="http://twitter.com/bitsoffreedom">onze twitter @bitsoffreedom</a>.</p>
+        </div>
+        <div id="deelreageer">
+          <div id="reageren">
+            <p id="kloptniet">Heb jij een goed idee voor een campagne? Mis je iets? <a href="/static/contact">Laat het ons weten!</a></p>
+          </div>
+          <ul id="delen">
+            <li id="deelTwitter"><a href="http://twitter.com/intent/tweet/?text=Doe%20mee%20aan%20de%20campagne%20voor%20{{campaign.title}}%20http://www.dichterbijdenhaag.nl/campaign/{{campaign.title_slug}}">Twitter</a></li>
+            <li id="deelFacebook"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.dichterbijdenhaag.nl%2Fcampaign%2F{{campaign.title_slug}}&t=Doe%20mee%20aan%20de%20campagne%20voor%20{{campaign.title}}%20http://www.dichterbijdenhaag.nl/campaign/{{campaign.title_slug}}">Facebook</a></li>
+            <li id="deelHyves"><a href="http://hyves.nl">Hyves</a></li>
+          </ul>
+        </div>
+      </div><!-- //content -->
+      <div id="footer">
+        <div id="footerText">
+          <div id="marquee">
+            <p>Volg de laatste ontwikkelingen van Dichter Bij Den Haag via Bits of Freedom...</p>
+          </div>
+          <ul id="footerlinks">
+            <li><a href="/static/privacy/">Privacy-verklaring</a></li>
+            <li><a href="/static/regels/">Huisregels</a></li>
+            <li>Design: <a href="http://www.martijnbroekman.nl/">Martijn Broekman</a></li>
+            <li>Techniek: Zie <a href="/static/over/">Over</a></li>
+          </ul>
+        </div>
+        <ul id="followLinks">
+          <li id="followLinkedin"><a href="https://www.linkedin.com/groups?home=&amp;gid=2677586"></a></li>
+          <li id="followTwitter"><a href="https://twitter.com/bitsoffreedom"></a></li>
+          <li id="followRss"><a href="https://www.bof.nl/rss/"></a></li>
+          <li id="followFacebook"><a href="https://www.facebook.com/BitsofFreedom"></a></li>
+        </ul>
+      </div><!-- //footer -->
+    </div><!-- //wrapper -->
+  </body>
+</html>

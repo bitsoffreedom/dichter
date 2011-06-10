@@ -13,7 +13,10 @@ def index(request, campaign_slug=None):
     campaign = Campaign.objects.filter(
         start_date__lte=today, end_date__gte=today)
     if not campaign_slug:
-      campaign = campaign.order_by('-start_date')[0]
+      try:
+        campaign = campaign.order_by('-start_date')[0]
+      except IndexError:
+        return render_to_response('nothintodo.html')
     else:
       campaign = campaign.get(title_slug=campaign_slug)
   except Campaign.DoesNotExist:
