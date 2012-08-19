@@ -4,7 +4,7 @@ from django.contrib import admin
 class PoliticianCampaignInline(admin.TabularInline):
 	model = PoliticianCampaign
 	extra = 1
-	fields = ['politician', 'desc', 'weight']
+	#fields = ['politician', 'desc', 'weight']
 
 class PoliticianContactInfoInline(admin.TabularInline):
 	model = Politician.contact_info.through
