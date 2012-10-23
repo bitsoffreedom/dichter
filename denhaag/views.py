@@ -1,4 +1,4 @@
-from django.template import Context, loader
+from django.template import Context, loader, RequestContext
 from django.shortcuts import render_to_response
 from django.conf import settings
 from dichter.denhaag.models import *
@@ -16,7 +16,7 @@ def index(request, campaign_slug=None):
       try:
         campaign = campaign.order_by('-start_date')[0]
       except IndexError:
-        return render_to_response('nothintodo.html')
+        return render_to_response('nothintodo.html', RequestContext(request, {}))
     else:
       campaign = campaign.get(title_slug=campaign_slug)
   except Campaign.DoesNotExist:
@@ -26,31 +26,31 @@ def index(request, campaign_slug=None):
   politicians_list = PoliticianCampaign.objects.filter(campaign=campaign).order_by('weight')
 
   return render_to_response(
-      'index.html',
+      'index.html', RequestContext(request,
       {'campaign_list': campaign_list, 'politicians_list': politicians_list,
-       'STATIC_PREFIX': settings.MEDIA_URL, 'campaign': campaign})
+       'campaign': campaign}))
 
 def politician_info(request, politician=''):
   politician = Politician.objects.get(name=unsluggify(politician))
   if not politician:
     raise Http404
   return render_to_response(
-      'politician.html',
-      {'STATIC_PREFIX': settings.MEDIA_URL, 'politician': politician})
+      'politician.html', RequestContext(request,
+      {'politician': politician}))
 
 def send_message_mail(request, politician):
   try:
     politician = Politician.objects.get(name=politician)
   except Politician.DoesNotExist:
     raise Http404
-  return render_to_response('form_mail.html', {'politician': politician})
+  return render_to_response('form_mail.html', RequestContext(request, {'politician': politician}))
 
 def send_message_facebook(request, politician):
   try:
     politician = Politician.objects.get(name=politician)
   except Politician.DoesNotExist:
     raise Http404
-  return render_to_response('form_facebook.html', {'politician': politician})
+  return render_to_response('form_facebook.html', RequestContext(request, {'politician': politician}))
 
 def static(request, slug):
   try:
@@ -59,5 +59,5 @@ def static(request, slug):
   except Static.DoesNotExist:
     raise Http404
   return render_to_response(
-      'static.html',
-      {'page': politician, 'STATIC_PREFIX': settings.MEDIA_URL})
+      'static.html', RequestContext(request,
+      {'page': politician,} ))
