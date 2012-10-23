@@ -50,7 +50,7 @@ a:active {
 
 ul {
 	margin: 3px 0 0 15px;
-	list-style-image: url(/static/media/images/li-bullet.png);
+	list-style-image: url(/media/images/li-bullet.png);
 }
 
 #header {
@@ -70,7 +70,7 @@ ul {
 	display: block;
 	width: 331px;
 	height: 98px;
-	background: url(/static/media/images/h1-dbdh-logo.png) no-repeat;
+	background: url(/media/images/h1-dbdh-logo.png) no-repeat;
 	text-indent: -9999px;
 }
 
@@ -79,7 +79,7 @@ ul {
 	float: right;
 	width: 233px;
 	height: 98px;
-	background: url(/static/media/images/bg-bof-logo.png) no-repeat;
+	background: url(/media/images/bg-bof-logo.png) no-repeat;
 	text-indent: -9999px
 }
 
@@ -161,12 +161,12 @@ ul {
 	width: 92px;
 	margin: 0 auto;
 	height: 20px;
-	background: url(/static/media/images/bg-a-meer.png) no-repeat bottom #36abdb;
+	background: url(/media/images/bg-a-meer.png) no-repeat bottom #36abdb;
 	color: #fff;
 }
 
 #meer a {
-	background: url(/static/media/images/bg-meer-arrow.png) no-repeat 2px 7px;
+	background: url(/media/images/bg-meer-arrow.png) no-repeat 2px 7px;
 	color: #fff;
 	text-decoration: none;
 	display: block;
@@ -181,7 +181,7 @@ ul {
 }
 
 #meer.open a {
-	background: url(/static/media/images/bg-meer-arrow-open.png) no-repeat 2px 7px;
+	background: url(/media/images/bg-meer-arrow-open.png) no-repeat 2px 7px;
 }
 
 .preamble{
@@ -197,7 +197,7 @@ ul {
 	width: 654px;
 	padding-left: 140px;
 	margin: 0 auto;
-	background: url(/static/media/images/bg-campagnes.png) no-repeat 0 10px;
+	background: url(/media/images/bg-campagnes.png) no-repeat 0 10px;
 	height: 30px;
 	margin-top: 0px;
 	font-weight: bold !important;
@@ -217,7 +217,7 @@ ul {
 	padding-right: 0;
 }
 #campagnesScrollLeft {
-	background: url(/static/media/images/arrow-left.png) no-repeat;
+	background: url(/media/images/arrow-left.png) no-repeat;
 	float: left;
 	margin-top: 6px;
 	width: 19px;
@@ -225,7 +225,7 @@ ul {
 	margin-right: 2px;
 }
 #campagnesScrollRight {
-	background: url(/static/media/images/arrow-right.png) no-repeat;
+	background: url(/media/images/arrow-right.png) no-repeat;
 	float: right;
 	margin-top: 6px;
 	width: 19px;
@@ -240,7 +240,7 @@ ul {
 }
 
 #steps .stepContent {
-	background: url(/static/media/images/bg-panel-narrow.png) no-repeat 0px 0px;
+	background: url(/media/images/bg-panel-narrow.png) no-repeat 0px 0px;
 	min-height: 370px;
 	overflow: hidden;
 }
@@ -262,43 +262,43 @@ ul {
 }
 
 #step1 h3 {
-	background: url(/static/media/images/bg-stap1.png) no-repeat;
+	background: url(/media/images/bg-stap1.png) no-repeat;
 	width: 212px;
 	height: 42px;
   text-indent: -9999px
 }
 
 #targetScrollUp {
-	background: url(/static/media/images/bg-stap1-scrollup.png) no-repeat;
+	background: url(/media/images/bg-stap1-scrollup.png) no-repeat;
 	width: 207px;
 	height: 27px;
 	margin: 13px 0 0 2px;
 }
 
 #targetScrollUp:hover {
-	background: url(/static/media/images/bg-stap1-scrollup.png) no-repeat 0px -27px;
+	background: url(/media/images/bg-stap1-scrollup.png) no-repeat 0px -27px;
 	cursor: pointer;
 }
 
 #targetScrollUp.ui-state-disabled:hover {
-	background: url(/static/media/images/bg-stap1-scrollup.png) no-repeat;
+	background: url(/media/images/bg-stap1-scrollup.png) no-repeat;
 	cursor: default;
 }
 
 #targetScrollDown {
-	background: url(/static/media/images/bg-stap1-scrolldown.png) no-repeat;
+	background: url(/media/images/bg-stap1-scrolldown.png) no-repeat;
 	width: 207px;
 	height: 27px;
 	margin: 0px 0 13px 2px;
 }
 
 #targetScrollDown:hover {
-	background: url(/static/media/images/bg-stap1-scrolldown.png) no-repeat 0px -27px;
+	background: url(/media/images/bg-stap1-scrolldown.png) no-repeat 0px -27px;
 	cursor: pointer;
 }
 
 #targetScrollDown.ui-state-disabled:hover {
-	background: url(/static/media/images/bg-stap1-scrolldown.png) no-repeat;
+	background: url(/media/images/bg-stap1-scrolldown.png) no-repeat;
 	cursor: default;
 }
 
@@ -341,7 +341,7 @@ ul {
 	float: left;
 	display: block;
 	text-indent: -9999px;
-	background-image: url(/static/media/images/stap1-sprites.png);
+	background-image: url(/media/images/stap1-sprites.png);
 	background-repeat: no-repeat;
 	overflow: hidden;
 	padding: 0px;
@@ -427,13 +427,13 @@ ul {
 
 #targets li .infoToggle span {
 	display: block;
-	background: url(/static/media/images/bg-politici-meer-info.png) no-repeat top right;
+	background: url(/media/images/bg-politici-meer-info.png) no-repeat top right;
 	float: left;
 }
 
 #targets li .infoToggle span span {
 	display: block;
-	background: url(/static/media/images/bg-politici-meer-info.png) no-repeat top left;
+	background: url(/media/images/bg-politici-meer-info.png) no-repeat top left;
 	margin: 0 5px 0 0;
 }
 
@@ -442,11 +442,11 @@ ul {
 	font-size: 12px;
 	padding: 0 0 0 16px;
 	line-height: 16px;
-	background: url(/static/media/images/bg-a-meer-info.png) no-repeat 4px 4px;
+	background: url(/media/images/bg-a-meer-info.png) no-repeat 4px 4px;
 }
 
 #targets li .infoToggle.hide span span a {
-	background: url(/static/media/images/bg-a-hide-info.png) no-repeat 4px 4px;
+	background: url(/media/images/bg-a-hide-info.png) no-repeat 4px 4px;
 				}
 
 
@@ -456,7 +456,7 @@ ul {
 		}
 
 		#steps div.nietbeschikbaar h4 {
-			background: url(/static/media/images/bg-nietbeschikbaar.png) no-repeat;
+			background: url(/media/images/bg-nietbeschikbaar.png) no-repeat;
 			font-size: 19px;
 			font-weight: normal;
 			padding: 5px 0 0 25px;
@@ -464,7 +464,7 @@ ul {
 		}
 
 		#steps div.nietbeschikbaar p {
-			background: url(/static/media/images/bg-nietbeschikbaar.png) no-repeat bottom;
+			background: url(/media/images/bg-nietbeschikbaar.png) no-repeat bottom;
 			margin: 0;
 			color: #fff;
 			font-size: 11px;
@@ -479,7 +479,7 @@ ul {
 		}
 
 			#step2 h3 {
-				background: url(/static/media/images/bg-stap2.png) no-repeat;
+				background: url(/media/images/bg-stap2.png) no-repeat;
 				width: 212px;
 				height: 42px;
 				text-indent: -9999px
@@ -503,7 +503,7 @@ ul {
 					height: 86px;
 					display: block;
 					text-indent: -9999px;
-					background-image: url(/static/media/images/stap2-sprites.png);
+					background-image: url(/media/images/stap2-sprites.png);
 					background-repeat:  no-repeat;
 					margin: 15px 0 0 0;
 				}
@@ -532,11 +532,11 @@ ul {
 		}
 
 			#step3 .stepContent {
-			background: url(/static/media/images/bg-panel-wide.png) no-repeat 0px 0px;
+			background: url(/media/images/bg-panel-wide.png) no-repeat 0px 0px;
 			}
 
 			#step3 h3 {
-				background: url(/static/media/images/bg-stap3.png) no-repeat;
+				background: url(/media/images/bg-stap3.png) no-repeat;
 				width: 352px;
 				height: 42px;
 				text-indent: -9999px
@@ -558,7 +558,7 @@ ul {
 			#step3 .onderwerp label,
 			#step3 .naam label {
 				display: block;
-				background: url(/static/media/images/bg-label-h.png) no-repeat #585858;
+				background: url(/media/images/bg-label-h.png) no-repeat #585858;
 				color: #fff;
 				width: 78px;
 				height: 20px;
@@ -578,7 +578,7 @@ ul {
 
 			#step3 .bericht label {
 				display: block;
-				background: url(/static/media/images/bg-label-v.png) no-repeat;
+				background: url(/media/images/bg-label-v.png) no-repeat;
 				color: #fff;
 				width: 56px;
 				height: 18px;
@@ -620,7 +620,7 @@ ul {
         font-size:1.1em;
       }
 			#step3 .versturen input {
-				background: url(/static/media/images/bg-btn-versturen.png) no-repeat;
+				background: url(/media/images/bg-btn-versturen.png) no-repeat;
 				display: block;
 				width: 128px;
 				height: 31px;
@@ -635,7 +635,7 @@ ul {
 				}
 
 		#bedankt {
-			background: url(/static/media/images/bg-bedankt.png) no-repeat;
+			background: url(/media/images/bg-bedankt.png) no-repeat;
 			width: 345px;
 			height: 81px;
 			text-indent: -9999px;
@@ -648,7 +648,7 @@ ul {
 		}
 
 		#delen {
-			background: url(/static/media/images/bg-delen.png) no-repeat;
+			background: url(/media/images/bg-delen.png) no-repeat;
 			width: 130px;
 			height: 44px;
 			margin: 0;
@@ -666,7 +666,7 @@ ul {
 				#deelFacebook a,
 				#deelHyves a{
 					display: block;
-					background-image: url(/static/media/images/delen-sprites.png);
+					background-image: url(/media/images/delen-sprites.png);
 					background-repeat: no-repeat;
 					text-indent: -9999px;
 					width: 30px;
@@ -698,7 +698,7 @@ ul {
 	width: 818px;
 	min-height: 200px;
 	margin: 0 auto;
-	background: url(/static/media/images/bg-footer.png) no-repeat;
+	background: url(/media/images/bg-footer.png) no-repeat;
 }
 
 	#footerText {
@@ -762,7 +762,7 @@ ul {
 		height: 78px;
 		display: block;
 		text-align: -9999px;
-		background-image: url(/static/media/images/bg-footer.png);
+		background-image: url(/media/images/bg-footer.png);
 		background-repeat: no-repeat;
 	}
 
